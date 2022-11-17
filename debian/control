@@ -9,8 +9,8 @@ Homepage: https:/mxlinux.org
 Package: mx-rofi-manager
 Architecture: all
 Depends: yad feh
-Breaks: mxfb-goodies (<< 22.08.26)
-Conflicts: mxfb-goodies (<< 22.08.26) 
+Breaks: mxfb-goodies (<< 22.08.26), mxfb-accessories (<<22.11.06)
+Conflicts: mxfb-goodies (<< 22.08.26), mxfb-accessories (<<22.11.06)  
 Replaces: 
 Description: Manager of rofi themes and settings
   
