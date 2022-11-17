@@ -12,4 +12,3 @@ components/rofi-help usr/share/rofi
 components/calc-help usr/share/rofi
 components/ssh-help usr/share/rofi
 mx-rofi-manager usr/bin
-apt/* etc/apt/

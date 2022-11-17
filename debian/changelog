@@ -1,3 +1,9 @@
+mx-rofi-manager (22.11.18) mx; urgency=medium
+
+  * final changes for new test buile
+
+ -- Jerry <jb@mx>  Thu, 17 Nov 2022 17:34:06 -0500
+
 mx-rofi-manager (22.11.17) mx; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
