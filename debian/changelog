@@ -1,5 +1,6 @@
-mx-rofi-manager (22.11.16) UNRELEASED; urgency=medium
+mx-rofi-manager (22.11.17) mx; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
+  * Updated translation files
 
- -- Jerry <jb@mx>  Wed, 16 Nov 2022 19:18:26 -0500
+ -- Jerry <jb@mx>  Thu, 17 Nov 2022 17:19:57 -0500
