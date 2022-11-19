@@ -1,3 +1,10 @@
+mx-rofi-manager (22.11.19) UNRELEASED; urgency=medium
+
+  * added new MX theme "dracula"
+  * made rofi-help executable
+
+ -- Jerry <jb@mx>  Sat, 19 Nov 2022 05:46:51 -0500
+
 mx-rofi-manager (22.11.18) mx; urgency=medium
 
   * final changes for new test buile
