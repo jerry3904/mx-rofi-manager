@@ -1,10 +1,10 @@
-**MX Rofi manager** -- Fast and handy way to change themes, functions (modi), position, size, size etc. Includes a tab with help documents, existing and new. 
+**MX Rofi manager** -- Fast and handy app based on yad that greatly eases dealing with themes, functions (modi), position, size, font etc. A small set of MX themes is supplied that is adapted to work with all app functions, while other themes require manual intervention with items such as position or size. Comes with tab of linked help documents, existing and new.
 
-Main window
+
 ![mx-rofi-manager](/pix/main.png)
 
-Position window 
+ 
 ![mx-rofi-manager](/pix/position.png)
 
-Help tab
+
 ![mx-rofi-manager](/pix/help.png)
