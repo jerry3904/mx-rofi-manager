@@ -8,8 +8,6 @@ components/MX-*-rr usr/share/mxrr
 components/*.desktop usr/share/applications
 components/*.png usr/share/pixmaps
 components/mxcr-help.png usr/share/doc/mxfb-comfort/help/
-components/rofi-help usr/share/rofi
-components/calc-help usr/share/rofi
 components/ssh-help usr/share/rofi
 extra-themes/*.rasi usr/share/rofi/themes
 mx-rofi-manager usr/bin
