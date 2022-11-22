@@ -73,7 +73,6 @@ kill featherpad
 fi
 
 echo "  ROFI HELP  "
-echo "-------------"
 echo ">> calc"
 echo ">> detailed help"
 echo ">> general help"
