@@ -64,11 +64,20 @@ featherpad /usr/share/rofi/ssh-help
 kill featherpad
 fi
 
+if [ x"$@" = x">> position and size" ];
+then
+killall rofi
+sleep 0.25
+featherpad /usr/share/rofi/position-help
+kill featherpad
+fi
+
 echo "  ROFI HELP  "
 echo "-------------"
 echo ">> calc"
 echo ">> detailed help"
 echo ">> general help"
+echo ">> position and size"
 echo ">> recolor"
 echo ">> scripts"
 echo ">> ssh"
