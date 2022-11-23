@@ -13,7 +13,7 @@ CODE #2
 Position and size traits can be adjusted using MX Rofi manager for the MX Rofi themes in /usr/share/mxrr/ that will be imported into ~/.config/rofi/themes/ upon first launch of the app. 
 
 Other themes may or may not have position and size coding available. To check, 
---launch MC Rofi manager
+--launch MX Rofi manager
 --click on “Edit a rofi theme config file in text editor”
 --search for 
 ---->“location” (for position and width)
@@ -29,7 +29,7 @@ Once the code is in the theme, simply proceed to substitute the values you want.
 Position und Größe können mit dem MX Rofi Manager für die MX Rofi-Themen in /usr/share/mxrr/ angepasst werden, die beim ersten Start der App in ~/.config/rofi/themes/ importiert werden. 
 
 Bei anderen Themen sind Position und Größe möglicherweise nicht kodiert. Zum Überprüfen, 
---starten Sie MC Rofi Manager
+--starten Sie MX Rofi Manager
 -Klicken Sie auf "Edit a rofi theme config file in text editor".
 --suchen Sie nach 
 ---->"location" (für Position und Breite)
@@ -45,7 +45,7 @@ Sobald sich der Code im Thema befindet, ersetzen Sie einfach die gewünschten We
 Los rasgos de posición y tamaño se pueden ajustar mediante el gestor de MX Rofi para los temas de MX Rofi en /usr/share/mxrr/ que se importarán a ~/.config/rofi/themes/ al iniciar la aplicación por primera vez. 
 
 Otros temas pueden o no tener codificación de posición y tamaño disponible. Para comprobarlo, 
---lanza el gestor de MC Rofi
+--lanza el gestor de MX Rofi
 --haga clic en "Editar un archivo de configuración de temas rofi en el editor de texto"
 --busque 
 ---->"location" (para la posición y la anchura)
@@ -61,7 +61,7 @@ Una vez que el código está en el tema, simplemente proceda a sustituir los val
 Τα χαρακτηριστικά θέσης και μεγέθους μπορούν να ρυθμιστούν με τη χρήση του MX Rofi manager για τα θέματα MX Rofi στο /usr/share/mxrr/, τα οποία θα εισαχθούν στο ~/.config/rofi/themes/ κατά την πρώτη εκκίνηση της εφαρμογής. 
 
 Άλλα θέματα μπορεί να έχουν ή να μην έχουν διαθέσιμη κωδικοποίηση θέσης και μεγέθους. Για να το ελέγξετε, 
---launch MC Rofi manager
+--launch MX Rofi manager
 -κλικάρετε στο "Edit a rofi theme config file in text editor" (Επεξεργασία αρχείου διαμόρφωσης θέματος rofi σε επεξεργαστή κειμένου).
 --αναζήτηση για 
 ---->"location" (για τη θέση και το πλάτος)
@@ -77,7 +77,7 @@ Una vez que el código está en el tema, simplemente proceda a sustituir los val
 Les traits de position et de taille peuvent être ajustés en utilisant le gestionnaire MX Rofi pour les thèmes MX Rofi dans /usr/share/mxrr/ qui seront importés dans ~/.config/rofi/themes/ au premier lancement de l'application. 
 
 D'autres thèmes peuvent ou non avoir un codage de position et de taille disponible. Pour vérifier, 
---Lancez le gestionnaire MC Rofi
+--Lancez le gestionnaire MX Rofi
 --Cliquez sur "Editer un fichier de configuration de thème rofi dans un éditeur de texte".
 --Cherchez 
 ----> "location" (pour la position et la largeur)
@@ -94,7 +94,7 @@ Une fois que le code est dans le thème, il suffit de substituer les valeurs que
 I tratti di posizione e dimensione possono essere regolati utilizzando MX Rofi manager per i temi MX Rofi in /usr/share/mxrr/ che saranno importati in ~/.config/rofi/themes/ al primo avvio dell'applicazione. 
 
 Altri temi possono avere o meno la codifica della posizione e della dimensione. Per verificare, 
---avviare MC Rofi manager
+--avviare MX Rofi manager
 --fare clic su "Modifica il file di configurazione di un tema rofi nell'editor di testo".
 --ricercare 
 ---->"location" (per posizione e larghezza)
@@ -110,7 +110,7 @@ Una volta inserito il codice nel tema, è sufficiente procedere alla sostituzion
 位置とサイズの特徴は、MX Rofi managerを使用して、/usr/share/mxrr/にあるMX Rofiテーマで調整できます。このテーマは、アプリの初回起動時に~/.config/rofi/themes/にインポートされます。
 
 他のテーマでは、位置とサイズのコーディングが可能な場合と不可能な場合があります。確認するには 
---MC Rofiマネージャを起動します。
+--MX Rofiマネージャを起動します。
 -- "Edit a rofi theme config file in text editor" をクリックします。
 --検索してください 
 ---->"location" (位置と幅について)
@@ -126,7 +126,7 @@ Una volta inserito il codice nel tema, è sufficiente procedere alla sostituzion
 Pozycję i cechy rozmiaru można dostosować za pomocą menedżera MX Rofi dla motywów MX Rofi w /usr/share/mxrr/, które zostaną zaimportowane do ~/.config/rofi/themes/ przy pierwszym uruchomieniu aplikacji. 
 
 Inne motywy mogą, ale nie muszą, mieć dostępne kodowanie pozycji i rozmiaru. Aby sprawdzić, 
---uruchom MC Rofi manager
+--uruchom MX Rofi manager
 --kliknij na "Edit a rofi theme config file in text editor"
 --wyszukaj. 
 ---->"location" (dla pozycji i szerokości)
@@ -142,7 +142,7 @@ Gdy kod znajdzie się już w motywie, po prostu zastąp wartości, które chcesz
 Os traços de posição e tamanho podem ser ajustados usando MX Rofi manager para os temas MX Rofi em /usr/share/mxrr/ que serão importados em ~/.config/rofi/temas/ no primeiro lançamento da aplicação. 
 
 Outros temas podem ou não ter código de posição e tamanho disponíveis. A verificar, 
---lançar o MC Rofi manager
+--lançar o MX Rofi manager
 --clique em "Editar um ficheiro de configuração de tema rofi no editor de texto".
 -pesquisar por 
 ---->"localização" (para posição e largura)
@@ -158,7 +158,7 @@ Uma vez o código no tema, simplifique o processo para substituir os valores des
 Признаки положения и размера можно настроить с помощью менеджера MX Rofi для тем MX Rofi в /usr/share/mxrr/, которые будут импортированы в ~/.config/rofi/themes/ при первом запуске приложения. 
 
 Другие темы могут иметь или не иметь кодировку положения и размера. Чтобы проверить, 
--запустите MC Rofi manager
+-запустите MX Rofi manager
 --нажмите на "Редактировать файл конфигурации темы rofi в текстовом редакторе"
 --поищите 
 ---->"location" (для позиции и ширины)
@@ -174,7 +174,7 @@ Uma vez o código no tema, simplifique o processo para substituir os valores des
 Position och storlek kan justeras med hjälp av MX Rofi Manager för MX Rofi-teman i /usr/share/mxrr/ som importeras till ~/.config/rofi/themes/ vid första starten av appen. 
 
 Andra teman kanske eller kanske inte har positions- och storlekskodning tillgänglig. För att kontrollera, 
---launch MC Rofi manager
+--launch MX Rofi manager
 --klicka på "Redigera en konfigurationsfil för ett rofi-tema i en textredigerare".
 -sök efter 
 ---->"location" (för position och bredd)
@@ -190,7 +190,7 @@ När koden finns i temat är det bara att byta ut de värden du vill ha.
 可以使用MX Rofi管理器调整/usr/share/mxrr/中的MX Rofi主题的位置和大小特征，这些主题将在应用程序首次启动时被导入~/.config/rofi/themes/。
 
 其他主题可能有也可能没有位置和大小的编码。要检查。
---启动MC Rofi管理器
+--启动MX Rofi管理器
 --点击 "在文本编辑器中编辑一个rofi主题配置文件"
 --搜索 
 ---->"location"（用于位置和宽度）
