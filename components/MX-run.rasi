@@ -1,0 +1,80 @@
+/**
+ * ROFI Color theme
+ * Copyright: Dave Davenport
+ * MX-run by MX Devs November 2022
+ * License: GPL
+ */
+
+* {
+	background-color:      #1D2324;
+	border-color:          #0f56d9;
+	text-color:            #ffffff;
+    font:            "Noto sans 12";
+}
+
+window {
+   anchor: north;
+   location: north;
+   y-offset: 0;
+   x-offset: 0;
+   width: 20%;
+   border: 6px 0px 0px 0px;
+}
+
+mainbox {
+	background-color:      #1D2324;
+    children: [ horibox, listview ];
+    spacing: 0px;
+}
+
+horibox {
+    orientation: horizontal;
+    margin: 5px 0px 0px 0px;
+    children:   [ prompt, textbox-prompt-colon, entry ];
+}
+
+prompt {
+    spacing:    0;
+    margin:     0em 0.25em 0em 0.5em ;
+    text-color: #CACDD0;
+}
+
+textbox-prompt-colon {
+    expand:     false;
+    str:        ": ";
+    text-color: #CACDD0;
+}
+
+entry {
+    expand:     true;
+    margin:     0em 0em 0em 0.25em ;
+}
+
+
+listview {
+    lines: 2;
+    background-color: #1D2324;
+    text-color: #CACDD0;
+    margin: 0px 10px 0px 10px;
+}
+
+element {
+    background-color: #1D2324;
+    text-color: #CACDD0;
+}
+
+element selected {
+    background-color: #1D2324;
+    text-color: #ffffff;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 30;
+    background-color: inherit;
+}
