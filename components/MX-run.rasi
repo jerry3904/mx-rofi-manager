@@ -1,38 +1,30 @@
 /**
  * ROFI Color theme
+ * User: Qball
  * Copyright: Dave Davenport
- * MX-run by MX Devs November 2022
- * License: GPL
  */
 
 * {
-	background-color:      #1D2324;
+    background-color:      #1D2324;
 	border-color:          #0f56d9;
 	text-color:            #ffffff;
-    font:            "Noto sans 12";
+    font:            "Noto sans 10";
 }
-
 window {
    anchor: north;
    location: north;
    y-offset: 0;
    x-offset: 0;
-   width: 20%;
+   width: 25%;
+   padding:    4px;
    border: 6px 0px 0px 0px;
+   children:   [ horibox ];
 }
-
-mainbox {
-	background-color:      #1D2324;
-    children: [ horibox, listview ];
-    spacing: 0px;
-}
-
 horibox {
     orientation: horizontal;
     margin: 5px 0px 0px 0px;
-    children:   [ prompt, textbox-prompt-colon, entry ];
+    children:   [ prompt, textbox-prompt-colon, entry, listview ];
 }
-
 prompt {
     spacing:    0;
     margin:     0em 0.25em 0em 0.5em ;
@@ -44,37 +36,23 @@ textbox-prompt-colon {
     str:        ": ";
     text-color: #CACDD0;
 }
-
-entry {
-    expand:     true;
-    margin:     0em 0em 0em 0.25em ;
-}
-
-
 listview {
-    lines: 2;
-    background-color: #1D2324;
-    text-color: #CACDD0;
-    margin: 0px 10px 0px 10px;
+    layout:     horizontal;
+    spacing:    5px;
+    lines:      100;
 }
-
+entry {
+    expand:     false;
+    width:      10em;
+}
 element {
-    background-color: #1D2324;
-    text-color: #CACDD0;
+    padding: 0px 2px;
 }
-
 element selected {
-    background-color: #1D2324;
-    text-color: #ffffff;
+    background-color: gray;
 }
 
-element-text {
-    background-color: inherit;
-    text-color: inherit;
-    vertical-align: 0.5;
-}
-
-element-icon {
-    size: 30;
-    background-color: inherit;
+element-text, element-icon {
+  background-color: inherit;
+  text-color: inherit;
 }

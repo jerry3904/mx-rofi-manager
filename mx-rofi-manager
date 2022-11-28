@@ -1,11 +1,10 @@
 #!/bin/bash
 #Rofi-Manager
 #Tool to manage rofi settings
-#V.0.12 by Melber and MX Devs, 16 November 2022
+#V.0.14 by Melber and MX Devs, 27 November 2022
 #License: GPL-3.0+
 #mxrm-icon based on applications-development and applications-interfacedesign icons from papirus icon set
-#Changelog 11b: moved location and font as global settings to separate mxrm-settings.rasi, added config.rasi edit
-#Changelog 12: MX-sidebar follows own settings
+#Changelog 14: Global/theme specific toggle for appearance settings
 
 #set up translation
 
@@ -117,6 +116,25 @@ lines: 12;
 
 fi
 
+# V13 move template files
+
+if [ -f $ROFIPATH/template-comfort.rasi ]; then
+
+	mv $ROFIPATH/template-comfort.rasi $ROFIPATH/mxrm-settings/template-comfort.rasi
+	
+fi
+
+if [ -f $ROFIPATH/template-fancy.rasi ]; then
+
+	mv $ROFIPATH/template-fancy.rasi $ROFIPATH/mxrm-settings/template-fancy.rasi
+	
+fi
+
+if [ -f $ROFIPATH/template-sidebar.rasi ]; then
+
+	mv $ROFIPATH/template-sidebar.rasi $ROFIPATH/mxrm-settings/template-sidebar.rasi
+	
+fi
 
 # Check if MX-comfort-rr exists, create if false
 
@@ -141,6 +159,7 @@ fi
 
 ###################################################################
 ###################################################################
+
 # function rofi_theme
 
 rofi_theme() {
@@ -164,6 +183,7 @@ cd $HOME/.config/rofi
 #sed -i "s/@import/@theme/g" config.rasi
 
 #fi
+
 
 ROFICHECK2="$(grep "//width" config.rasi)"
 
@@ -237,20 +257,58 @@ ROFICURRENT=$(echo "${ROFICURRENT}" | sed -e 's/\"//g' | sed -e 's/@theme//g' | 
 
 ROFICURRENT=$(basename "${ROFICURRENT}")
 
-TEXTTHEME1="$(eval_gettext '\n<b>Select rofi theme to make current</b>
-Double click a theme name to open a preview rofi.
+TOGGLECURRENT="$(grep '//@import' $HOME/.config/rofi/config.rasi)"
 
-The current theme is <b>$ROFICURRENT</b>\n')"
+if [ "$TOGGLECURRENT" = "" ]; then
+	
+	TOGGLETEXT='global'
+	TOGGLETEXTTRANS="$(gettext 'global')"
+	 
+	else
+	  
+	TOGGLETEXT='theme specific'
+	TOGGLETEXTTRANS="$(gettext 'theme specific')"
+	
+fi
 
-NEWTHEME=$( yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text="$TEXTTHEME1" --width=600 --height=400 --borders=20 --center --fixed --list --no-headers --separator="" --column=Style --text-align=left --dclick-action='@bash -c "rofi_preview %s;"' < $ROFIPATH/tempdir/rasilist.txt )
+
+TEXTTHEME1="$(eval_gettext '<b>Select rofi theme to make current</b>
+Double click a theme name to open a preview rofi.')"
+
+TEXTTHEME2="$(eval_gettext 'The current theme is <b>$ROFICURRENT</b>')"
+
+TEXTTHEME3="$(eval_gettext 'The current appearance settings are <b>$TOGGLETEXTTRANS</b>\n')"
+
+#################################
+
+
+fkey=$(($RANDOM * $$))
+
+yad --plug="$fkey" --tabnum=1 --form --text-align=left --separator="" \
+--field="$(gettext 'Use global appearance settings')":CHK > $ROFIPATH/tempdir/themetog.txt &
+
+
+yad --plug="$fkey" --tabnum=2 --list --no-headers --column=Style --text-align=left --separator="" --dclick-action='@bash -c "rofi_preview %s;"' < $ROFIPATH/tempdir/rasilist.txt > $ROFIPATH/tempdir/themesel.txt &
+
+
+yad --paned --key="$fkey" --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text="\n$TEXTTHEME1\n\n$TEXTTHEME2\n$TEXTTHEME3" --width=600 --height=400 --borders=20 --center --fixed
+
 
 GETOUT=$(echo "$?")
+
 
 if [ "$GETOUT" != 0 ]; then
 
 	  exit
 
 fi
+
+
+read -r -a THEMESEL < $ROFIPATH/tempdir/themesel.txt
+read -r -a TOGGLESEL < $ROFIPATH/tempdir/themetog.txt
+
+	  NEWTHEME="${THEMESEL[0]}"
+	  TOGGLE="${TOGGLESEL[0]}"
 
 
 if [ -z "$NEWTHEME" ]; then
@@ -264,23 +322,9 @@ if [ -z "$NEWTHEME" ]; then
 fi
 
 
-#check MX-sidebar
-cd $HOME/.config/rofi/
-
-if [ $NEWTHEME = "MX-sidebar" ]; then
-
-	sed -i -e "s/@import/\/\/@import/g" config.rasi
-
-fi
-
-if [ $ROFICURRENT = "MX-sidebar" ]; then
-
-	sed -i -e "s/\/\/@import/@import/g" config.rasi
-
-fi
-
-
+##################
 #check change and make current
+
 if [ ! -f $ROFIPATH/$NEWTHEME.rasi ]; then
 
 	ROFINEW="@theme \""$ROFIPATHUSR"/"$NEWTHEME".rasi"\"
@@ -295,16 +339,60 @@ fi
 ROFIOLD="$(grep "@theme" $HOME/.config/rofi/config.rasi | tail -1)"
 
 
+if [ "$TOGGLETEXT" = global ]; then
+
+	TOGGLECHECK=TRUE
+	
+else
+
+	TOGGLECHECK=FALSE
+
+fi
+
+
+###################
+
+
 if [ "$ROFINEW" = "$ROFIOLD" ]; then
 
 	TEXTROFINOCHANGE="$(eval_gettext 'No change to current settings!\n')"
+	
+	if [ "$TOGGLECHECK" = "$TOGGLE" ]; then
 
 	yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --width=400 --height=200 --fixed --center --borders=20 --text="$TEXTROFINOCHANGE" --text-align=center --button="gtk-ok" \
 	
-
 	exit
+	
+	fi
+	
+fi
+	
+###################	
+	
 
-else
+declare -a THEMECHECK=(MX-sidebar MX-appfinder MX-run)
+
+for i in "${THEMECHECK[@]}"
+
+do
+
+	if [ $i = $NEWTHEME ]; then
+
+		if [ "$TOGGLE" = TRUE ]; then
+		
+		TEXTTHEME5="$(eval_gettext 'Global settings are blocked for')"
+		TEXTTHEME6="$(eval_gettext 'Theme specific settings will be used')"
+		
+		yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text="$TEXTTHEME5\n<b>$NEWTHEME</b>\n$TEXTTHEME6" --button=gtk-ok --text-align=center --center --width=400 --height=200 --borders=20 \
+		
+		TOGGLE=FALSE
+		
+		fi
+	fi
+done
+
+
+cd $HOME/.config/rofi/
 
 ROFIOLD=$(echo "${ROFIOLD}" | sed -e 's/[]$\/*[\^]/\\&/g' )
 ROFINEW=$(echo "${ROFINEW}" | sed -e 's/[]$\/*[\^]/\\&/g' )
@@ -312,13 +400,33 @@ ROFINEW=$(echo "${ROFINEW}" | sed -e 's/[]$\/*[\^]/\\&/g' )
 sed -i -e "s/${ROFIOLD}/${ROFINEW}/g" config.rasi
 
 
-TEXTTHEME2="$(eval_gettext 'All done!\n\n<b>$NEWTHEME</b> has been set as the current rofi theme.\n\n')"
+if [ "$TOGGLECHECK" = "$TOGGLE" ]; then
 
-yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --width=400 --height=200 --fixed --center --borders=20 --text="$TEXTTHEME2" --text-align=center --button="gtk-ok" \
-
-exit
+	TOGGLE=NOCHANGE
 
 fi
+
+	
+if [ "$TOGGLE" = FALSE ]; then
+
+	sed -i -e "s/@import/\/\/@import/g" config.rasi
+
+fi
+
+if [ "$TOGGLE" = TRUE ]; then
+
+	sed -i -e "s/\/\/@import/@import/g" config.rasi
+
+fi
+
+
+#########
+
+TEXTTHEME4="$(eval_gettext 'All done!\n\n<b>$NEWTHEME</b> has been set as the current rofi theme.\n\n')"
+
+yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --width=400 --height=200 --fixed --center --borders=20 --text="$TEXTTHEME4" --text-align=center --button="gtk-ok" \
+
+exit
 
 }
 
@@ -491,40 +599,50 @@ export -f rofi_help-position
 ###################################################################
 
 
+
 #check MX-sidebar, define Settingslocation
+
+cd $HOME/.config/rofi
+
 ROFICURRENT="$(grep '@theme' $HOME/.config/rofi/config.rasi | tail -1)"
 
 ROFICURRENT=$(echo "${ROFICURRENT}" | sed -e 's/\"//g' | sed -e 's/@theme//g' | sed -e 's/ //g' | sed -e 's/.rasi//g' )
 
 ROFICURRENT=$(basename "${ROFICURRENT}")
 
-if [ $ROFICURRENT = "MX-sidebar" ]; then
 
-	SETTINGSLOCATION=$ROFIPATH/MX-sidebar.rasi
-	
-else
-	
-	SETTINGSLOCATION=$ROFIPATH/mxrm-settings/mxrm-settings.rasi
+TOGGLECURRENT="$(grep '//@import' $HOME/.config/rofi/config.rasi)"
 
+if [ "$TOGGLECURRENT" = "" ]; then
+	
+	TOGGLETEXT='global'
+	TOGGLETEXTTRANS="$(gettext 'global')"
+	SETTINGSLOCATION="$ROFIPATH/mxrm-settings/mxrm-settings.rasi"
+	 
+	else
+	  
+	TOGGLETEXT='theme specific'
+	TOGGLETEXTTRANS="$(gettext 'theme specific')"
+	SETTINGSLOCATION="$ROFIPATH/$ROFICURRENT.rasi"
+	
 fi
 
 
-#check theme is MX-comfort based
+declare -a THEMECHECK=(MX-sidebar MX-appfinder MX-run)
 
-#ROFICOMFORTCHECK="$(grep 'mxrr' $ROFICURRENT)"
+for i in "${THEMECHECK[@]}"
 
-#TEXTSORRY="$(gettext 'Sorry, this function is only available for MX-comfort based rofi themes\n\nTo adjust the current rofi theme you need to manually edit the .rasi file.\n\n')"
+do
 
-
-#if [ "$ROFICOMFORTCHECK" = "" ]; then
-
-#	yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
-#	--borders=20 --width=400 --height=200 --center --fixed --margins=20 \
-#	--text="$TEXTSORRY" --text-align=center --button="gtk-ok" \
-#	
-#	exit
-
-#fi
+	if [ $i = $ROFICURRENT ]; then
+	
+	TOGGLETEXT='theme specific'
+	TOGGLETEXTTRANS="$(gettext 'theme specific')"
+	SETTINGSLOCATION="$ROFIPATH/$ROFICURRENT.rasi"
+	
+	fi
+	
+done
 
 
 #get current position
@@ -606,7 +724,7 @@ ROFIWIDTHOLD=$(echo "${ROFIWIDTHOLD}" | sed -e 's/[]$\/*[\^]/\\&/g' )
 
 ROFIHEIGHTOLD="$(grep "lines" $SETTINGSLOCATION)"
 
-	if [ "$ROFIHEIGHTOLD" = "" ]; then
+	if [ -z "$ROFIHEIGHTOLD" ]; then
 
 		ROFIHEIGHTOLD='     lines: 12;'
 		sed -ie "/^listview/a $ROFIHEIGHTOLD" $SETTINGSLOCATION
@@ -622,8 +740,12 @@ ROFIHEIGHTOLD=$(echo "${ROFIHEIGHTOLD}" | sed -e 's/[]$\/*[\^]/\\&/g' )
 #get new position
 #MAINPOS
 
-MAINPOS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --borders=20 --center --width=600 --height=400 --fixed --form --columns=1 --align=left --separator=" " --button="gtk-help":"bash -c rofi_help-position" --button="gtk-cancel":1 --button="gtk-ok":0 \
---text="$(gettext '<b>\nAdjust the location and size of the current rofi window.\n</b>')" \
+TEXTLOCMAIN1="$(gettext '<b>\nAdjust the location and size of the current rofi window.\n</b>')"
+
+TEXTLOCMAIN2="$(eval_gettext 'The current appearance settings are <b>$TOGGLETEXTTRANS</b>\n')"
+
+MAINPOS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --borders=20 --center --width=600 --height=400 --fixed --form --columns=1 --align=right --separator=" " --button="gtk-help":"bash -c rofi_help-position" --button="gtk-cancel":1 --button="gtk-ok":0 \
+--text="$TEXTLOCMAIN1\n$TEXTLOCMAIN2\n" \
 --field="$(gettext 'Location of rofi window on the screen')":CB "$LOCVALUE!northwest!north!northeast!west!center!east!southwest!south!southeast" \
 --field="$(gettext '   X-Offset (- to left, + to right)')":NUM "$XOFFVALUE\!-100..100\!1\!0" \
 --field="$(gettext '   Y-Offset (- upwards, + downwards)')":NUM "$YOFFVALUE\!-100..100\!1\!0" \
@@ -719,9 +841,9 @@ else
 
 #delete rasie
 
-#STRANGERASIE=$(echo "${ROFICURRENT}" | sed -e 's/rasi/rasie/g' )
+STRANGERASIE=$(echo "${ROFICURRENT}" | sed -e 's/rasi/rasie/g' )
 
-#	rm "$STRANGERASIE"
+	rm "$STRANGERASIE"
 
 
 exit
@@ -745,42 +867,47 @@ ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
 source gettext.sh
 
 ###################################################################
-
-
-#check MX-sidebar, define Settingslocation
+#define Settingslocation
 ROFICURRENT="$(grep '@theme' $HOME/.config/rofi/config.rasi | tail -1)"
 
 ROFICURRENT=$(echo "${ROFICURRENT}" | sed -e 's/\"//g' | sed -e 's/@theme//g' | sed -e 's/ //g' | sed -e 's/.rasi//g' )
 
 ROFICURRENT=$(basename "${ROFICURRENT}")
 
-if [ $ROFICURRENT = "MX-sidebar" ]; then
+TOGGLECURRENT="$(grep '//@import' $HOME/.config/rofi/config.rasi)"
 
-	SETTINGSLOCATION=$ROFIPATH/MX-sidebar.rasi
+if [ "$TOGGLECURRENT" = "" ]; then
 	
-else
+	TOGGLETEXT='global'
+	TOGGLETEXTTRANS="$(gettext 'global')"
+	SETTINGSLOCATION="$ROFIPATH/mxrm-settings/mxrm-settings.rasi"
+	 
+	else
+	  
+	TOGGLETEXT='theme specific'
+	TOGGLETEXTTRANS="$(gettext 'theme specific')"
+	SETTINGSLOCATION="$ROFIPATH/$ROFICURRENT.rasi"
 	
-	SETTINGSLOCATION=$ROFIPATH/mxrm-settings/mxrm-settings.rasi
-
 fi
 
 
-#check theme is MX-comfort based
+declare -a THEMECHECK=(MX-sidebar MX-appfinder MX-run)
 
-#TEXTSORRY="$(gettext 'Sorry, this function is only available for MX-comfort based rofi themes\n\nTo adjust the current rofi theme you need to manually edit the .rasi file.\n\n')"
+for i in "${THEMECHECK[@]}"
 
-#ROFICOMFORTCHECK="$(grep 'mxrr' $ROFICURRENT)"
+do
 
-#if [ "$ROFICOMFORTCHECK" = "" ]; then
+	if [ $i = $ROFICURRENT ]; then
+	
+	TOGGLETEXT='theme specific'
+	TOGGLETEXTTRANS="$(gettext 'theme specific')"
+	SETTINGSLOCATION="$ROFIPATH/$ROFICURRENT.rasi"
+	
+	fi
+	
+done
 
-#	yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
-#	--borders=20 --width=400 --height=200 --center --fixed --margins=20 \
-#	--text="$TEXTSORRY" --text-align=center --button="gtk-ok" \
-#	
-#	exit
-
-#fi
-
+###################################################################
 
 ROFIFONTOLD="$(grep "font" $SETTINGSLOCATION | head -1 )"
 
@@ -797,10 +924,13 @@ FONVALUE=$(echo "${ROFIFONTOLD}" | sed -e 's/font\://g' | sed -e 's/\;//g'| sed 
 ROFIFONTOLD=$(echo "${ROFIFONTOLD}" | sed -e 's/[]$\/*"[\^]/\\&/g' )
 
 
+FONTMAINTEXT1="$(gettext '<b>Adjust the font of the current rofi window.</b>')"
+FONTMAINTEXT2="$(eval_gettext 'The current appearance settings are <b>$TOGGLETEXTTRANS</b>\n')"
+
 #MAINPOS
 
 MAINPOS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --borders=20 --center --width=600 --height=400 --fixed --form --columns=1 --align=left --separator=" " --button="gtk-help":"bash -c rofi_help-position" --button="gtk-cancel":1 --button="gtk-ok":0 \
---text="$(gettext '<b>\nAdjust the font of the current rofi window.\n</b>')" \
+--text="\n$FONTMAINTEXT1\n$FONTMAINTEXT2\n" \
 
 --field="$(gettext 'Font')":FN "$FONVALUE" \
 )
@@ -977,6 +1107,10 @@ if [ "$HELPTEMP" = template-fancy.rasi ]; then
 elif [ "$HELPTEMP" = template-sidebar.rasi ]; then
 
 	HELPPNG=mxrr-help-sidebar.png
+	
+elif [ "$HELPTEMP" = template-appfinder.rasi ]; then
+
+	HELPPNG=mxrr-help-appfinder.png
 
 else
 
@@ -1163,15 +1297,19 @@ echo ""$COL01" "$COL02" "$COL03" "$COL04" "$COL05" "$COL06" "$COL07" "$COL08" "$
 
 if [ "$TEMPLATE" = template-fancy.rasi ]; then
 
-	cp $ROFIPATH/template-fancy.rasi $ROFIPATH/$NEWNAME.rasi
+	cp $ROFIPATH/mxrm-settings/template-fancy.rasi $ROFIPATH/$NEWNAME.rasi
 	
 elif [ "$TEMPLATE" = template-sidebar.rasi ]; then
 
-	cp $ROFIPATH/template-sidebar.rasi $ROFIPATH/$NEWNAME.rasi
+	cp $ROFIPATH/mxrm-settings/template-sidebar.rasi $ROFIPATH/$NEWNAME.rasi
+	
+elif [ "$TEMPLATE" = template-appfinder.rasi ]; then
+
+	cp $ROFIPATH/mxrm-settings/template-appfinder.rasi $ROFIPATH/$NEWNAME.rasi
 
 else
 
-	cp $ROFIPATH/template-comfort.rasi $ROFIPATH/$NEWNAME.rasi
+	cp $ROFIPATH/mxrm-settings/template-comfort.rasi $ROFIPATH/$NEWNAME.rasi
 
 fi
 
@@ -1205,18 +1343,7 @@ if [ "$MAKECUR" = yes ]; then
 
 	sed -i -e "s/${ROFIOLD}/${ROFINEW}/g" config.rasi
 	
-#	ROFIOLD="$(grep "@theme" $HOME/.config/rofi/config.rasi | tail -1)"
-#	ROFIOLDCOMMENT="//$ROFIOLD"	
-#	ROFIOLD=$(echo "${ROFIOLD}" | sed -e 's/[]$\/*[\^]/\\&/g' )
-#	ROFIOLDCOMMENT=$(echo "${ROFIOLDCOMMENT}" | sed -e 's/[]$\/*[\^]/\\&/g' )
-
-
-#	ROFINEW="@theme \""$ROFIPATH"/"$NEWNAME".rasi\""
-
-#	sed -i "s/$ROFIOLD/$ROFIOLDCOMMENT/g" config.rasi
-
-#	echo $ROFINEW >> config.rasi
-
+	
 	TEXTALLDONE1="$(eval_gettext 'All done!\n<b>$NEWNAME</b> has been set as the current rofi theme.')"
 
 	yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --width=400 --height=200 --fixed --center --borders=20 --text="$TEXTALLDONE1" --text-align=center --button="gtk-ok" \
@@ -1363,6 +1490,7 @@ ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
 
 TEXTMXRM="$(gettext '<b>Rofi Manager is a tool to configure rofi themes.\n\nWhat would you like to do?</b>\n')"
 BUTTONTHEME="$(gettext 'Change the current rofi theme')"
+BUTTONTOGGLE="$(gettext 'Toggle how appearance settings are applied')"
 BUTTONTABS="$(gettext 'Change the functions (<i> modi </i>) of the rofi tabs')"
 BUTTONPOSITION="$(gettext 'Change the location and size of the current Rofi window')"
 BUTTONFONT="$(gettext 'Change the font of the current Rofi window')"
@@ -1377,4 +1505,3 @@ yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --borders=20 --c
 --field="$BUTTONRECOLOR:FBTN" 'bash -c rofi_recolor' \
 --field="$BUTTONEDIT:FBTN" 'bash -c rofi_edit' \
 --field=" ":LBL " "
-
