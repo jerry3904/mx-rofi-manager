@@ -97,7 +97,7 @@ element normal {
 }
 
 element-icon {
-    size: 30;
+    size: 24;
     background-color: inherit;
 }
 
