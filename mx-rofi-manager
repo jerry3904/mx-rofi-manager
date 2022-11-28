@@ -1,7 +1,7 @@
 #!/bin/bash
 #Rofi-Manager
 #Tool to manage rofi settings
-#V.0.14 by Melber and MX Devs, 27 November 2022
+#V.0.14c by Melber and MX Devs, 28 November 2022
 #License: GPL-3.0+
 #mxrm-icon based on applications-development and applications-interfacedesign icons from papirus icon set
 #Changelog 14: Global/theme specific toggle for appearance settings
@@ -136,6 +136,12 @@ if [ -f $ROFIPATH/template-sidebar.rasi ]; then
 	
 fi
 
+if [ -f $ROFIPATH/template-appfinder.rasi ]; then
+
+	mv $ROFIPATH/template-appfinder.rasi $ROFIPATH/mxrm-settings/template-appfinder.rasi
+	
+fi
+
 # Check if MX-comfort-rr exists, create if false
 
 if [ ! -f $ROFIPATH/MX-comfort-rr ]; then
@@ -153,6 +159,12 @@ fi
 if [ ! -f $ROFIPATH/MX-sidebar-rr ]; then
 
 	printf "#1D2324 #FF0000 #29353B #ffffff #29353B #CACDD0 #1D2324 #ffffff #0f56d9 #0f56d9 #ffffff MX-sidebar yes" > $ROFIPATH/MX-sidebar-rr
+
+fi
+
+if [ ! -f $ROFIPATH/MX-appfinder-rr ]; then
+
+	printf "#1D2324 #FF0000 #29353B #ffffff #FF0000 #FF0000 #1D2324 #CACDD0 #0f56d9 #29353B #ffffff MX-appfinder yes" > $ROFIPATH/MX-appfinder-rr
 
 fi
 
@@ -272,10 +284,10 @@ if [ "$TOGGLECURRENT" = "" ]; then
 fi
 
 
-TEXTTHEME1="$(eval_gettext '<b>Select rofi theme to make current</b>
-Double click a theme name to open a preview rofi.')"
+TEXTTHEME1="$(eval_gettext '\n<b>Select rofi theme to make current</b>
+Double click a theme name to open a preview rofi.
 
-TEXTTHEME2="$(eval_gettext 'The current theme is <b>$ROFICURRENT</b>')"
+The current theme is <b>$ROFICURRENT</b>\n')"
 
 TEXTTHEME3="$(eval_gettext 'The current appearance settings are <b>$TOGGLETEXTTRANS</b>\n')"
 
@@ -291,7 +303,7 @@ yad --plug="$fkey" --tabnum=1 --form --text-align=left --separator="" \
 yad --plug="$fkey" --tabnum=2 --list --no-headers --column=Style --text-align=left --separator="" --dclick-action='@bash -c "rofi_preview %s;"' < $ROFIPATH/tempdir/rasilist.txt > $ROFIPATH/tempdir/themesel.txt &
 
 
-yad --paned --key="$fkey" --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text="\n$TEXTTHEME1\n\n$TEXTTHEME2\n$TEXTTHEME3" --width=600 --height=400 --borders=20 --center --fixed
+yad --paned --key="$fkey" --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text="\n$TEXTTHEME1\n$TEXTTHEME3" --width=600 --height=400 --borders=20 --center --fixed
 
 
 GETOUT=$(echo "$?")
@@ -381,7 +393,7 @@ do
 		if [ "$TOGGLE" = TRUE ]; then
 		
 		TEXTTHEME5="$(eval_gettext 'Global settings are blocked for')"
-		TEXTTHEME6="$(eval_gettext 'Theme specific settings will be used')"
+		TEXTTHEME6="$(gettext 'Theme specific settings will be used')"
 		
 		yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text="$TEXTTHEME5\n<b>$NEWTHEME</b>\n$TEXTTHEME6" --button=gtk-ok --text-align=center --center --width=400 --height=200 --borders=20 \
 		
@@ -1490,7 +1502,6 @@ ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
 
 TEXTMXRM="$(gettext '<b>Rofi Manager is a tool to configure rofi themes.\n\nWhat would you like to do?</b>\n')"
 BUTTONTHEME="$(gettext 'Change the current rofi theme')"
-BUTTONTOGGLE="$(gettext 'Toggle how appearance settings are applied')"
 BUTTONTABS="$(gettext 'Change the functions (<i> modi </i>) of the rofi tabs')"
 BUTTONPOSITION="$(gettext 'Change the location and size of the current Rofi window')"
 BUTTONFONT="$(gettext 'Change the font of the current Rofi window')"
@@ -1505,3 +1516,4 @@ yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --borders=20 --c
 --field="$BUTTONRECOLOR:FBTN" 'bash -c rofi_recolor' \
 --field="$BUTTONEDIT:FBTN" 'bash -c rofi_edit' \
 --field=" ":LBL " "
+
