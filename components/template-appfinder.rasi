@@ -1,0 +1,116 @@
+/**
+ * ROFI Color theme by Melber & MX-Devs
+ */
+
+* {
+    // NEWNAME
+    // with tabs
+    // mxrr template-appfinder.rasi
+    font: "Noto Sans 12";
+} 
+  
+* {  
+	// Title background  
+	color01: xyz001;  
+	// Title text  
+	color02: xyz002;  
+	// Searchbar background  
+	color03: xyz003;  
+	// Searchbar text  
+	color04: xyz004;  
+	// Inctive tab background  
+	color05: xyz005;  
+	// Inactive tab text  
+	color06: xyz006;  
+	// Active tab background  
+	color07: xyz007;  
+	// Active tab text  
+	color08: xyz008;  
+	// Active tab highlight  
+	color09: xyz009;  
+	// Selection background  
+	color10: xyz010;  
+	// Selection text   
+	color11: xyz011;  
+}  
+
+mainbox {
+    background-color: @color01;
+    spacing: 0px;
+    border: 6px 0px 0px 0px ;
+    border-color: @color09;
+}
+
+window {  
+	location: center;
+	anchor: center;
+	width: 40%;
+	x-offset: 0;
+	y-offset: 0;
+	background-color: @color01;
+}
+
+inputbar {
+    background-color: @color01;
+    text-color: @color04;
+    padding: 10px;
+    margin: 1px 1px 1px 0px;
+    children: [icon-search, entry];
+}
+
+icon-search {
+	expand   : false;
+	filename : "search-symbolic";
+	size : 18px;
+    margin: 0px 20px 0px 10px;
+	vertical-align: 0.5; 
+	background-color: @color01; 
+}
+
+entry {
+	font : inherit;
+	placeholder : "  Search Apps";
+	vertical-align: 0.5;
+    padding: 5px;
+	background-color: @color03;
+	text-color: @color04;
+	placeholder-color : @color04;
+}
+
+listview {  
+	columns: 5;  
+	lines: 4;
+	spacing       : 8px;
+	background-color: @color07; 
+	fixed-height  : true;
+	fixed-columns : true;
+	border:12px 24px 24px 24px ;
+	border-color: @color01;
+}  
+   
+element {  
+	background-color: @color07;  
+	text-color: @color08;
+	orientation   : vertical;
+	spacing       : 8px;
+	padding       : 8px; 
+}  
+   
+element selected {  
+	background-color: @color10;  
+	text-color: @color11;
+		border:6px 0px 0px 0px ;
+	border-color: @color09;  
+}  
+   
+element-text {  
+	background-color: inherit;  
+	text-color: inherit;  
+	vertical-align: 0.5;
+	horizontal-align : 0.5;
+}  
+   
+element-icon {  
+	size: 2em;
+	background-color: inherit;
+}
