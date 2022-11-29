@@ -1516,4 +1516,3 @@ yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --borders=20 --c
 --field="$BUTTONRECOLOR:FBTN" 'bash -c rofi_recolor' \
 --field="$BUTTONEDIT:FBTN" 'bash -c rofi_edit' \
 --field=" ":LBL " "
-

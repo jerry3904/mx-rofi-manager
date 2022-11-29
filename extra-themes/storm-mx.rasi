@@ -18,11 +18,11 @@
 }
 
 #window {
-    anchor: north;
-    location: north;
+    anchor: south;
+    location: south;
     y-offset: 0;
     x-offset: 0;
-    width: 25%;
+    width: 15%;
     background-color: @background-color;
     border:           1;
     border-radius: 6;
@@ -48,7 +48,7 @@
     spacing:      2px ;
     scrollbar:    false;
     padding:      2px 0px 0px ;
-    lines: 10;
+    lines: 		  5;
 }
 #element {
     border:  0;

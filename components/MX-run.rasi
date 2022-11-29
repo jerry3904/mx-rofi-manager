@@ -2,14 +2,17 @@
  * ROFI Color theme
  * User: Qball
  * Copyright: Dave Davenport
+ * Modified by Melbert and MX Devs November 2022
+ * License: GPL
  */
 
 * {
     background-color:      #1D2324;
 	border-color:          #0f56d9;
 	text-color:            #ffffff;
-    font:            "Noto sans 10";
+    font:            "Noto sans 11";
 }
+
 window {
    anchor: north;
    location: north;
@@ -20,11 +23,13 @@ window {
    border: 6px 0px 0px 0px;
    children:   [ horibox ];
 }
+
 horibox {
     orientation: horizontal;
-    margin: 5px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     children:   [ prompt, textbox-prompt-colon, entry, listview ];
 }
+
 prompt {
     spacing:    0;
     margin:     0em 0.25em 0em 0.5em ;
@@ -34,25 +39,30 @@ prompt {
 textbox-prompt-colon {
     expand:     false;
     str:        ": ";
-    text-color: #CACDD0;
+    text-color: #808080;
 }
-listview {
-    layout:     horizontal;
-    spacing:    5px;
-    lines:      100;
-}
+
 entry {
     expand:     false;
     width:      10em;
 }
+
 element {
     padding: 0px 2px;
 }
+
 element selected {
-    background-color: gray;
+    background-color: #808080;
 }
+
 
 element-text, element-icon {
   background-color: inherit;
   text-color: inherit;
+}
+
+listview {
+    layout:     horizontal;
+    spacing:    5px;
+    lines:      100;
 }

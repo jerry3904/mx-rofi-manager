@@ -1,7 +1,5 @@
 components/*-help usr/share/rofi
 components/config.rasi usr/share/rofi
-components/mxrr-help-*.png usr/share/pixmaps
-components/mxrm-icon.png usr/share/pixmaps
 components/template-*.rasi usr/share/mxrr
 components/MX-*.rasi usr/share/mxrr
 components/MX-*-rr usr/share/mxrr
@@ -11,3 +9,4 @@ components/mxcr-help.png usr/share/doc/mxfb-comfort/help/
 components/ssh-help usr/share/rofi
 extra-themes/*.rasi usr/share/rofi/themes
 mx-rofi-manager usr/bin
+bin/mxfb-comfort usr/bin
