@@ -1,13 +1,15 @@
-mx-rofi-manager (22.11.22) UNRELEASED; urgency=medium
+mx-rofi-manager (22.12.01) mx; urgency=medium
 
   * added new MX theme "dracula"
   * made rofi-help executable
-  * upgraded version to 14
+  * upgraded version to 15
   * added new MX theme "run" to replace fbrun
   * tweaked multiple themes, etc.
   * removed mxcr icons
+  * revised change rofi tab to clarify settings
+  * final changes for RC release
 
- -- Jerry <jb@mx>  Tue, 29 Nov 2022 05:34:02 -0500
+ -- Jerry <jb@mx>  Thu, 01 Dec 2022 05:41:02 -0500
 
 mx-rofi-manager (22.11.18) mx; urgency=medium
 

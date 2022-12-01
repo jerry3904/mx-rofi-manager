@@ -8,4 +8,3 @@ components/*.png usr/share/pixmaps
 components/ssh-help usr/share/rofi
 extra-themes/*.rasi usr/share/rofi/themes
 mx-rofi-manager usr/bin
-bin/mxfb-comfort usr/bin
