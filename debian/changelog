@@ -1,3 +1,10 @@
+mx-rofi-manager (22.12.02) UNRELEASED; urgency=medium
+
+  * added code for rofi to run as F2 runbox
+  * added upgraded MX-run.rasi"
+
+ -- Jerry <jb@mx>  Sat, 03 Dec 2022 14:08:26 -0500
+
 mx-rofi-manager (22.12.01) mx; urgency=medium
 
   * added new MX theme "dracula"

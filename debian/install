@@ -1,4 +1,5 @@
 components/*-help usr/share/rofi
+components/rofi_run_F2_code usr/share/rofi
 components/config.rasi usr/share/rofi
 components/template-*.rasi usr/share/mxrr
 components/MX-*.rasi usr/share/mxrr
