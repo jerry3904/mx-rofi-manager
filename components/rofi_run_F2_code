@@ -2,7 +2,7 @@ Menu > Settings > Configure > Keys
 
 ----------
 # run 
-none F2 :Exec rofi -show run -theme ~/.config/rofi/themes/MX-run.rasi -run-shell-command 'x-terminal-emulator -e bash -c "{cmd} && read"'
+none F2 :Exec rofi -show run -theme ~/.config/rofi/themes/MX-run.rasi -run-shell-command 'rofi-sensible-terminal -e bash -c "{cmd} && read"'
 ----------
 
 /usr/share/rofi/rofi_run_F2_code
