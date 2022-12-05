@@ -1,0 +1,11 @@
+THEME DETAILS
+
+Sources
+--User: xxx
+--Extras: yyy
+--System: zzz
+
+Names
+--themes take the form: <some name>.rasi
+--MX rofi manager only lists names, excluding source
+--If a theme with the same name exists in more than one source, the theme will be applied according to the source order User > Extras > System
