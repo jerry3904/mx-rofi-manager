@@ -1,11 +1,157 @@
 THEME DETAILS
 
 Sources
---User: xxx
---Extras: yyy
---System: zzz
+--User: $HOME/.config/rofi/themes/
+--Extras: /usr/share/rofi/themes/extra-themes/
+--System: /usr/share/rofi/themes/
 
 Names
 --themes take the form: <some name>.rasi
 --MX rofi manager only lists names, excluding source
 --If a theme with the same name exists in more than one source, the theme will be applied according to the source order User > Extras > System
+
+
+*****DE*****
+THEMA DETAILS
+
+Quellen:
+-Benutzer: $HOME/.config/rofi/themes/
+--Extras: /usr/share/rofi/themes/extra-themes/
+--System: /usr/share/rofi/themes/
+
+Namen
+--Themen haben die Form: <irgendein Name>.rasi
+--MX rofi manager listet nur Namen auf, nicht die Quelle
+-Wenn ein Thema mit demselben Namen in mehr als einer Quelle vorhanden ist, wird das Thema in der Reihenfolge der Quelle angewendet Benutzer > Extras > System
+
+*****ES*****
+DETALLES DEL TEMA
+
+Fuentes
+--Usuario: $HOME/.config/rofi/themes/
+--Extras: /usr/share/rofi/themes/extra-themes/
+--Sistema: /usr/share/rofi/themes/
+
+Nombres
+--los temas tienen la forma <algún nombre>.rasi
+--MX rofi manager sólo lista los nombres, excluyendo la fuente
+--Si un tema con el mismo nombre existe en más de una fuente, el tema se aplicará según el orden de la fuente Usuario > Extras > Sistema
+
+*****EL*****
+ΘΕΜΑΤΙΚΕΣ ΛΕΠΤΟΜΕΡΕΙΕΣ
+
+Πηγές
+-Χρήστης: $HOME/.config/rofi/themes/
+--Extras: /usr/share/rofi/themes/extra-themes/
+-Σύστημα: /usr/share/rofi/themes/
+
+Ονόματα
+-θέματα έχουν τη μορφή: <κάποιο όνομα>.rasi
+--MX rofi manager απαριθμεί μόνο ονόματα, αποκλείοντας την πηγή
+--Αν ένα θέμα με το ίδιο όνομα υπάρχει σε περισσότερες από μία πηγές, το θέμα θα εφαρμοστεί σύμφωνα με τη σειρά των πηγών Χρήστης > Πρόσθετα > Σύστημα
+
+*****FR*****
+DÉTAILS DU THÈME
+
+Sources
+--Utilisateur : $HOME/.config/rofi/themes/
+--Extras : /usr/share/rofi/themes/extra-themes/
+--Système : /usr/share/rofi/themes/
+
+Noms
+-thèmes prennent la forme : <un nom>.rasi
+--MX rofi manager ne liste que les noms, à l'exclusion de la source
+--Si un thème portant le même nom existe dans plus d'une source, le thème sera appliqué selon l'ordre des sources Utilisateur > Extras > Système
+
+*****IT*****
+DETTAGLI DEL TEMA
+
+Fonti
+--Utente: $HOME/.config/rofi/themes/
+-Extras: /usr/share/rofi/themes/extra-themes/
+--Sistema: /usr/share/rofi/themes/
+
+Nomi
+--I temi assumono la forma: <qualche nome>.rasi
+--MX rofi manager elenca solo i nomi, escludendo la sorgente
+--Se un tema con lo stesso nome esiste in più fonti, il tema verrà applicato in base all'ordine delle fonti Utente > Extra > Sistema
+
+*****JA*****
+テーマ詳細
+
+ソース
+--ユーザー：$HOME/.config/rofi/themes/
+--エキストラ: /usr/share/rofi/themes/extra-themes/
+--システム：/usr/share/rofi/themes/
+
+名前
+-テーマは次のような形式をとります。<名前>.rasi
+--MX rofi manager は名前だけをリストアップし、ソースは除外します。
+--同じ名前のテーマが複数のソースに存在する場合、そのテーマはソースの順序に従って適用されます User > Extras > System
+
+*****PL*****
+SZCZEGÓŁY DOTYCZĄCE TEMATU
+
+Źródła
+--Użytkownik: $HOME/.config/rofi/themes/
+--Extras: yy
+-System: /usr/share/rofi/themes/
+
+Nazwy
+--tematy przyjmują postać: <jakaś nazwa>.rasi
+--MX rofi manager wymienia tylko nazwy, bez źródła
+--Jeśli motyw o tej samej nazwie istnieje w więcej niż jednym źródle, zostanie on zastosowany zgodnie z kolejnością źródeł Użytkownik > Dodatki > System
+
+*****PT*****
+DETALHES TÉCNICOS
+
+Fontes
+--Utilizador: $HOME/.config/rofi/themes/
+--Extras: /usr/share/rofi/themes/extra-themes/
+--System: /usr/share/rofi/themes/
+
+Nomes
+- os temas tomam a forma: <algum nome>.rasi
+--MX rofi manager apenas lista nomes, excluindo a fonte
+--Se um tema com o mesmo nome existir em mais do que uma fonte, o tema será aplicado de acordo com a ordem da fonte Utilizador > Extras > Sistema
+
+*****RU*****
+ДЕТАЛИ ТЕМЫ
+
+Источники
+--Пользователь: $HOME/.config/rofi/themes/
+--Дополнительные: /usr/share/rofi/themes/extra-themes/
+-Система: /usr/share/rofi/themes/
+
+Имена
+-темы имеют форму: <какое-то имя>.rasi
+--MX rofi manager перечисляет только имена, исключая источник.
+-Если тема с одинаковым именем существует в нескольких источниках, тема будет применена в соответствии с порядком источников Пользователь > Дополнения > Система
+
+*****SV*****
+DETALJER OM TEMAT
+
+Källor
+--Användare: $HOME/.config/rofi/themes/
+--Extras: /usr/share/rofi/themes/extra-themes/
+-system: /usr/share/rofi/themes/
+
+Namn
+--teman har formen: <något namn>.rasi
+--MX rofi manager listar endast namn, exklusive källan.
+--Om ett tema med samma namn finns i mer än en källa kommer temat att tillämpas enligt källordningen Användare > Extras > System
+
+*****ZH*****
+主题细节
+
+资料来源
+--用户: $HOME/.config/rofi/themes/
+--额外的：/usr/share/rofi/themes/extra-themes/
+--系统：/usr/share/rofi/themes/
+
+名称
+--主题的形式。<某个名字>.rasi
+--MX rofi管理器只列出名字，不包括来源
+--如果一个具有相同名称的主题存在于一个以上的源中，该主题将根据源的顺序被应用，用户>额外功能>系统
+
+Translated with www.DeepL.com/Translator (free version)
