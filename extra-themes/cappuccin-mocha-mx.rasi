@@ -1,4 +1,4 @@
-/* Source: https://github.com/catppuccin/rofi */
+/* Source: https://github.com/catppuccin/rofi*}*/
 * {
     bg-col:  #1e1e2e;
     bg-col-light: #1e1e2e;
@@ -8,20 +8,20 @@
     fg-col: #cdd6f4;
     fg-col2: #f38ba8;
     grey: #6c7086;
-	width: 20%;
-    font: "Noto Sans 11";
+
+    width: 600;
+    font: "JetBrainsMono Nerd Font 14";
 }
 
-element-text, element-icon {
-    background-color: @bg-col;
-    text-color:       @fg-col;
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 window {
-y-offset: 0;
 x-offset: 0;
-anchor: south;
-location: south;
+anchor: center;
+location: center;
     height: 360px;
     border: 3px;
     border-color: @border-col;
@@ -29,7 +29,6 @@ location: south;
 }
 
 mainbox {
-    children: [ inputbar, listview, wrapper-mode-switcher  ];
     background-color: @bg-col;
 }
 
@@ -65,14 +64,14 @@ listview {
     padding: 6px 0px 0px;
     margin: 10px 0px 0px 20px;
     columns: 2;
-	lines: 5;
+    lines: 5;
     background-color: @bg-col;
 }
 
 element {
     padding: 5px;
     background-color: @bg-col;
-    text-color: @fg-col;
+    text-color: @fg-col  ;
 }
 
 element-icon {
@@ -84,28 +83,19 @@ element selected {
     text-color: @fg-col2  ;
 }
 
-wrapper-mode-switcher {
-    orientation: horizontal;
-    expand: false;
-    spacing: 0;
-    children: [ mode-switcher ];
-}
-
 mode-switcher {
     spacing: 0;
-    background-color: @bg-col;
-    text-color:       @fg-col;
-}
+  }
 
 button {
     padding: 10px;
-    background-color: @bg-col;
+    background-color: @bg-col-light;
     text-color: @grey;
     vertical-align: 0.5; 
     horizontal-align: 0.5;
 }
 
 button selected {
-  background-color: @bg-col-light;
+  background-color: @bg-col;
   text-color: @blue;
 }
