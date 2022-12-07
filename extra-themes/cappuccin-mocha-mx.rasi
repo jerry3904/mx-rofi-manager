@@ -8,9 +8,8 @@
     fg-col: #cdd6f4;
     fg-col2: #f38ba8;
     grey: #6c7086;
-
-    width: 600;
-    font: "JetBrainsMono Nerd Font 14";
+width: 25%;
+font: "JetBrainsMono Nerd Font 11";
 }
 
 element-text, element-icon , mode-switcher {
@@ -19,10 +18,10 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
+y-offset: 0;
 x-offset: 0;
-anchor: center;
-location: center;
-    height: 360px;
+anchor: south;
+location: south;
     border: 3px;
     border-color: @border-col;
     background-color: @bg-col;
@@ -64,7 +63,7 @@ listview {
     padding: 6px 0px 0px;
     margin: 10px 0px 0px 20px;
     columns: 2;
-    lines: 5;
+lines: 5;
     background-color: @bg-col;
 }
 
