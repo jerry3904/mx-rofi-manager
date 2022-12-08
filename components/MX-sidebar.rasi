@@ -38,8 +38,8 @@ window {
 y-offset: 0;
 x-offset: 0;
 width: 15%;
-location: east;
-anchor: east;
+location: west;
+anchor: west;
 //    border: 5px 0px 0px 0px;
     border-color: @color09;
 }
