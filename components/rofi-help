@@ -64,6 +64,14 @@ featherpad /usr/share/rofi/position-help
 kill featherpad
 fi
 
+if [ x"$@" = x">> runbox code" ];
+then
+killall rofi
+sleep 0.25
+featherpad /usr/share/rofi/runbox_code
+kill featherpad
+fi
+
 echo "  ROFI HELP  "
 echo "--------------"
 echo ">> calc"
@@ -71,6 +79,7 @@ echo ">> detailed help"
 echo ">> general help"
 echo ">> position and size"
 echo ">> recolor"
+echo ">> runbox code"
 echo ">> scripts"
 echo ">> ssh"
 echo ">> theme format"

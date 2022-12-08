@@ -1,0 +1,1 @@
+rofi -show run -theme ~/.config/rofi/themes/MX-run.rasi -run-shell-command 'x-terminal-emulator -e bash -c "{cmd} && read"'
