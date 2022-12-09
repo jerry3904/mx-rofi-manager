@@ -9,8 +9,8 @@ configuration {
 
 ////
 //for use with kobaian-menu.rasi
-//@import "display0.rasi"
-//@import "display1.rasi"
+//@import "/mxrm-settings/display0.rasi"
+//@import "/mxrm-settings/display1.rasi"
 ////
 @theme "/home/jb/.config/rofi/themes/MX-comfort.rasi"
 //@import "/mxrm-settings/mxrm-settings.rasi";
