@@ -8,7 +8,7 @@ configuration {
 }
 
 ////
-//for use with kobaian-menu.rasi
+//for use with iconic.rasi
 //@import "/mxrm-settings/display0.rasi"
 //@import "/mxrm-settings/display1.rasi"
 ////
