@@ -6,7 +6,7 @@ components/MX-*.rasi usr/share/mxrr
 components/MX-*-rr usr/share/mxrr
 components/*.desktop usr/share/applications
 components/*.png usr/share/pixmaps
-components/ssh-help usr/share/rofi
 components/README usr/share/rofi/themes
+components/displ*.rasi usr/share/mxrr
 extra-themes/*.rasi usr/share/rofi/themes/extra-themes
 mx-rofi-manager usr/bin

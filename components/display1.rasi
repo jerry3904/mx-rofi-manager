@@ -1,0 +1,10 @@
+configuration {
+	display-drun:    " Apps";
+	display-run:     " Run";
+	display-window:  " Windows";
+	display-filebrowser: " Files";
+	display-keys: " Keys";
+	display-help:   " Help";
+	display-ssh: " SSH";
+	display-calc:   " Calculator";
+}

@@ -1,0 +1,10 @@
+configuration {
+	display-drun:    "";
+	display-run:     "";
+	display-window:  "";
+	display-filebrowser: "";
+	display-keys: "";
+	display-help:   "";
+	display-ssh: "";
+	display-calc:   ""; 
+}

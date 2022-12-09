@@ -48,14 +48,6 @@ featherpad /usr/share/rofi/calc-help
 kill featherpad
 fi
 
-if [ x"$@" = x">> ssh" ];
-then
-killall rofi
-sleep 0.25
-featherpad /usr/share/rofi/ssh-help
-kill featherpad
-fi
-
 if [ x"$@" = x">> position and size" ];
 then
 killall rofi
@@ -81,7 +73,6 @@ echo ">> position and size"
 echo ">> recolor"
 echo ">> runbox code"
 echo ">> scripts"
-echo ">> ssh"
 echo ">> theme format"
 
 
