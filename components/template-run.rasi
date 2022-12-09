@@ -1,0 +1,109 @@
+/**
+ * ROFI Color theme by MX-Devs inspired by Qball.rasi by Dave Davenport
+ * Modified by MX Devs December 2022
+ * License: GPL
+ */
+
+* {
+    // NEWNAME
+    // with tabs
+    // mxrr template-run.rasi
+    font: "Noto Sans 11";
+}
+
+* {
+    // Title background
+    color01: xyz001;
+    // Title text not used
+    color02: xyz002;
+    // Searchbar background
+    color03: xyz003;
+    // Searchbar text
+    color04: xyz004;
+    // Inctive tab background
+    color05: xyz005;
+    // Inctive tab text
+    color06: xyz006;
+    // Active tab background
+    color07: xyz007;
+    // Active tab text
+    color08: xyz008;
+    // Active tab highlight
+    color09: xyz009;
+    // Selection background
+    color10: xyz010;
+    // Selection text 
+    color11: xyz011;
+}
+
+* {
+    background-color:      @color01;
+	border-color:          @color09;
+	text-color:            @color04;
+}
+
+window {
+   anchor: north;
+   location: north;
+   y-offset: 0;
+   x-offset: 0;
+   width: 25%;
+   padding:    4px;
+   border: 6px 0px 0px 0px;
+   children:   [ horibox, textbox ];
+}
+
+horibox {
+    orientation: horizontal;
+    margin: 5px 0px 0px 0px;
+    children:   [ prompt, textbox-prompt-colon, entry, listview ];
+}
+prompt {
+    spacing:    0;
+    margin:     0em 0.25em 0em 0.5em ;
+    text-color: @color06;
+}
+
+textbox-prompt-colon {
+    expand:     false;
+    str:        ": ";
+    text-color: @color06;
+}
+
+
+entry {
+    expand:     false;
+    width:      10em;
+}
+
+listview {
+    layout:     horizontal;
+    lines:      100;
+}
+
+element {
+    padding: 2px;
+}
+
+element selected {
+    background-color: @color10;
+    border: 1px;
+    border-color: @color09;
+    text-color: @color11;
+}
+
+element-text, element-icon {
+  background-color: inherit;
+  text-color: inherit;
+  horizontal-align: 0.5;
+  expand: false;
+}
+
+textbox {
+    expand: false;
+    background-color: @color03;
+    text-color: @color06;
+    margin: 10px 0px 0px 10px;
+    font: "Noto Sans Italic 10";
+    content: "Run in terminal:   Shift + Enter";
+}
