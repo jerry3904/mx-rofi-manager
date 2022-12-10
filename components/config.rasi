@@ -12,5 +12,5 @@ configuration {
 //@import "/mxrm-settings/display0.rasi"
 //@import "/mxrm-settings/display1.rasi"
 ////
-@theme "/home/jb/.config/rofi/themes/MX-comfort.rasi"
+@theme "~/.config/rofi/themes/MX-comfort.rasi"
 //@import "/mxrm-settings/mxrm-settings.rasi";
