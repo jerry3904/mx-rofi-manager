@@ -7,7 +7,7 @@
 
 * {
     // NEWNAME
-    // requires font-awesome
+    // uses flag-for-font-awesome
     // mxrr template-iconic.rasi
     //font: "Noto Sans 12";
 } 
