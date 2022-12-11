@@ -1,4 +1,9 @@
-/* Source: https://github.com/catppuccin/rofi*}*/
+/* 
+ * Based on the catpuccin mocha rofi theme
+ * Source: https://github.com/catppuccin/rofi/basic/ 
+ * Recommended font "JetBrainsMono Nerd Font 14"
+ * Adapted by MX Devs December 2022 for MX Fluxbox
+*/
 * {
     bg-col:  #1e1e2e;
     bg-col-light: #1e1e2e;

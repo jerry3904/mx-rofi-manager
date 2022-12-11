@@ -1,3 +1,8 @@
+/*Dracula theme (config2) based on the Purple official rofi theme
+ * Source: https://draculatheme.com/rofi 
+ * Recommended font "Jetbrains Mono 12"
+ * Adapted by MX Devs December 2022 for MX Fluxbox
+ */
 * {
     /* Dracula theme colour palette */
     drac-bgd: #282a36;
@@ -12,7 +17,7 @@
     drac-red: #ff5555;
     drac-yel: #f1fa8c;
 
-    font: "Jetbrains Mono 12";
+    font: "Noto sans 11";
 
     foreground: @drac-fgd;
     background-color: @drac-bgd;

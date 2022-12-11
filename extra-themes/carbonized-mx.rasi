@@ -1,6 +1,8 @@
 /* Source: https://github.com/yuky2020/rofi-themes
-* Modified by MX Devs November 2022
-* License: GPL*/
+ * Recommended font "Rubik 10"
+ * Modified by MX Devs November 2022
+ * License: GPL
+*/
 
 * {
 	bg:				    #b5b5aa;
