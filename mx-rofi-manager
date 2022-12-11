@@ -297,7 +297,7 @@ fi
 #################################
 
 
-fkey=$(($RANDOM * $$))
+fkey=1234
 
 yad --plug="$fkey" --tabnum=1 --form --text-align=left --separator="" \
 --field="$(gettext 'Settings')":CB "$CBCURRENT!$CBOTHER" \
@@ -877,8 +877,8 @@ TEXTLOCMAIN2="$(eval_gettext 'The current appearance settings are <b>$TOGGLETEXT
 MAINPOS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --borders=20 --center --width=600 --height=400 --fixed --form --columns=1 --align=left --separator=" " --button="gtk-help":"bash -c rofi_help-position" --button="gtk-cancel":1 --button="gtk-ok":0 \
 --text="$TEXTLOCMAIN1\n$TEXTLOCMAIN2\n" \
 --field="$(gettext 'Location of rofi window on the screen')":CB "$LOCVALUE!northwest!north!northeast!west!center!east!southwest!south!southeast" \
---field="$(gettext 'X-Offset (- to left, + to right)')":NUM "$XOFFVALUE\!-100..100\!1\!0" \
---field="$(gettext 'Y-Offset (- upwards, + downwards)')":NUM "$YOFFVALUE\!-100..100\!1\!0" \
+--field="$(gettext '     X-Offset (- to left, + to right)')":NUM "$XOFFVALUE\!-100..100\!1\!0" \
+--field="$(gettext '     Y-Offset (- upwards, + downwards)')":NUM "$YOFFVALUE\!-100..100\!1\!0" \
 --field="$(gettext 'Width (percentage of screen width)')":NUM "$WIDVALUE\!1..100\!1\!0" \
 --field="$(gettext 'Height (number of lines shown in list)')":NUM "$LINVALUE\!1..25\!1\!0" \
 )
@@ -1676,7 +1676,7 @@ TITLE="$(gettext 'MX-Rofi-Manager')"
 CLASS="mxrm"
 ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
 
-TEXTMXRM="$(gettext '<b>Rofi Manager is a tool to configure rofi themes.\n\n<i>What would you like to do?</i></b>\n')"
+TEXTMXRM="$(gettext '<b>Rofi Manager is a tool to configure rofi themes.\n\n<i>What would you like to do?</i></b>\n\n')"
 BUTTONTHEME="$(gettext 'Change the current rofi theme')"
 BUTTONTABS="$(gettext 'Change the functions (<i> modi </i>) of the rofi tabs')"
 BUTTONPOSITION="$(gettext 'Change the location and size of the current Rofi window')"
