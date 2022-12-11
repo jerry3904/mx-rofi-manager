@@ -10,7 +10,6 @@ configuration {
 ////
 //for use with iconic.rasi
 //@import "/mxrm-settings/display0.rasi"
-//@import "/mxrm-settings/display1.rasi"
 ////
 @theme "~/.config/rofi/themes/MX-comfort.rasi"
 //@import "/mxrm-settings/mxrm-settings.rasi"
