@@ -64,8 +64,6 @@ featherpad /usr/share/rofi/runbox_code
 kill featherpad
 fi
 
-echo "  ROFI HELP  "
-echo "--------------"
 echo ">> calc"
 echo ">> detailed help"
 echo ">> general help"
