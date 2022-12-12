@@ -1,10 +1,11 @@
-mx-rofi-manager (22.12.03) UNRELEASED; urgency=medium
+mx-rofi-manager (22.12.12) mx; urgency=medium
 
   * added code for rofi to run as F2 runbox
   * added upgraded MX-run.rasi"
   * added extra theme "cappuccin-mocha-mx"
+  * final cleanup and changes for RC2
 
- -- Jerry <jb@mx>  Sun, 04 Dec 2022 14:17:48 -0500
+ -- Jerry <jb@mx>  Mon, 12 Dec 2022 18:45:23 -0500
 
 mx-rofi-manager (22.12.01) mx; urgency=medium
 

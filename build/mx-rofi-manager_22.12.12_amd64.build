@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui
 dpkg-buildpackage: info: source package mx-rofi-manager
-dpkg-buildpackage: info: source version 22.12.01
+dpkg-buildpackage: info: source version 22.12.12
 dpkg-buildpackage: info: source distribution mx
 dpkg-buildpackage: info: source changed by Jerry <jb@mx>
  dpkg-source --before-build .
@@ -12,8 +12,8 @@ dh: warning: Compatibility levels before 10 are deprecated (level 9 in use)
 dh_clean: warning: Compatibility levels before 10 are deprecated (level 9 in use)
  dpkg-source -b .
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building mx-rofi-manager in mx-rofi-manager_22.12.01.tar.xz
-dpkg-source: info: building mx-rofi-manager in mx-rofi-manager_22.12.01.dsc
+dpkg-source: info: building mx-rofi-manager in mx-rofi-manager_22.12.12.tar.xz
+dpkg-source: info: building mx-rofi-manager in mx-rofi-manager_22.12.12.dsc
  debian/rules build
 make: 'build' is up to date.
  fakeroot debian/rules binary
@@ -40,9 +40,9 @@ dh_installdeb: warning: Compatibility levels before 10 are deprecated (level 9 i
    dh_gencontrol
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'mx-rofi-manager' in '../mx-rofi-manager_22.12.01_all.deb'.
+dpkg-deb: building package 'mx-rofi-manager' in '../mx-rofi-manager_22.12.12_all.deb'.
  dpkg-genbuildinfo
- dpkg-genchanges  >../mx-rofi-manager_22.12.01_amd64.changes
+ dpkg-genchanges  >../mx-rofi-manager_22.12.12_amd64.changes
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build .
 dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
