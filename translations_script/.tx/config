@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[antix-development.mx-rofi-manager]
+file_filter = po/mx-rofi-manager_<lang>.po
+source_file = mx-rofi-manager.pot
+source_lang = en
+type = po
