@@ -1,7 +1,7 @@
 #!/bin/bash
 #Rofi-Manager
 #Tool to manage rofi settings
-#V.0.16b by Melber and MX Devs, 11 December 2022
+#V.0.16c by Melber and MX Devs, 13 December 2022
 #License: GPL-3.0+
 #mxrm-icon based on applications-development and applications-interfacedesign icons from papirus icon set
 #Changelog 16: Added MX-run & MX-iconic, support for awesome-font, added theme locations in selection list
@@ -11,7 +11,7 @@
 source gettext.sh
 
 export TEXTDOMAINDIR=/usr/share/locale 
-export TEXTDOMAIN="mx-rofi-manager"
+export TEXTDOMAIN="mxfb-accessories"
 
 
 #define some variables
@@ -157,25 +157,34 @@ fi
 TEXTREQAWESOME=' (fonts-font-awesome recommended for tab icons)'
 TEMPTHEME=$(echo "${TEMPTHEME}" | sed -e "s/$TEXTREQAWESOME//g" )
 
-
 ROFIPATH="$HOME/.config/rofi/themes"
 ROFIPATHUSR="/usr/share/rofi/themes"
+ROFIPATHEXTRA="/usr/share/rofi/themes/extra-themes"
 
 ROFIOLD="$(grep '@theme' $HOME/.config/rofi/config.rasi | tail -1)"
 ROFIOLD=$(echo "${ROFIOLD}" | sed -e 's/[]$\/*[\^]/\\&/g' )
 
-
-if [ ! -f $ROFIPATH/$TEMPTHEME.rasi ]; then
+if [ -f $ROFIPATHUSR/$TEMPTHEME.rasi ]; then
 
 	ROFITEMP="@theme \""$ROFIPATHUSR"/"$TEMPTHEME".rasi"\"
 	ROFITEMP=$(echo "${ROFITEMP}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+	
+	elif
+	
+	[ -f $ROFIPATHEXTRA/$TEMPTHEME.rasi ]; then
 
-	else
+	ROFITEMP="@theme \""$ROFIPATHEXTRA"/"$TEMPTHEME".rasi"\"
+	ROFITEMP=$(echo "${ROFITEMP}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+	
+	elif
+	
+	[ -f $ROFIPATH/$TEMPTHEME.rasi ]; then
 
 	ROFITEMP="@theme \""$ROFIPATH"/"$TEMPTHEME".rasi"\"
 	ROFITEMP=$(echo "${ROFITEMP}" | sed -e 's/[]$\/*[\^]/\\&/g' )
-
+	
 fi
+
 
 cd $HOME/.config/rofi/
 
@@ -183,9 +192,17 @@ cp config.rasi config-temp.rasi
 
 sed -i -e "s/${ROFIOLD}/${ROFITEMP}/g" config.rasi
 
+	DISPLAYOFF='//@import "/mxrm-settings/display0.rasi"'
+	DISPLAYOFF=$(echo "${DISPLAYOFF}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+	
+	DISPLAYON='@import "/mxrm-settings/display0.rasi"'
+	DISPLAYON=$(echo "${DISPLAYON}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+	sed -i -e "s/${DISPLAYON}/${DISPLAYOFF}/g" $HOME/.config/rofi/config.rasi
+
 rofi -show
 
-sed -i -e "s/${ROFITEMP}/${ROFIOLD}/g" config.rasi
+mv -f config-temp.rasi config.rasi
 
 exit
 
