@@ -157,7 +157,7 @@ msgstr ""
 #: ../mx-rofi-manager:1462
 #, sh-format
 msgid "All done!\\n<b>$NEWNAME</b> has been set as the current rofi theme."
-msgstr "Gotowe!\\n <b>$NEWNAME1</b> został ustawiony jako aktualny motyw."
+msgstr "Gotowe!\\n <b>$NEWNAME</b> został ustawiony jako aktualny motyw."
 
 #: ../mx-rofi-manager:1092
 #, sh-format
