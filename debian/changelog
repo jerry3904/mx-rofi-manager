@@ -1,3 +1,10 @@
+mx-rofi-manager (22.12.13) mx; urgency=medium
+
+  * corrected for new location extra-themes
+  * test of Final with localization
+
+ -- Jerry <jb@mx>  Tue, 13 Dec 2022 20:21:42 -0500
+
 mx-rofi-manager (22.12.12) mx; urgency=medium
 
   * added code for rofi to run as F2 runbox
