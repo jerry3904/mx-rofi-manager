@@ -2,7 +2,7 @@
 
 #DEBHELPER#
 
-# postinst script for mxfb-accessories
+# postinst script for mx-rofi-manager
 
 #set -e
 

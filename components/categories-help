@@ -1,0 +1,94 @@
+modi: "drun,categories:~/.config/rofi/categories"
+
+-----
+#! /bin/bash
+
+if [ x"$@" = x"Accessories" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "Utility,Accessories" -display-drun Accessories
+fi
+
+if [ x"$@" = x"Office" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "Office,TextEditor" -display-drun Office
+fi
+
+if [ x"$@" = x"Graphics" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "Graphics,Image,Photo" -display-drun Graphics
+fi
+
+if [ x"$@" = x"Games" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "Game" -display-drun Games
+fi
+
+if [ x"$@" = x"Internet" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "Network,WebBrowser" -display-drun Internet
+fi
+
+if [ x"$@" = x"Multimedia" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "Music,Sound,Video,Audio,AudioVideo,Multimedia" -display-drun Multimedia
+fi
+
+if [ x"$@" = x"MX-Tools" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "MX-Setup,MX-Maintenance,MX-Software,MX-Utilities,MX-Live" -display-drun MX-Tools
+fi
+
+if [ x"$@" = x"Settings" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "Settings" -display-drun Settings
+fi
+
+if [ x"$@" = x"Development" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "Development,TerminalEmulator"  -display-drun Development
+fi
+
+if [ x"$@" = x"System" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "System" -display-drun System
+fi
+
+if [ x"$@" = x"ALL APPS" ];
+then
+killall rofi
+sleep 0.25
+rofi -show drun -drun-categories "" -display-drun drun
+fi
+
+echo "ALL APPS"
+echo "Accessories"
+echo "Development"
+echo "Graphics"
+echo "Games"
+echo "Internet"
+echo "Multimedia"
+echo "MX-Tools"
+echo "Office"
+echo "Settings"
+echo "System"
+-----

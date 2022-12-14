@@ -11,7 +11,7 @@
 source gettext.sh
 
 export TEXTDOMAINDIR=/usr/share/locale 
-export TEXTDOMAIN="mxfb-accessories"
+export TEXTDOMAIN="mx-rofi-manager"
 
 
 #define some variables

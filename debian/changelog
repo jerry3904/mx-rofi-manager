@@ -1,3 +1,9 @@
+mx-rofi-manager (22.12.14) mx; urgency=medium
+
+  * corrected domain in script, added categories-help
+
+ -- Jerry <jb@mx>  Wed, 14 Dec 2022 07:52:15 -0500
+
 mx-rofi-manager (22.12.13) mx; urgency=medium
 
   * corrected for new location extra-themes
