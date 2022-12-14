@@ -48,6 +48,14 @@ featherpad /usr/share/rofi/calc-help
 kill featherpad
 fi
 
+if [ x"$@" = x">> categories" ];
+then
+killall rofi
+sleep 0.25
+featherpad /usr/share/rofi/categories-help
+kill featherpad
+fi
+
 if [ x"$@" = x">> position and size" ];
 then
 killall rofi
@@ -65,6 +73,7 @@ kill featherpad
 fi
 
 echo ">> calc"
+echo ">> categories"
 echo ">> detailed help"
 echo ">> general help"
 echo ">> position and size"
