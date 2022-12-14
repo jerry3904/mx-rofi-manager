@@ -1693,7 +1693,7 @@ TITLE="$(gettext 'MX-Rofi-Manager')"
 CLASS="mxrm"
 ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
 
-TEXTMXRM="$(gettext '<b>Rofi Manager is a tool to configure rofi themes.\n\n<i>What would you like to do?</i></b>\n\n')"
+TEXTMXRM="$(gettext '<b>Rofi Manager is a tool to configure rofi themes.\n\n<i>What would you like to do?</i></b>\n')\n"
 BUTTONTHEME="$(gettext 'Change the current rofi theme')"
 BUTTONTABS="$(gettext 'Change the functions (<i> modi </i>) of the rofi tabs')"
 BUTTONPOSITION="$(gettext 'Change the location and size of the current Rofi window')"
