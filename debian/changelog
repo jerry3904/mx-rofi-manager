@@ -1,3 +1,9 @@
+mx-rofi-manager (22.12.15) mx; urgency=medium
+
+  * repaired translation string, a Final build
+
+ -- Jerry <jb@mx>  Wed, 14 Dec 2022 17:49:59 -0500
+
 mx-rofi-manager (22.12.14) mx; urgency=medium
 
   * corrected domain in script, added categories-help
