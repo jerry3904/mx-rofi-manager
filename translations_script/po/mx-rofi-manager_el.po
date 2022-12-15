@@ -96,9 +96,9 @@ msgstr ""
 #. get new position
 #. MAINPOS
 #: ../mx-rofi-manager:819
-msgid "<b>\\nAdjust the location and size of the current rofi window.\\n</b>"
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
 msgstr ""
-"<b>\\nΠροσαρμόστε τη θέση και το μέγεθος του τρέχοντος παραθύρου "
+"<b>Προσαρμόστε τη θέση και το μέγεθος του τρέχοντος παραθύρου "
 "rofi.\\n</b>"
 
 #. MAIN
@@ -351,8 +351,8 @@ msgstr "Θα χρησιμοποιηθούν συγκεκριμένες ρυθμ�
 #. <b>$TOGGLETEXTTRANS</b>\n')"
 #: ../mx-rofi-manager:823 ../mx-rofi-manager:1042
 #, sh-format
-msgid "The current appearance settings are <b>$TOGGLETEXT</b>\\n"
-msgstr "Οι τρέχουσες ρυθμίσεις εμφάνησης ειναι <b>TOGGLETEXT1</b>\\n"
+msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
+msgstr "Οι τρέχουσες ρυθμίσεις εμφάνησης ειναι <b>TOGGLETEXT1</b>"
 
 #. TEXTTHEME3="$(eval_gettext 'The current theme is <b>$ROFICURRENT</b> and
 #. its settings are <b>$TOGGLETEXTTRANS</b>.')"
@@ -400,7 +400,7 @@ msgstr "\\n<b>Επιλέξτε πιο θέμα θα χρησιμοποιηθεί
 
 #: ../mx-rofi-manager:296
 msgid ""
-"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
 
@@ -412,7 +412,7 @@ msgid ""
 msgstr ""
 
 #: ../mx-rofi-manager:485
-msgid "\\n<b>Select which tabs rofi should display</b>\\n"
+msgid "<b>Select which tabs rofi should display</b>\\n"
 msgstr ""
 
 #: ../mx-rofi-manager:1539

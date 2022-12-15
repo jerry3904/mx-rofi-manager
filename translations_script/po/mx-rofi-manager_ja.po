@@ -113,8 +113,8 @@ msgstr "<b>Rofi マネージャは Rofi テーマの設定ツールです。\\n\
 #. get new position
 #. MAINPOS
 #: ../mx-rofi-manager:819
-msgid "<b>\\nAdjust the location and size of the current rofi window.\\n</b>"
-msgstr "<b>\\n現在の rofi ウィンドウの場所と大きさを調整します。\\n</b>"
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
+msgstr "<b>現在の rofi ウィンドウの場所と大きさを調整します。\\n</b>"
 
 #. MAIN
 #. color selection dialogue
@@ -372,8 +372,8 @@ msgstr "特定の設定を使用します"
 #. <b>$TOGGLETEXTTRANS</b>\n')"
 #: ../mx-rofi-manager:823 ../mx-rofi-manager:1042
 #, sh-format
-msgid "The current appearance settings are <b>$TOGGLETEXT</b>\\n"
-msgstr "現在の外観の設定は <b>$TOGGLETEXT</b> です\\n"
+msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
+msgstr "現在の外観の設定は <b>$TOGGLETEXT</b> です"
 
 #. TEXTTHEME3="$(eval_gettext 'The current theme is <b>$ROFICURRENT</b> and
 #. its settings are <b>$TOGGLETEXTTRANS</b>.')"
@@ -418,9 +418,9 @@ msgstr "\\n<b> どのテーマを開始時にするかを選択します</b>\\n"
 
 #: ../mx-rofi-manager:296
 msgid ""
-"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
-msgstr "\\n<b>使用する外観の設定とテーマを選択してください</b> (ダブルクリックでプレビューできます)。"
+msgstr "<b>使用する外観の設定とテーマを選択してください</b> (ダブルクリックでプレビューできます)。"
 
 #. select theme
 #: ../mx-rofi-manager:1515
@@ -430,8 +430,8 @@ msgid ""
 msgstr "\\n<b>編集したい rofi テーマを選択します</b>\\n\\n rasi ファイルがお気に入りのテキストエディタで開きます\\n\\n"
 
 #: ../mx-rofi-manager:485
-msgid "\\n<b>Select which tabs rofi should display</b>\\n"
-msgstr "\\n<b>Rofi を表示するタブを選択</b>\\n"
+msgid "<b>Select which tabs rofi should display</b>\\n"
+msgstr "<b>Rofi を表示するタブを選択</b>\\n"
 
 #: ../mx-rofi-manager:1539
 #, sh-format

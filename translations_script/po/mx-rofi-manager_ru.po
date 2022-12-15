@@ -117,8 +117,8 @@ msgstr ""
 #. get new position
 #. MAINPOS
 #: ../mx-rofi-manager:819
-msgid "<b>\\nAdjust the location and size of the current rofi window.\\n</b>"
-msgstr "<b>\\nНастроить положение и размер текущего окна Rofi.\\n</b>"
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
+msgstr "<b>Настроить положение и размер текущего окна Rofi.\\n</b>"
 
 #. MAIN
 #. color selection dialogue
@@ -383,7 +383,7 @@ msgstr ""
 #. <b>$TOGGLETEXTTRANS</b>\n')"
 #: ../mx-rofi-manager:823 ../mx-rofi-manager:1042
 #, sh-format
-msgid "The current appearance settings are <b>$TOGGLETEXT</b>\\n"
+msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
 msgstr ""
 
 #. TEXTTHEME3="$(eval_gettext 'The current theme is <b>$ROFICURRENT</b> and
@@ -429,7 +429,7 @@ msgstr ""
 
 #: ../mx-rofi-manager:296
 msgid ""
-"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
 
@@ -443,8 +443,8 @@ msgstr ""
 "откроется в вашем предпочтительном текстовом редакторе\\n\\n"
 
 #: ../mx-rofi-manager:485
-msgid "\\n<b>Select which tabs rofi should display</b>\\n"
-msgstr "\\n<b>Выбор отображаемых Rofi вкладок</b>\\n"
+msgid "<b>Select which tabs rofi should display</b>\\n"
+msgstr "<b>Выбор отображаемых Rofi вкладок</b>\\n"
 
 #: ../mx-rofi-manager:1539
 #, sh-format

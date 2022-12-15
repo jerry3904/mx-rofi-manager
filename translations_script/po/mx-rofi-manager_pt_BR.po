@@ -116,8 +116,8 @@ msgstr ""
 #. get new position
 #. MAINPOS
 #: ../mx-rofi-manager:819
-msgid "<b>\\nAdjust the location and size of the current rofi window.\\n</b>"
-msgstr "<b>\\nAjuste a localização e do tamanho da janela atual do Rofi.\\n</b>"
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
+msgstr "<b>Ajuste a localização e do tamanho da janela atual do Rofi.\\n</b>"
 
 #. MAIN
 #. color selection dialogue
@@ -394,8 +394,8 @@ msgstr "Serão utilizadas as configurações específicas"
 #. <b>$TOGGLETEXTTRANS</b>\n')"
 #: ../mx-rofi-manager:823 ../mx-rofi-manager:1042
 #, sh-format
-msgid "The current appearance settings are <b>$TOGGLETEXT</b>\\n"
-msgstr "As configurações atuais da aparência são <b>$TOGGLETEXT</b>\\n"
+msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
+msgstr "As configurações atuais da aparência são <b>$TOGGLETEXT</b>"
 
 #. TEXTTHEME3="$(eval_gettext 'The current theme is <b>$ROFICURRENT</b> and
 #. its settings are <b>$TOGGLETEXTTRANS</b>.')"
@@ -442,10 +442,10 @@ msgstr "\\n<b> Escolha qual tema será utilizado como ponto de partida</b>\\n"
 
 #: ../mx-rofi-manager:296
 msgid ""
-"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
-"\\n<b>Selecione as configurações da aparência e o tema a ser utilizado</b> "
+"<b>Selecione as configurações da aparência e o tema a ser utilizado</b> "
 "(clique duas vezes para visualizar)."
 
 #. select theme
@@ -458,8 +458,8 @@ msgstr ""
 "configurações .rasi será aberto no seu editor de texto padrão\\n\\n"
 
 #: ../mx-rofi-manager:485
-msgid "\\n<b>Select which tabs rofi should display</b>\\n"
-msgstr "\\n<b>Selecione quais abas ou guias o Rofi deve exibir</b>\\n"
+msgid "<b>Select which tabs rofi should display</b>\\n"
+msgstr "<b>Selecione quais abas ou guias o Rofi deve exibir</b>\\n"
 
 #: ../mx-rofi-manager:1539
 #, sh-format

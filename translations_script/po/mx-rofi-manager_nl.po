@@ -115,8 +115,8 @@ msgstr ""
 #. get new position
 #. MAINPOS
 #: ../mx-rofi-manager:819
-msgid "<b>\\nAdjust the location and size of the current rofi window.\\n</b>"
-msgstr "<b>\\nHuidig rofi venster locatie en formaat aanpassen.\\n</b>"
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
+msgstr "<b>Huidig rofi venster locatie en formaat aanpassen.\\n</b>"
 
 #. MAIN
 #. color selection dialogue
@@ -385,8 +385,8 @@ msgstr "Specifieke instellingen worden gebruikt"
 #. <b>$TOGGLETEXTTRANS</b>\n')"
 #: ../mx-rofi-manager:823 ../mx-rofi-manager:1042
 #, sh-format
-msgid "The current appearance settings are <b>$TOGGLETEXT</b>\\n"
-msgstr "De huidige uiterlijk instellingen zijn <b>$TOGGLETEXT</b>\\n"
+msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
+msgstr "De huidige uiterlijk instellingen zijn <b>$TOGGLETEXT</b>"
 
 #. TEXTTHEME3="$(eval_gettext 'The current theme is <b>$ROFICURRENT</b> and
 #. its settings are <b>$TOGGLETEXTTRANS</b>.')"
@@ -433,10 +433,10 @@ msgstr "\\n<b> Kies welk thema om te gebruiken als uitgangspunt</b>\\n"
 
 #: ../mx-rofi-manager:296
 msgid ""
-"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
-"\\n<b>Selecteer verschijningsinstellingen en het te gebruiken thema</b> "
+"<b>Selecteer verschijningsinstellingen en het te gebruiken thema</b> "
 "(dubbelklik voor een voorbeeld)."
 
 #. select theme
@@ -449,8 +449,8 @@ msgstr ""
 "bestand wordt geopend in uw favoriete tekstverwerker\\n\\n"
 
 #: ../mx-rofi-manager:485
-msgid "\\n<b>Select which tabs rofi should display</b>\\n"
-msgstr "\\n<b>Selecteer welke tabbladen rofi moet weergeven</b>\\n"
+msgid "<b>Select which tabs rofi should display</b>\\n"
+msgstr "<b>Selecteer welke tabbladen rofi moet weergeven</b>\\n"
 
 #: ../mx-rofi-manager:1539
 #, sh-format
