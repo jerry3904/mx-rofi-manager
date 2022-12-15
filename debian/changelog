@@ -1,3 +1,10 @@
+mx-rofi-manager (22.12.16) mx; urgency=medium
+
+  * corrected errors in translation strings
+  * this is Final
+
+ -- Jerry <jb@mx>  Thu, 15 Dec 2022 18:09:53 -0500
+
 mx-rofi-manager (22.12.15) mx; urgency=medium
 
   * repaired translation string, a Final build
