@@ -372,8 +372,8 @@ msgstr "特定の設定を使用します"
 #. <b>$TOGGLETEXTTRANS</b>\n')"
 #: ../mx-rofi-manager:823 ../mx-rofi-manager:1042
 #, sh-format
-msgid "The current appearance settings are <b>$TOGGLETEXT</b>\\n"
-msgstr "現在の外観の設定は <b>$TOGGLETEXT</b> です\\n"
+msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
+msgstr "現在の外観の設定は <b>$TOGGLETEXT</b> です"
 
 #. TEXTTHEME3="$(eval_gettext 'The current theme is <b>$ROFICURRENT</b> and
 #. its settings are <b>$TOGGLETEXTTRANS</b>.')"
