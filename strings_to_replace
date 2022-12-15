@@ -1,0 +1,31 @@
+#strings to replace
+
+"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"preview)."
+
+<b>Select appearance settings and theme to use</b> (double-click for preview).
+
+
+\\n<b>Select which tabs rofi should display</b>\\n
+
+<b>Select which tabs rofi should display</b>\n
+
+
+\\nAdjust the location and size of the current rofi window.\\n
+
+<b>Adjust the location and size of the current rofi window.\n
+
+
+
+The current appearance settings are <b>$TOGGLETEXT</b>\\n
+
+The current appearance settings are <b>$TOGGLETEXT</b>\n
+
+
+
+
+"   X-Offset (- to left, + to right)"
+'     X-Offset (- to left, + to right)'
+
+"   Y-Offset (- upwards, + downwards)"
+'     Y-Offset (- upwards, + downwards)'

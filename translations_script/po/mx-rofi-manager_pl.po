@@ -115,8 +115,8 @@ msgstr ""
 #. get new position
 #. MAINPOS
 #: ../mx-rofi-manager:819
-msgid "<b>\\nAdjust the location and size of the current rofi window.\\n</b>"
-msgstr "<b>\\nDostosuj pozycję i rozmiar aktualnego okna rofi.\\n</b>"
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
+msgstr "<b>Dostosuj pozycję i rozmiar aktualnego okna rofi.\\n</b>"
 
 #. MAIN
 #. color selection dialogue
@@ -431,10 +431,10 @@ msgstr "\\n<b> Wybierz, który motyw chcesz użyć na start</b>\\n"
 
 #: ../mx-rofi-manager:296
 msgid ""
-"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
-"\\n<b>Wybierz ustawienia wyglądu i motyw, który chcesz użyć</b> (podwójne "
+"<b>Wybierz ustawienia wyglądu i motyw, który chcesz użyć</b> (podwójne "
 "kliknięcie umożliwia pogląd)."
 
 #. select theme
@@ -447,8 +447,8 @@ msgstr ""
 "się w twoim preferowanym edytorze tekstu\\n\\n"
 
 #: ../mx-rofi-manager:485
-msgid "\\n<b>Select which tabs rofi should display</b>\\n"
-msgstr "\\n<b>Wybierz, które karty rofi ma wyświetlić</b>\\n"
+msgid "<b>Select which tabs rofi should display</b>\\n"
+msgstr "<b>Wybierz, które karty rofi ma wyświetlić</b>\\n"
 
 #: ../mx-rofi-manager:1539
 #, sh-format

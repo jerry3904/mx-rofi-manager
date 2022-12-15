@@ -114,8 +114,8 @@ msgstr ""
 #. get new position
 #. MAINPOS
 #: ../mx-rofi-manager:819
-msgid "<b>\\nAdjust the location and size of the current rofi window.\\n</b>"
-msgstr "<b>\\nJustera plats och storlek på det nuvarande rofi-fönstret.\\n</b>"
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
+msgstr "<b>Justera plats och storlek på det nuvarande rofi-fönstret.\\n</b>"
 
 #. MAIN
 #. color selection dialogue
@@ -428,10 +428,10 @@ msgstr "\\n<b> Välj vilket tema som ska användas som startpunkt</b>\\n"
 
 #: ../mx-rofi-manager:296
 msgid ""
-"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
-"\\n<b>Välj inställningar för utseende och tema som ska användas</b> "
+"<b>Välj inställningar för utseende och tema som ska användas</b> "
 "(dubbelklicka för förhandsvisning)."
 
 #. select theme
@@ -444,8 +444,8 @@ msgstr ""
 "öppnas med den textredigerare du föredrar\\n\\n"
 
 #: ../mx-rofi-manager:485
-msgid "\\n<b>Select which tabs rofi should display</b>\\n"
-msgstr "\\n<b>Välj vilka flikar rofi ska visa</b>\\n"
+msgid "<b>Select which tabs rofi should display</b>\\n"
+msgstr "<b>Välj vilka flikar rofi ska visa</b>\\n"
 
 #: ../mx-rofi-manager:1539
 #, sh-format

@@ -116,8 +116,8 @@ msgstr ""
 #. get new position
 #. MAINPOS
 #: ../mx-rofi-manager:819
-msgid "<b>\\nAdjust the location and size of the current rofi window.\\n</b>"
-msgstr "<b>\\nGeçerli rofi penceresinin konumunu ve boyutunu ayarla.\\n</b>"
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
+msgstr "<b>Geçerli rofi penceresinin konumunu ve boyutunu ayarla.\\n</b>"
 
 #. MAIN
 #. color selection dialogue
@@ -431,10 +431,10 @@ msgstr "\\n<b> Başlangıç noktası olarak kullanılacak temayı seçin</b>\\n"
 
 #: ../mx-rofi-manager:296
 msgid ""
-"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
-"\\n<b>Görünüm ayarlarını ve kullanılacak temayı seçin</b> (Önizleme için "
+"<b>Görünüm ayarlarını ve kullanılacak temayı seçin</b> (Önizleme için "
 "çift tıklayın)."
 
 #. select theme
@@ -447,8 +447,8 @@ msgstr ""
 "tercih ettiğiniz metin düzenleyicide açılacaktır\\n\\n"
 
 #: ../mx-rofi-manager:485
-msgid "\\n<b>Select which tabs rofi should display</b>\\n"
-msgstr "\\n<b>Rofi'nin hangi sekmeleri görüntüleyeceğini seçin</b>\\n"
+msgid "<b>Select which tabs rofi should display</b>\\n"
+msgstr "<b>Rofi'nin hangi sekmeleri görüntüleyeceğini seçin</b>\\n"
 
 #: ../mx-rofi-manager:1539
 #, sh-format

@@ -114,9 +114,9 @@ msgstr ""
 #. get new position
 #. MAINPOS
 #: ../mx-rofi-manager:819
-msgid "<b>\\nAdjust the location and size of the current rofi window.\\n</b>"
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
 msgstr ""
-"<b>\\nPërimtoni vendndodhjen dhe madhësinë e dritares së tanishme "
+"<b>Përimtoni vendndodhjen dhe madhësinë e dritares së tanishme "
 "rofi.\\n</b>"
 
 #. MAIN
@@ -431,10 +431,10 @@ msgstr "\\n<b> Zgjidhni cila temë të përdoret si pikënisje</b>\\n"
 
 #: ../mx-rofi-manager:296
 msgid ""
-"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
-"\\n<b>Përzgjidhni rregullime shfaqjeje dhe temë për përdorim</b> (për "
+"<b>Përzgjidhni rregullime shfaqjeje dhe temë për përdorim</b> (për "
 "paraparje, dyklikojeni)."
 
 #. select theme
@@ -447,8 +447,8 @@ msgstr ""
 ".rasi do të hapet me përpunuesin tuaj të parapëlqyer të teksteve\\n\\n"
 
 #: ../mx-rofi-manager:485
-msgid "\\n<b>Select which tabs rofi should display</b>\\n"
-msgstr "\\n<b>Përzgjidhni cilat skeda duhet të shfaqë rofi</b>\\n"
+msgid "<b>Select which tabs rofi should display</b>\\n"
+msgstr "<b>Përzgjidhni cilat skeda duhet të shfaqë rofi</b>\\n"
 
 #: ../mx-rofi-manager:1539
 #, sh-format

@@ -113,8 +113,8 @@ msgstr ""
 #. get new position
 #. MAINPOS
 #: ../mx-rofi-manager:819
-msgid "<b>\\nAdjust the location and size of the current rofi window.\\n</b>"
-msgstr "<b>\\nPrilagodi položaj in velikost trenutnega rofi okna.\\n</b>"
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
+msgstr "<b>Prilagodi položaj in velikost trenutnega rofi okna.\\n</b>"
 
 #. MAIN
 #. color selection dialogue
@@ -426,7 +426,7 @@ msgstr "\\n<b>Izberite izhodiščno temo</b>\\n"
 
 #: ../mx-rofi-manager:296
 msgid ""
-"\\n<b>Select appearance settings and theme to use</b> (double-click for "
+"<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
 
@@ -440,8 +440,8 @@ msgstr ""
 "privzetem urejevalniku besedil\\n\\n"
 
 #: ../mx-rofi-manager:485
-msgid "\\n<b>Select which tabs rofi should display</b>\\n"
-msgstr "\\n<b>Izberite zavihke, ki naj jih rofi prikaže</b>\\n"
+msgid "<b>Select which tabs rofi should display</b>\\n"
+msgstr "<b>Izberite zavihke, ki naj jih rofi prikaže</b>\\n"
 
 #: ../mx-rofi-manager:1539
 #, sh-format
