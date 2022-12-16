@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Fri, 16 Dec 2022 09:16:49 -0500
+Source: mx-rofi-manager
+Binary: mx-rofi-manager
+Architecture: source all
+Version: 22.12.17
+Distribution: mx
+Urgency: medium
+Maintainer: Jerry3904<jerry@mxlinux.org>
+Changed-By: Jerry <jb@mx>
+Description:
+ mx-rofi-manager - Manager of rofi themes and settings
+Changes:
+ mx-rofi-manager (22.12.17) mx; urgency=medium
+ .
+   * updated the control file to change recommended to depends
+Checksums-Sha1:
+ a36e6cf6ef62dcfa7646775b2446a7355cc3834a 602 mx-rofi-manager_22.12.17.dsc
+ 324fc8eb7e7506525183b9cbbc9f2b56e3f19359 387604 mx-rofi-manager_22.12.17.tar.xz
+ 73b612fff5171d391d5cf26d977022f26cec08a2 323692 mx-rofi-manager_22.12.17_all.deb
+ a08563fa4f082a8c96a7dff99c203eeb632eed82 5278 mx-rofi-manager_22.12.17_amd64.buildinfo
+Checksums-Sha256:
+ 8c0fe9d51afb79c6345f6f27a52b68adeddc696ac8d55e2160fe0a337f36038c 602 mx-rofi-manager_22.12.17.dsc
+ 96dd54119a5f20bfcd11108aab07c79ca768c55f2e9bd7f09b223a6e315c62d8 387604 mx-rofi-manager_22.12.17.tar.xz
+ d8bf5592ae25058703b891ba042a6798177a126c39fb02c5bc11b20d82d5c48c 323692 mx-rofi-manager_22.12.17_all.deb
+ 59c0e59ec3eedcf31af05da69405c3bced96f8e85c9a0006b3df77131db86109 5278 mx-rofi-manager_22.12.17_amd64.buildinfo
+Files:
+ 491fb02a18964c481d81830e0163aaeb 602 desktop optional mx-rofi-manager_22.12.17.dsc
+ ccaa327a36ac3f2a274d4b5265271b62 387604 desktop optional mx-rofi-manager_22.12.17.tar.xz
+ c996de184f2ec8a49dea7437134725b2 323692 desktop optional mx-rofi-manager_22.12.17_all.deb
+ 39bd84f3b9e76b6c9a98c5bc0a5ab0aa 5278 desktop optional mx-rofi-manager_22.12.17_amd64.buildinfo
