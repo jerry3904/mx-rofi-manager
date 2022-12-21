@@ -1,3 +1,9 @@
+mx-rofi-manager (22.12.21) mx; urgency=medium
+
+  * corrected rofi-help for new release 
+
+ -- Jerry <jb@mx>  Wed, 21 Dec 2022 06:14:02 -0500
+
 mx-rofi-manager (22.12.17) mx; urgency=medium
 
   * updated the control file to change recommended to depends

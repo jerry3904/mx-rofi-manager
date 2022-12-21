@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui
 dpkg-buildpackage: info: source package mx-rofi-manager
-dpkg-buildpackage: info: source version 22.12.17
+dpkg-buildpackage: info: source version 22.12.21
 dpkg-buildpackage: info: source distribution mx
 dpkg-buildpackage: info: source changed by Jerry <jb@mx>
  dpkg-source --before-build .
@@ -12,8 +12,8 @@ dh: warning: Compatibility levels before 10 are deprecated (level 9 in use)
 dh_clean: warning: Compatibility levels before 10 are deprecated (level 9 in use)
  dpkg-source -b .
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building mx-rofi-manager in mx-rofi-manager_22.12.17.tar.xz
-dpkg-source: info: building mx-rofi-manager in mx-rofi-manager_22.12.17.dsc
+dpkg-source: info: building mx-rofi-manager in mx-rofi-manager_22.12.21.tar.xz
+dpkg-source: info: building mx-rofi-manager in mx-rofi-manager_22.12.21.dsc
  debian/rules build
 make: 'build' is up to date.
  fakeroot debian/rules binary
@@ -43,19 +43,6 @@ dh_installdocs: warning: Compatibility levels before 10 are deprecated (level 9 
 	Normalized debian/mx-rofi-manager/usr/share/locale/da/LC_MESSAGES/mx-rofi-manager.mo
 	Normalized debian/mx-rofi-manager/usr/share/locale/cs/LC_MESSAGES/mx-rofi-manager.mo
 	Normalized debian/mx-rofi-manager/usr/share/locale/zh_CN/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/ca/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/ja/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/el/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/ar/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/hr/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/pl/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/ro/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/id/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/pt_BR/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/lt/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/et/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/ko/LC_MESSAGES/mx-rofi-manager.mo
-	Normalized debian/mx-rofi-manager/usr/share/locale/fr/LC_MESSAGES/mx-rofi-manager.mo
 	Normalized debian/mx-rofi-manager/usr/share/locale/bg/LC_MESSAGES/mx-rofi-manager.mo
 	Normalized debian/mx-rofi-manager/usr/share/locale/de/LC_MESSAGES/mx-rofi-manager.mo
 	Normalized debian/mx-rofi-manager/usr/share/locale/zh_TW/LC_MESSAGES/mx-rofi-manager.mo
@@ -69,6 +56,19 @@ dh_installdocs: warning: Compatibility levels before 10 are deprecated (level 9 
 	Normalized debian/mx-rofi-manager/usr/share/locale/is/LC_MESSAGES/mx-rofi-manager.mo
 	Normalized debian/mx-rofi-manager/usr/share/locale/sl/LC_MESSAGES/mx-rofi-manager.mo
 	Normalized debian/mx-rofi-manager/usr/share/locale/mk/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/ca/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/ja/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/el/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/ar/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/hr/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/pl/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/ro/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/id/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/pt_BR/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/lt/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/et/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/ko/LC_MESSAGES/mx-rofi-manager.mo
+	Normalized debian/mx-rofi-manager/usr/share/locale/fr/LC_MESSAGES/mx-rofi-manager.mo
 	Normalized debian/mx-rofi-manager/usr/share/locale/sv/LC_MESSAGES/mx-rofi-manager.mo
 	Normalized debian/mx-rofi-manager/usr/share/locale/pt/LC_MESSAGES/mx-rofi-manager.mo
 	Normalized debian/mx-rofi-manager/usr/share/locale/he_IL/LC_MESSAGES/mx-rofi-manager.mo
@@ -82,9 +82,9 @@ dh_installdeb: warning: Compatibility levels before 10 are deprecated (level 9 i
    dh_gencontrol
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'mx-rofi-manager' in '../mx-rofi-manager_22.12.17_all.deb'.
+dpkg-deb: building package 'mx-rofi-manager' in '../mx-rofi-manager_22.12.21_all.deb'.
  dpkg-genbuildinfo
- dpkg-genchanges  >../mx-rofi-manager_22.12.17_amd64.changes
+ dpkg-genchanges  >../mx-rofi-manager_22.12.21_amd64.changes
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build .
 dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
