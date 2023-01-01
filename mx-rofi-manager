@@ -1,10 +1,10 @@
 #!/bin/bash
 #Rofi-Manager
 #Tool to manage rofi settings
-#V.1.01 by Melber and MX Devs, xx January 2023
+#V.1.01 by Melber and MX Devs, 01 January 2023
 #License: GPL-3.0+
 #mxrm-icon based on applications-development and applications-interfacedesign icons from papirus icon set
-#Changelog 1.01
+#Changelog 1.01: tab selection increased to 6, maximum X and Y-offsets increased to 500, string corrections to match gettext translations
 
 #set up translation
 
@@ -607,7 +607,7 @@ fi
 
 
 
-TABS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text-align=left --height=450 --width=600 --borders=20 --center --fixed --separator=" " --form --columns=3 --button="gtk-cancel":1 --button="gtk-ok":0 \
+TABS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text-align=left --height=450 --width=600 --borders=20 --center --fixed --separator=" " --form --columns=3 --output-by-row --button="gtk-cancel":1 --button="gtk-ok":0 \
 --text="$TEXTTABS1
 <i>drun</i>: $TEXTTABS2
 <i>calc</i>: $TEXTTABS3
@@ -620,10 +620,10 @@ TABS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text-ali
 
 $TEXTTABS10" 
 --field="Tab 1 ":CB "$CURTAB1!drun!calc!filebrowser!run!ssh!window!help!none" \
---field="Tab 2 ":CB "$CURTAB2!drun!calc!filebrowser!run!ssh!window!help!none" \
---field="  Tab 3 ":CB "$CURTAB3!drun!calc!filebrowser!run!ssh!window!help!none" \
---field="  Tab 4 ":CB "$CURTAB4!drun!calc!filebrowser!run!ssh!window!help!none" \
+--field="Tab 4 ":CB "$CURTAB4!drun!calc!filebrowser!run!ssh!window!help!none" \
+--field="  Tab 2 ":CB "$CURTAB2!drun!calc!filebrowser!run!ssh!window!help!none" \
 --field="  Tab 5 ":CB "$CURTAB5!drun!calc!filebrowser!run!ssh!window!help!none" \
+--field="  Tab 3 ":CB "$CURTAB3!drun!calc!filebrowser!run!ssh!window!help!none" \
 --field="  Tab 6 ":CB "$CURTAB6!drun!calc!filebrowser!run!ssh!window!help!none" \
 )
 
