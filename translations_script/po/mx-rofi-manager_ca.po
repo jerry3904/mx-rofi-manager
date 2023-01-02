@@ -6,7 +6,7 @@
 # Translators:
 # anticapitalista <anticapitalista@riseup.net>, 2022
 # Eduard Selma <selma@tinet.cat>, 2022
-# Dolphin Oracle <dolphinoracle@gmail.com>, 2022
+# Dolphin Oracle <dolphinoracle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-02 14:28-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2022\n"
+"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
 "Language-Team: Catalan (https://www.transifex.com/anticapitalista/teams/10162/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -199,7 +199,7 @@ msgstr "Canvia el rema actual de Rofi"
 
 #: ../mx-rofi-manager:1738
 msgid "Change the font of the current rofi window"
-msgstr ""
+msgstr "Canvia la lletra de la finestra rofi actual"
 
 #: ../mx-rofi-manager:1736
 msgid "Change the functions (<i> modi </i>) of the rofi tabs"
@@ -207,7 +207,7 @@ msgstr "Canvia les funcions (<i> modi </i>) de les pestanyes Rofi"
 
 #: ../mx-rofi-manager:1737
 msgid "Change the location and size of the current rofi window"
-msgstr ""
+msgstr "Canvia la mida i ubicació de la finestra rofi actual"
 
 #: ../mx-rofi-manager:1740
 msgid "Edit a rofi theme config file in text editor"

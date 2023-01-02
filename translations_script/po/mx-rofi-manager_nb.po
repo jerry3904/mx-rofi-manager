@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Dolphin Oracle <dolphinoracle@gmail.com>, 2022
 # heskjestad <cato@heskjestad.xyz>, 2022
+# Dolphin Oracle <dolphinoracle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-02 14:28-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: heskjestad <cato@heskjestad.xyz>, 2022\n"
+"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
 "Language-Team: Norwegian Bokmål (https://www.transifex.com/anticapitalista/teams/10162/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -209,7 +209,7 @@ msgstr "Endre gjeldende rofi-temasett"
 
 #: ../mx-rofi-manager:1738
 msgid "Change the font of the current rofi window"
-msgstr ""
+msgstr "Endre skrifttypen i gjeldende rofi-vindu"
 
 #: ../mx-rofi-manager:1736
 msgid "Change the functions (<i> modi </i>) of the rofi tabs"
@@ -217,7 +217,7 @@ msgstr "Endre funksjonene (<i>modi</i>) til rofi-fanene"
 
 #: ../mx-rofi-manager:1737
 msgid "Change the location and size of the current rofi window"
-msgstr ""
+msgstr "Justere posisjon og størrelse til gjeldende rofi-vindu"
 
 #: ../mx-rofi-manager:1740
 msgid "Edit a rofi theme config file in text editor"
