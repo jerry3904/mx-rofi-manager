@@ -1,10 +1,10 @@
 #!/bin/bash
 #Rofi-Manager
 #Tool to manage rofi settings
-#V.0.16c by Melber and MX Devs, 13 December 2022
+#V.1.01 by Melber and MX Devs, 01 January 2023
 #License: GPL-3.0+
 #mxrm-icon based on applications-development and applications-interfacedesign icons from papirus icon set
-#Changelog 16: Added MX-run & MX-iconic, support for awesome-font, added theme locations in selection list
+#Changelog 1.01: tab selection increased to 6, maximum X and Y-offsets increased to 500, string corrections to match gettext translations
 
 #set up translation
 
@@ -552,7 +552,7 @@ TEXTTABS5="$(gettext 'displays all available executable files')"
 TEXTTABS6="$(gettext 'opens a secure shell')"
 TEXTTABS7="$(gettext 'enables easy switching')"
 TEXTTABS8="$(gettext 'a set of links about using rofi')"
-TEXTTABS9="$(gettext 'tab will not be shown\n')"
+TEXTTABS9="$(gettext 'tab will not be shown\n\n')"
 TEXTTABS10="$(gettext 'If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or <i>Ctrl + Tab</i>\n')"
 
 
@@ -568,6 +568,18 @@ CURTAB2=${TABARRAY[1]}
 CURTAB2=$(echo "${CURTAB2}" | sed -e 's/"//g' )
 CURTAB3=${TABARRAY[2]}
 CURTAB3=$(echo "${CURTAB3}" | sed -e 's/"//g' )
+CURTAB4=${TABARRAY[3]}
+CURTAB4=$(echo "${CURTAB4}" | sed -e 's/"//g' )
+CURTAB5=${TABARRAY[4]}
+CURTAB5=$(echo "${CURTAB5}" | sed -e 's/"//g' )
+CURTAB6=${TABARRAY[5]}
+CURTAB6=$(echo "${CURTAB6}" | sed -e 's/"//g' )
+
+if [ "$CURTAB2" = "" ]; then
+
+	  CURTAB2=none
+
+fi
 
 if [ "$CURTAB3" = "" ]; then
 
@@ -575,8 +587,27 @@ if [ "$CURTAB3" = "" ]; then
 
 fi
 
+if [ "$CURTAB4" = "" ]; then
 
-TABS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text-align=left --height=450 --width=600 --borders=20 --center --fixed --separator=" " --form --columns=3 --button="gtk-cancel":1 --button="gtk-ok":0 \
+	  CURTAB4=none
+
+fi
+
+if [ "$CURTAB5" = "" ]; then
+
+	  CURTAB5=none
+
+fi
+
+if [ "$CURTAB6" = "" ]; then
+
+	  CURTAB6=none
+
+fi
+
+
+
+TABS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text-align=left --height=450 --width=600 --borders=20 --center --fixed --separator=" " --form --columns=3 --output-by-row --button="gtk-cancel":1 --button="gtk-ok":0 \
 --text="$TEXTTABS1
 <i>drun</i>: $TEXTTABS2
 <i>calc</i>: $TEXTTABS3
@@ -586,10 +617,14 @@ TABS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --text-ali
 <i>window</i>: $TEXTTABS7
 <i>help</i>: $TEXTTABS8
 <i>none</i>: $TEXTTABS9
+
 $TEXTTABS10" 
---field="$(gettext '1st Tab')":CB "$CURTAB1!drun!calc!filebrowser!run!ssh!window!help!none" \
---field="$(gettext '2nd Tab')":CB "$CURTAB2!drun!calc!filebrowser!run!ssh!window!help!none" \
---field="$(gettext '3rd Tab')":CB "$CURTAB3!drun!calc!filebrowser!run!ssh!window!help!none" \
+--field="Tab 1 ":CB "$CURTAB1!drun!calc!filebrowser!run!ssh!window!help!none" \
+--field="Tab 4 ":CB "$CURTAB4!drun!calc!filebrowser!run!ssh!window!help!none" \
+--field="  Tab 2 ":CB "$CURTAB2!drun!calc!filebrowser!run!ssh!window!help!none" \
+--field="  Tab 5 ":CB "$CURTAB5!drun!calc!filebrowser!run!ssh!window!help!none" \
+--field="  Tab 3 ":CB "$CURTAB3!drun!calc!filebrowser!run!ssh!window!help!none" \
+--field="  Tab 6 ":CB "$CURTAB6!drun!calc!filebrowser!run!ssh!window!help!none" \
 )
 
 NEWTABS=$("${TABS[@]}")
@@ -608,8 +643,11 @@ read -r -a TEMPTABS < $ROFIPATH/tempdir/temptabs.txt
 	TAB0="${TEMPTABS[0]}"
 	TAB1="${TEMPTABS[1]}"
 	TAB2="${TEMPTABS[2]}"
+	TAB3="${TEMPTABS[3]}"
+	TAB4="${TEMPTABS[4]}"
+	TAB5="${TEMPTABS[5]}"
 
-NEWTABS="modi: \""$TAB0","$TAB1","$TAB2"\";"
+NEWTABS="modi: \""$TAB0","$TAB1","$TAB2","$TAB3","$TAB4","$TAB5"\";"
 
 	NEWTABS=$(echo "${NEWTABS}" | sed -e "s/help/help\:\/usr\/share\/rofi\/rofi-help/g" )
 	NEWTABS=$(echo "${NEWTABS}" | sed -e "s/calc/calc\:qalc/g" )
@@ -894,8 +932,8 @@ TEXTLOCMAIN2="$(eval_gettext 'The current appearance settings are <b>$TOGGLETEXT
 MAINPOS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --borders=20 --center --width=600 --height=400 --fixed --form --columns=1 --align=left --separator=" " --button="gtk-help":"bash -c rofi_help-position" --button="gtk-cancel":1 --button="gtk-ok":0 \
 --text="$TEXTLOCMAIN1\n$TEXTLOCMAIN2\n" \
 --field="$(gettext 'Location of rofi window on the screen')":CB "$LOCVALUE!northwest!north!northeast!west!center!east!southwest!south!southeast" \
---field="$(gettext '    X-Offset (- to left, + to right)')":NUM "$XOFFVALUE\!-100..100\!1\!0" \
---field="$(gettext '    Y-Offset (- upwards, + downwards)')":NUM "$YOFFVALUE\!-100..100\!1\!0" \
+--field="$(gettext '    X-Offset (- to left, + to right)')":NUM "$XOFFVALUE\!-500..500\!1\!0" \
+--field="$(gettext '    Y-Offset (- upwards, + downwards)')":NUM "$YOFFVALUE\!-500..500\!1\!0" \
 --field="$(gettext 'Width (percentage of screen width)')":NUM "$WIDVALUE\!1..100\!1\!0" \
 --field="$(gettext 'Height (number of lines shown in list)')":NUM "$LINVALUE\!1..25\!1\!0" \
 )
@@ -1116,12 +1154,12 @@ ROFIFONTOLD=$(echo "${ROFIFONTOLD}" | sed -e 's/[]$\/*"[\^]/\\&/g' )
 
 FONTMAINTEXT1="$(gettext '<b>Adjust the font of the current rofi window.</b>')"
 #FONTMAINTEXT2="$(eval_gettext 'The current appearance settings are <b>$TOGGLETEXTTRANS</b>\n')"
-FONTMAINTEXT2="$(eval_gettext 'The current appearance settings are <b>$TOGGLETEXT</b>\n')"
+FONTMAINTEXT2="$(eval_gettext 'The current appearance settings are <b>$TOGGLETEXT</b>')"
 
 #MAINPOS
 
 MAINPOS=(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --borders=20 --center --width=600 --height=400 --fixed --form --columns=1 --align=left --separator=" " --button="gtk-cancel":1 --button="gtk-ok":0 \
---text="$FONTMAINTEXT1\n\n$FONTMAINTEXT2\n" \
+--text="$FONTMAINTEXT1\n\n$FONTMAINTEXT2\n\n" \
 
 --field="$(gettext 'Font')":FN "$FONVALUE" \
 )
