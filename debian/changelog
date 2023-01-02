@@ -1,3 +1,11 @@
+mx-rofi-manager (23.01.02) UNRELEASED; urgency=medium
+
+  * created 3 additional tabs
+  * extended x and y offset to 500
+  * used consistent case for "rofi" on main screen
+
+ -- Jerry <jb@mx>  Mon, 02 Jan 2023 11:22:01 -0500
+
 mx-rofi-manager (22.12.21) mx; urgency=medium
 
   * corrected rofi-help for new release 
