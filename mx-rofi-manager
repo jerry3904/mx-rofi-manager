@@ -552,7 +552,7 @@ TEXTTABS5="$(gettext 'displays all available executable files')"
 TEXTTABS6="$(gettext 'opens a secure shell')"
 TEXTTABS7="$(gettext 'enables easy switching')"
 TEXTTABS8="$(gettext 'a set of links about using rofi')"
-TEXTTABS9="$(gettext 'tab will not be shown\n\n')"
+TEXTTABS9="$(gettext 'tab will not be shown\n')\n"
 TEXTTABS10="$(gettext 'If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or <i>Ctrl + Tab</i>\n')"
 
 
