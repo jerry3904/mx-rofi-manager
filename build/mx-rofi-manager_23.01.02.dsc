@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: mx-rofi-manager
 Binary: mx-rofi-manager
 Architecture: all
-Version: 22.12.21
+Version: 23.01.02
 Maintainer: Jerry3904<jerry@mxlinux.org>
 Homepage: https:/mxlinux.org
 Standards-Version: 3.9.6
@@ -10,8 +10,8 @@ Build-Depends: debhelper (>= 9.20120115)
 Package-List:
  mx-rofi-manager deb desktop optional arch=all
 Checksums-Sha1:
- fd3b8be59cde92bce4df0faf514a6897f3703cb9 1104316 mx-rofi-manager_22.12.21.tar.xz
+ 194f12865dfc94a17f75258f1e31c0927b093114 1836148 mx-rofi-manager_23.01.02.tar.xz
 Checksums-Sha256:
- 002d339b9c6d33ade5cdaea8a2640521e2d4552c658432b4f1948d7c89bdbd42 1104316 mx-rofi-manager_22.12.21.tar.xz
+ b35f934eb54041fde3096fe37ccf0ce3db4c901b7143ffb0c31af7b0d4e8a59a 1836148 mx-rofi-manager_23.01.02.tar.xz
 Files:
- 0552b717a4ecb35f3bc597dfcfb427c4 1104316 mx-rofi-manager_22.12.21.tar.xz
+ be1eafd79bee4c8acba23484a502792c 1836148 mx-rofi-manager_23.01.02.tar.xz

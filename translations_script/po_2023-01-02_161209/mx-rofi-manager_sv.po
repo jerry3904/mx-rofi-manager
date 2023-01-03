@@ -1,0 +1,493 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Henry Oquist <henryoquist@nomalm.se>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-01 21:10-0500\n"
+"PO-Revision-Date: 2022-11-18 00:46+0000\n"
+"Last-Translator: Henry Oquist <henryoquist@nomalm.se>, 2022\n"
+"Language-Team: Swedish (https://www.transifex.com/anticapitalista/teams/10162/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../mx-rofi-manager:611
+msgid ""
+"\n"
+"TERMS\n"
+"\n"
+"- LOCATION: The general placement of the rofi window on the screen\n"
+"\n"
+"- ANCHOR: The point of the rofi window which is set at the location.\n"
+"\n"
+"- X-OFFSET & Y-OFFSET: The offset (pixels) of the rofi window from the anchor point\n"
+"\n"
+"\n"
+"EXAMPLES\n"
+"\n"
+"Location center, anchor center: places the center of the rofi window at the center of the screen\n"
+"\n"
+"Location northwest, anchor northwest: places the top left corner of the rofi window at the top left of the screen.\n"
+"\n"
+"Location center, anchor northwest: places the top left corner of the rofi window at the center of the screen.\n"
+"\n"
+"Location west, anchor west, x-offset 32: displaces the rofi window to avoid overlap with a vertical panel."
+msgstr ""
+"\n"
+"TERMER\n"
+"\n"
+"- PLACERING:  rofi-fönstrets allmänna placering på skärmen\n"
+"\n"
+"- ANKARE: Den punkt på rofi-fönstret som är på platsen.\n"
+"\n"
+"- X-OFFSET & Y-OFFSET: rofi-fönstrets offset (pixlar) från ankringspunkten\n"
+"\n"
+"\n"
+"EXEMPEL\n"
+"\n"
+"Placering centralt, ankare centralt: placerar mitten av rofi-fönstret vid skärmens mitt\n"
+"\n"
+"Placering nordvästt, ankra nordväst: Placerar rofi-fönstrets övre vänstra hörn överst till vänster på skärmen.\n"
+"\n"
+"Placering centralt, ankra nordväst: placerar rofi-fönstrets övre vänstra hörn mitt på skärmen.\n"
+"\n"
+"Placering väst, ankra väst, x-offset 32: flyttar rofi-fönstret för att förhindra överlappning av vertikal panel."
+
+#: ../mx-rofi-manager:828
+msgid "   X-Offset (- to left, + to right)"
+msgstr "   X-Offset (- åt vänster, + åt höger)"
+
+#: ../mx-rofi-manager:829
+msgid "   Y-Offset (- upwards, + downwards)"
+msgstr "   Y-Offset (- uppåt, + nedåt)"
+
+#: ../mx-rofi-manager:528
+msgid "1st Tab"
+msgstr "1:a fliken"
+
+#: ../mx-rofi-manager:529
+msgid "2nd Tab"
+msgstr "2:a fliken"
+
+#: ../mx-rofi-manager:530
+msgid "3rd Tab"
+msgstr "3:e fliken"
+
+#: ../mx-rofi-manager:1040
+msgid "<b>Adjust the font of the current rofi window.</b>"
+msgstr "<b>Justera typsnittet för nuvarande rofi-fönster.</b>"
+
+#: ../mx-rofi-manager:1301
+msgid "<b>Make new theme current?</b>"
+msgstr "<b>Använd nya temat?</b>"
+
+#: ../mx-rofi-manager:1365
+msgid "<b>Name for new style</b>"
+msgstr "<b>Namn på ny stil</b>"
+
+#: ../mx-rofi-manager:1346 ../mx-rofi-manager:1392
+msgid "<b>Name for new theme</b>"
+msgstr "<b>Namn på nytt tema</b>"
+
+#: ../mx-rofi-manager:1299
+msgid "<b>Name for new theme</b>     "
+msgstr "<b>Namn på det nya temat</b>     "
+
+#: ../mx-rofi-manager:1606
+msgid ""
+"<b>Rofi Manager is a tool to configure rofi themes.\\n\\n<i>What would you "
+"like to do?</i></b>\\n"
+msgstr ""
+"<b>Rofi Hanterare är ett verktyg för att kofigurera  rofi-teman.\\n\\n<i>Vad"
+" vill du göra?</i></b>\\n"
+
+#. get new position
+#. MAINPOS
+#: ../mx-rofi-manager:819
+msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
+msgstr "<b>Justera plats och storlek på det nuvarande rofi-fönstret.\\n</b>"
+
+#. MAIN
+#. color selection dialogue
+#: ../mx-rofi-manager:1262
+msgid "<b>\\nEdit colors and create a new rofi theme.\\n\\n</b>"
+msgstr "<b>\\nHantera färger och skapa ett nytt rofi-tema.\\n\\n</b>"
+
+#: ../mx-rofi-manager:1385
+#, sh-format
+msgid ""
+"A Theme with this name already exists. \\n\\nDo you want to overwrite "
+"<b>$NEWNAME</b>\\nor save as a different theme name?\\n"
+msgstr ""
+"Ett tema med detta namn finns redan. \\n\\nVill du skriva över "
+"<b>$NEWNAME</b>\\neller spara med ett annat temanamn?\\n"
+
+#: ../mx-rofi-manager:1243 ../mx-rofi-manager:1281
+msgid "Active Tab Background"
+msgstr "Bakgrund för aktiv flik"
+
+#: ../mx-rofi-manager:1245 ../mx-rofi-manager:1283
+msgid "Active Tab Highlight"
+msgstr "Markera aktiv flik"
+
+#: ../mx-rofi-manager:1244 ../mx-rofi-manager:1282
+msgid "Active Tab Text"
+msgstr "Text för aktiv flik"
+
+#: ../mx-rofi-manager:1471
+#, sh-format
+msgid ""
+"All done!\\n<b>$NEWNAME</b> Rofi theme has been created.\\n\\nYou can change"
+" themes with <b>MX-Rofi-Manager</b>"
+msgstr ""
+"Allt klart!\\n<b>$NEWNAME</b> Rofi-tema har skapats.\\n\\nDu kan byta tema "
+"med <b>MX-Rofi-Hanterare</b>"
+
+#: ../mx-rofi-manager:1462
+#, sh-format
+msgid "All done!\\n<b>$NEWNAME</b> has been set as the current rofi theme."
+msgstr "Allt klart!\\n<b>$NEWNAME</b> har blivit nuvarande rofi-tema."
+
+#: ../mx-rofi-manager:1092
+#, sh-format
+msgid "All done!\\nFont of the current rofi theme has been amended."
+msgstr "Allt klart!\\nNuvarande rofi-temas typsnitt har ändrats."
+
+#: ../mx-rofi-manager:917
+#, sh-format
+msgid ""
+"All done!\\nPosition and size of the current rofi theme have been amended."
+msgstr "Allt klart!\\nPosition och storlek på nuvarande rofi-tema har ändrats."
+
+#. ########
+#: ../mx-rofi-manager:462
+#, sh-format
+msgid "All done!\\n\\n<b>$NEWTHEME</b> has been set as the current rofi theme.\\n\\n"
+msgstr "Allt klart!\\n\\n<b>$NEWTHEME</b> har blivit nuvarande rofi-tema.\\n\\n"
+
+#: ../mx-rofi-manager:578
+msgid "All done!\\n\\nTab configuration has been updated.\\n\\n"
+msgstr "Allt klart!\\n\\nFlik-konfiguration har uppdaterats.\\n\\n"
+
+#: ../mx-rofi-manager:1607
+msgid "Change the current rofi theme"
+msgstr "Byt nuvarande rofi-tema"
+
+#: ../mx-rofi-manager:1610
+msgid "Change the font of the current Rofi window"
+msgstr "Ändra nuvarande Rofi-fönsters typsnitt"
+
+#: ../mx-rofi-manager:1608
+msgid "Change the functions (<i> modi </i>) of the rofi tabs"
+msgstr "Ändra funktionerna (<i> modi </i>) på rofi-flikarna"
+
+#: ../mx-rofi-manager:1609
+msgid "Change the location and size of the current Rofi window"
+msgstr "Ändra plats och storlek på nuvarande Rofi-fönster"
+
+#: ../mx-rofi-manager:1612
+msgid "Edit a rofi theme config file in text editor"
+msgstr "Redigera ett rofi-temas konfigurationsfil med en textredigerare"
+
+#: ../mx-rofi-manager:1049
+msgid "Font"
+msgstr "Typsnitt"
+
+#: ../mx-rofi-manager:420
+#, sh-format
+msgid "Global settings are blocked for"
+msgstr "Globala inställningar är blockerade för"
+
+#: ../mx-rofi-manager:831
+msgid "Height (number of lines shown in list)"
+msgstr "Höjd (antal rader som visas i lista)"
+
+#: ../mx-rofi-manager:494
+msgid ""
+"If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or "
+"<i>Ctrl + Tab</i>\\n"
+msgstr ""
+"Om ett tema inte visar flikar, byt flikar med <i>Skift + Pil</i> eller "
+"<i>Ctrl + Tab</i>\\n"
+
+#: ../mx-rofi-manager:1241 ../mx-rofi-manager:1267
+msgid "Inactive Tab Background"
+msgstr "Inaktiv flik-bakgrund"
+
+#: ../mx-rofi-manager:1242 ../mx-rofi-manager:1268
+msgid "Inactive Tab Text"
+msgstr "Inaktiv fliktext"
+
+#: ../mx-rofi-manager:827
+msgid "Location of rofi window on the screen"
+msgstr "Plats för rofi-fönster på skärmen"
+
+#: ../mx-rofi-manager:1578
+msgid ""
+"MX Rofi manager provides a fast and easy way to manipulate the handy app rofi and its many possible functions (\"modi\"). Available actions:\n"
+"--select the functions to be shown\n"
+"--switch the current theme\n"
+"--adjust colors, font and position (default themes only)\n"
+"--edit themes manually\n"
+"--access documentation\n"
+"For more details, consult the rofi \"help\" tab.\n"
+msgstr ""
+"MX Rofi hanterare är ett snabbt och enkelt sätt att hantera den praktiska appen rofi och dess många funktionsmöjligheter (\"modi\"). Möjliga åtgärder:\n"
+"--välj funktioner som ska visas\n"
+"--byt nuvarande tema\n"
+"--justera färger, typsnitt och position (bara för standardtema)\n"
+"--redigera teman manuellt\n"
+"--läs dokumentation\n"
+"För mer detaljer, konsultera rofi \"hjälp\"-flik.\n"
+
+#: ../mx-rofi-manager:608 ../mx-rofi-manager:1574
+msgid "MX-Rofi-Help"
+msgstr "MX-Rofi-Hjälp"
+
+#. ##################################################################
+#. ##################################################################
+#. MAIN WINDOW
+#: ../mx-rofi-manager:1602
+msgid "MX-Rofi-Manager"
+msgstr "MX-Rofi-Hanterare"
+
+#. mxrr MX-comfort-rofi-recolor
+#. Tool to edit colors in MX-comfort rofi theme
+#. V.0.6 by Melber and MX Devs, 09 September 2022
+#. License: GPL-3.0+
+#. define some variables
+#: ../mx-rofi-manager:1117
+msgid "MX-Rofi-Recolor"
+msgstr "MX-Rofi-Färgbyte"
+
+#: ../mx-rofi-manager:1204 ../mx-rofi-manager:1250
+msgid "MX-Rofi-Recolor Help"
+msgstr "MX-Rofi-Färgbyte Hjälp"
+
+#: ../mx-rofi-manager:1347
+msgid "New theme name"
+msgstr "Nytt temanamn"
+
+#: ../mx-rofi-manager:1345
+msgid "No Theme name!"
+msgstr "Inget temanamn!"
+
+#: ../mx-rofi-manager:395 ../mx-rofi-manager:562 ../mx-rofi-manager:898
+#: ../mx-rofi-manager:1080
+#, sh-format
+msgid "No change to current settings!\\n"
+msgstr "Inga ändringar på nuvarande inställningar!\\n"
+
+#: ../mx-rofi-manager:353
+msgid "No theme selected."
+msgstr "Inget tema valt."
+
+#: ../mx-rofi-manager:1147
+msgid ""
+"No theme selected.\\n\\n<b>MX-comfort</b> will be used as the starting "
+"theme."
+msgstr ""
+"Inget tema valt.\\n\\n<b>MX-comfort</b> kommer att användas som starttema.."
+
+#. #begin message box
+#: ../mx-rofi-manager:51
+msgid "OK to proceed?"
+msgstr "OK att fortsätta?"
+
+#: ../mx-rofi-manager:1385
+#, sh-format
+msgid "Overwrite $NEWNAME"
+msgstr "Skriv över $NEWNAME"
+
+#: ../mx-rofi-manager:1611
+msgid "Recolor a rofi theme based on MX-comfort"
+msgstr "Byt färger på ett rofi-tema baserat på MX-comfort"
+
+#: ../mx-rofi-manager:1251
+msgid "Return to Main Window"
+msgstr "Återvänd till huvudfönstret"
+
+#: ../mx-rofi-manager:1489
+msgid "Rofi-Edit"
+msgstr "Rofi-Redigera"
+
+#: ../mx-rofi-manager:942
+msgid "Rofi-Font"
+msgstr "Rofi-Typsnitt"
+
+#: ../mx-rofi-manager:596
+msgid "Rofi-Position"
+msgstr "Rofi-Position"
+
+#: ../mx-rofi-manager:477
+msgid "Rofi-Tab-Selector"
+msgstr "Rofi-flikväljare"
+
+#: ../mx-rofi-manager:180
+msgid "Rofi-Theme"
+msgstr "Rofi-Tema"
+
+#: ../mx-rofi-manager:1385
+msgid "Save as different theme name"
+msgstr "Spara som annat temanamn"
+
+#: ../mx-rofi-manager:1239 ../mx-rofi-manager:1265
+msgid "Searchbar Background"
+msgstr "Sökruta bakgund"
+
+#: ../mx-rofi-manager:1240 ../mx-rofi-manager:1266
+msgid "Searchbar Text"
+msgstr "Sökruta text"
+
+#: ../mx-rofi-manager:1246 ../mx-rofi-manager:1284
+msgid "Selection Background"
+msgstr "Val bakgrund"
+
+#: ../mx-rofi-manager:1247 ../mx-rofi-manager:1285
+msgid "Selection Text"
+msgstr "Val text"
+
+#: ../mx-rofi-manager:323
+msgid "Settings"
+msgstr "Inställningar"
+
+#: ../mx-rofi-manager:693 ../mx-rofi-manager:996
+#, sh-format
+msgid ""
+"Sorry, the appearance settings for $ROFICURRENT can only be modified using "
+"global settings.\\n\\nWould you like to change to global settings?.\\n\\n"
+msgstr ""
+"Ledsen, utseende-inställningarna för $ROFICURRENT kan bara ändras med "
+"globala inställningarnas.\\n\\nVill du ändra de globala "
+"inställningarna?.\\n\\n"
+
+#: ../mx-rofi-manager:421
+msgid "Specific settings will be used"
+msgstr "Speciella inställningar kommer att användas"
+
+#. TEXTLOCMAIN2="$(eval_gettext 'The current appearance settings are
+#. <b>$TOGGLETEXTTRANS</b>\n')"
+#. FONTMAINTEXT2="$(eval_gettext 'The current appearance settings are
+#. <b>$TOGGLETEXTTRANS</b>\n')"
+#: ../mx-rofi-manager:823 ../mx-rofi-manager:1042
+#, sh-format
+msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
+msgstr "De nuvarande utseende-inställningarna är <b>$TOGGLETEXT</b>"
+
+#. TEXTTHEME3="$(eval_gettext 'The current theme is <b>$ROFICURRENT</b> and
+#. its settings are <b>$TOGGLETEXTTRANS</b>.')"
+#: ../mx-rofi-manager:300
+#, sh-format
+msgid ""
+"The current theme is <b>$ROFICURRENT</b> and its settings are "
+"<b>$TOGGLETEXT</b>."
+msgstr ""
+"Nuvarande tema är <b>$ROFICURRENT</b> och dess inställningar är "
+"<b>$TOGGLETEXT</b>."
+
+#: ../mx-rofi-manager:1364
+#, sh-format
+msgid "Theme name $NEWNAME is protected. Choose another name"
+msgstr "Temanamn $NEWNAME är skyddat. Välj ett annat namn"
+
+#: ../mx-rofi-manager:48
+#, sh-format
+msgid ""
+"This tool edits the rofi config file.\\n\\nThe existing file will be backed "
+"up as \\n\\n<b>$HOME/.restore/rofi/config.rasi_$NOW</b>"
+msgstr ""
+"Detta verktyg redigerar rofi konfigurationsfil.\\n\\nDen existerande filen "
+"kommer att backas upp som \\n\\n<b>$HOME/.restore/rofi/config.rasi_$NOW</b>"
+
+#: ../mx-rofi-manager:1237 ../mx-rofi-manager:1263
+msgid "Title Background"
+msgstr "Titelbakgrund"
+
+#: ../mx-rofi-manager:1238 ../mx-rofi-manager:1264
+msgid "Title Text"
+msgstr "Titeltext"
+
+#: ../mx-rofi-manager:830
+msgid "Width (percentage of screen width)"
+msgstr "Bredd (procent av skärmbredd)"
+
+#. select starting style
+#: ../mx-rofi-manager:1132
+msgid "\\n<b> Choose which theme to use as a starting point</b>\\n"
+msgstr "\\n<b> Välj vilket tema som ska användas som startpunkt</b>\\n"
+
+#: ../mx-rofi-manager:296
+msgid ""
+"<b>Select appearance settings and theme to use</b> (double-click for "
+"preview)."
+msgstr ""
+"<b>Välj inställningar för utseende och tema som ska användas</b> "
+"(dubbelklicka för förhandsvisning)."
+
+#. select theme
+#: ../mx-rofi-manager:1515
+msgid ""
+"\\n<b>Select the rofi theme you wish to edit</b>\\n\\nThe .rasi file will be"
+" opened in your preferred text editor\\n\\n"
+msgstr ""
+"\\n<b>Välj det rofi-tema du vill redigera</b>\\n\\n.rasi filen kommer att "
+"öppnas med den textredigerare du föredrar\\n\\n"
+
+#: ../mx-rofi-manager:485
+msgid "<b>Select which tabs rofi should display</b>\\n"
+msgstr "<b>Välj vilka flikar rofi ska visa</b>\\n"
+
+#: ../mx-rofi-manager:1539
+#, sh-format
+msgid ""
+"\\nThe theme to be edited has been saved in\\n<b>$ROFIPATH</b> "
+"as\\n\\n<b>$EDITTHEMECOPY</b>\\n\\n"
+msgstr ""
+"\\nTemat som ska redigeras har sparats in\\n<b>$ROFIPATH</b> "
+"som\\n\\n<b>$EDITTHEMECOPY</b>\\n\\n"
+
+#: ../mx-rofi-manager:487
+msgid "a powerful calculation engine"
+msgstr "en kraftfull kalkyleringsmotor"
+
+#: ../mx-rofi-manager:492
+msgid "a set of links about using rofi"
+msgstr "Ett set länkar om att använda rofi"
+
+#: ../mx-rofi-manager:489
+msgid "displays all available executable files"
+msgstr "visar alla tillgängliga körbara filer"
+
+#: ../mx-rofi-manager:491
+msgid "enables easy switching"
+msgstr "gör byte lätt"
+
+#: ../mx-rofi-manager:488
+msgid "fast access to files"
+msgstr "snabb tillgång till filer"
+
+#: ../mx-rofi-manager:1184
+msgid "mxrr-color-selector"
+msgstr "mxrr-färg-väljare"
+
+#: ../mx-rofi-manager:490
+msgid "opens a secure shell"
+msgstr "öppnar ett secure shell"
+
+#: ../mx-rofi-manager:493
+msgid "tab will not be shown\\n\\n"
+msgstr "flik kommer inte att visas\\n\\n"
+
+#: ../mx-rofi-manager:486
+msgid "the MX default that displays available apps"
+msgstr "MX standard som visar tillgängliga appar"

@@ -2,19 +2,19 @@ Format: 1.0
 Source: mx-rofi-manager
 Binary: mx-rofi-manager
 Architecture: all source
-Version: 22.12.21
+Version: 23.01.02
 Checksums-Md5:
- e89a01973e9abb068e8bdebeda23e02b 605 mx-rofi-manager_22.12.21.dsc
- 064f2868e27fcda45172f8f84d8f66ff 323568 mx-rofi-manager_22.12.21_all.deb
+ a5cd3a2e2314fa05f3ef28569db0de0c 605 mx-rofi-manager_23.01.02.dsc
+ f4eef3d853d9728098980b5b4f9e29ab 327504 mx-rofi-manager_23.01.02_all.deb
 Checksums-Sha1:
- ca59883eac70341dd10d2583f503ec9c10b9cf2b 605 mx-rofi-manager_22.12.21.dsc
- c4b484fc76b2515979585be4be22921e45b69727 323568 mx-rofi-manager_22.12.21_all.deb
+ db7d737fd726c6325c468fbff8c6b77ec1923b3e 605 mx-rofi-manager_23.01.02.dsc
+ 2533afe3882591b930adca5afb635becbab267bd 327504 mx-rofi-manager_23.01.02_all.deb
 Checksums-Sha256:
- c26392948eebf9f8bad173c84cd016d9c243a42d2c2254e46a3ccd81ac582752 605 mx-rofi-manager_22.12.21.dsc
- 4f68b9f21fd9ddaf2b0d4a55b8ed530be43e5e8b801c85102b256410de9efb4a 323568 mx-rofi-manager_22.12.21_all.deb
+ 340bf19c097aa46281c8a266f7f49daadd3e02fce90b0185f6bbeceb4cefcbc2 605 mx-rofi-manager_23.01.02.dsc
+ 6e9fbf6db7280638d6b6fabd55ac3c311181d38a798c00dfe91abb3f2d8d63c4 327504 mx-rofi-manager_23.01.02_all.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Wed, 21 Dec 2022 06:16:20 -0500
+Build-Date: Mon, 02 Jan 2023 19:23:29 -0500
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
  usr-local-has-libraries
@@ -176,4 +176,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1671621242"
+ SOURCE_DATE_EPOCH="1672676521"

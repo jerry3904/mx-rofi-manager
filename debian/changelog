@@ -1,4 +1,4 @@
-mx-rofi-manager (23.01.02) UNRELEASED; urgency=medium
+mx-rofi-manager (23.01.02) mx; urgency=medium
 
   * created 3 additional tabs
   * extended x and y offset to 500
