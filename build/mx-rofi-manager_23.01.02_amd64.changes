@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Mon, 02 Jan 2023 11:22:01 -0500
+Source: mx-rofi-manager
+Binary: mx-rofi-manager
+Architecture: source all
+Version: 23.01.02
+Distribution: mx
+Urgency: medium
+Maintainer: Jerry3904<jerry@mxlinux.org>
+Changed-By: Jerry <jb@mx>
+Description:
+ mx-rofi-manager - Manager of rofi themes and settings
+Changes:
+ mx-rofi-manager (23.01.02) mx; urgency=medium
+ .
+   * created 3 additional tabs
+   * extended x and y offset to 500
+   * used consistent case for "rofi" on main screen
+Checksums-Sha1:
+ db7d737fd726c6325c468fbff8c6b77ec1923b3e 605 mx-rofi-manager_23.01.02.dsc
+ 194f12865dfc94a17f75258f1e31c0927b093114 1836148 mx-rofi-manager_23.01.02.tar.xz
+ 2533afe3882591b930adca5afb635becbab267bd 327504 mx-rofi-manager_23.01.02_all.deb
+ ee1f415019c9d69a83a4dd77eda073a13dd26104 5278 mx-rofi-manager_23.01.02_amd64.buildinfo
+Checksums-Sha256:
+ 340bf19c097aa46281c8a266f7f49daadd3e02fce90b0185f6bbeceb4cefcbc2 605 mx-rofi-manager_23.01.02.dsc
+ b35f934eb54041fde3096fe37ccf0ce3db4c901b7143ffb0c31af7b0d4e8a59a 1836148 mx-rofi-manager_23.01.02.tar.xz
+ 6e9fbf6db7280638d6b6fabd55ac3c311181d38a798c00dfe91abb3f2d8d63c4 327504 mx-rofi-manager_23.01.02_all.deb
+ 8b1e4a5627fa28944e7be02c906a12a94b336036650dbc523b04a182f6f8935a 5278 mx-rofi-manager_23.01.02_amd64.buildinfo
+Files:
+ a5cd3a2e2314fa05f3ef28569db0de0c 605 desktop optional mx-rofi-manager_23.01.02.dsc
+ be1eafd79bee4c8acba23484a502792c 1836148 desktop optional mx-rofi-manager_23.01.02.tar.xz
+ f4eef3d853d9728098980b5b4f9e29ab 327504 desktop optional mx-rofi-manager_23.01.02_all.deb
+ 51045b5bc2861cd5a0a17019ba1b5639 5278 desktop optional mx-rofi-manager_23.01.02_amd64.buildinfo
