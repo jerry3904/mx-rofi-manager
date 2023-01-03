@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Dolphin Oracle <dolphinoracle@gmail.com>, 2022
 # marcelo cripe <marcelocripe@gmail.com>, 2022
+# Dolphin Oracle <dolphinoracle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-02 14:28-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: marcelo cripe <marcelocripe@gmail.com>, 2022\n"
+"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/anticapitalista/teams/10162/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -217,7 +217,7 @@ msgstr "Alterar o tema atual do Rofi"
 
 #: ../mx-rofi-manager:1738
 msgid "Change the font of the current rofi window"
-msgstr ""
+msgstr "Alterar a fonte atual da janela do rofi"
 
 #: ../mx-rofi-manager:1736
 msgid "Change the functions (<i> modi </i>) of the rofi tabs"
@@ -225,7 +225,7 @@ msgstr "Alterar as funções do (<i> modo </i>) nas abas ou guias do Rofi"
 
 #: ../mx-rofi-manager:1737
 msgid "Change the location and size of the current rofi window"
-msgstr ""
+msgstr "Alterar a localização e o tamanho da janela atual do rofi"
 
 #: ../mx-rofi-manager:1740
 msgid "Edit a rofi theme config file in text editor"

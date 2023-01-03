@@ -5,8 +5,8 @@
 # 
 # Translators:
 # Transifex Bot <>, 2022
-# Dolphin Oracle <dolphinoracle@gmail.com>, 2022
 # Green, 2023
+# Dolphin Oracle <dolphinoracle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-02 14:28-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: Green, 2023\n"
+"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/anticapitalista/teams/10162/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -201,7 +201,7 @@ msgstr "現在の rofi テーマを変更"
 
 #: ../mx-rofi-manager:1738
 msgid "Change the font of the current rofi window"
-msgstr ""
+msgstr "現在の rofi ウィンドウのフォントを変更"
 
 #: ../mx-rofi-manager:1736
 msgid "Change the functions (<i> modi </i>) of the rofi tabs"
@@ -209,7 +209,7 @@ msgstr "rofi タブの機能 (<i> modi </i>) を変更"
 
 #: ../mx-rofi-manager:1737
 msgid "Change the location and size of the current rofi window"
-msgstr ""
+msgstr "現在の rofi ウィンドウの場所と大きさを変更"
 
 #: ../mx-rofi-manager:1740
 msgid "Edit a rofi theme config file in text editor"
