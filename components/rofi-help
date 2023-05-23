@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ x"$@" = x">> general help" ];
+if [ x"$@" = x"general help" ];
 then
 killall rofi
 sleep 0.25
@@ -8,7 +8,7 @@ mx-viewer https://mxlinux.org/wiki/help-files/help-rofi/
 kill mx-viewer
 fi
 
-if [ x"$@" = x">> scripts" ];
+if [ x"$@" = x"scripts" ];
 then
 killall rofi
 sleep 0.25
@@ -16,7 +16,7 @@ rofi-sensible-terminal -e "man rofi-script"
 kill rofi-sensible-terminal
 fi
 
-if [ x"$@" = x">> recolor" ];
+if [ x"$@" = x"recolor" ];
 then
 killall rofi
 sleep 0.25
@@ -24,7 +24,7 @@ feh /usr/share/pixmaps/mxrr-help-recolor.png
 kill rofi-sensible-terminal
 fi
 
-if [ x"$@" = x">> theme format" ];
+if [ x"$@" = x"theme format" ];
 then
 killall rofi
 sleep 0.25
@@ -32,7 +32,7 @@ rofi-sensible-terminal -e "man rofi-theme"
 kill rofi-sensible-terminal
 fi
 
-if [ x"$@" = x">> detailed help" ];
+if [ x"$@" = x"detailed help" ];
 then
 killall rofi
 sleep 0.25
@@ -40,7 +40,7 @@ rofi-sensible-terminal -e "man rofi"
 kill rofi-sensible-terminal
 fi
 
-if [ x"$@" = x">> calc" ];
+if [ x"$@" = x"calc" ];
 then
 killall rofi
 sleep 0.25
@@ -48,15 +48,7 @@ featherpad /usr/share/rofi/calc-help
 kill featherpad
 fi
 
-if [ x"$@" = x">> categories" ];
-then
-killall rofi
-sleep 0.25
-featherpad /usr/share/rofi/categories-help
-kill featherpad
-fi
-
-if [ x"$@" = x">> position / size" ];
+if [ x"$@" = x"position / size" ];
 then
 killall rofi
 sleep 0.25
@@ -64,7 +56,7 @@ featherpad /usr/share/rofi/position-help
 kill featherpad
 fi
 
-if [ x"$@" = x">> runbox code" ];
+if [ x"$@" = x"runbox code" ];
 then
 killall rofi
 sleep 0.25
@@ -72,15 +64,11 @@ featherpad /usr/share/rofi/runbox_code
 kill featherpad
 fi
 
-echo ">> calc"
-echo ">> categories"
-echo ">> detailed help"
-echo ">> general help"
-echo ">> position / size"
-echo ">> recolor"
-echo ">> runbox code"
-echo ">> scripts"
-echo ">> theme format"
-
-
-
+echo -e "calc\0icon\x1fhelp-browser"
+echo -e "detailed help\0icon\x1fhelp-browser"
+echo -e "general help\0icon\x1fhelp-browser"
+echo -e "position / size\0icon\x1fhelp-browser"
+echo -e "recolor\0icon\x1fhelp-browser"
+echo -e "runbox code\0icon\x1fhelp-browser"
+echo -e "scripts\0icon\x1fhelp-browser"
+echo -e "theme format\0icon\x1fhelp-browser"
