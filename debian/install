@@ -1,4 +1,4 @@
-components/*-help usr/share/rofi
+components/*-help* usr/share/rofi
 components/runbox_code usr/share/rofi
 components/config.rasi usr/share/rofi
 components/template-*.rasi usr/share/mxrr
