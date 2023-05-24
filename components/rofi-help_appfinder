@@ -1,0 +1,19 @@
+Appfinder (mxfb-appfinder)
+
+TAB ICONS
+X All apps - shows all apps
+Y Categories - filters apps according to the the selected category
+Z Help - this document
+
+CUSTOMIZATION
+
+Appfinder uses a unique pair of configuration files that are located in ~/.config/rofi/themes/appfinder.
+
+1. mxfb-appfinder-config.rasi: 
+--the "window" section sets position and size
+--the "color" section sets colors
+2. mxfb-appfinder.rasi: 
+--sets which tabs are displayed
+--imports other settings from the file above.
+
+Both files can be manually edited with a text editor such as Featherpad.
