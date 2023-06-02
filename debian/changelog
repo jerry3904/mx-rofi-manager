@@ -1,3 +1,9 @@
+mx-rofi-manager (23.05.27) UNRELEASED; urgency=medium
+
+  * updated appfinder help tab and text for new app
+
+ -- Jerry <jb@mx>  Thu, 01 Jun 2023 21:32:34 -0400
+
 mx-rofi-manager (23.05.26) mx; urgency=medium
 
   * created script for so appfinder help would function

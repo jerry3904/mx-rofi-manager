@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ x"$@" = x"appfinder" ];
+if [ x"$@" = x"Appfinder" ];
 then
 killall rofi
 sleep 0.25
@@ -8,4 +8,12 @@ featherpad /usr/share/rofi/appfinder-help
 kill featherpad
 fi
 
-echo -e "appfinder\0icon\x1fhelp-browser"
+if [ x"$@" = x"Settings" ];
+then
+killall rofi
+sleep 0.25
+bash /bin/appfinder-settings
+fi
+
+echo -e "Appfinder\0icon\x1fhelp-browser"
+echo -e "Settings\0icon\x1fhelp-browser"
