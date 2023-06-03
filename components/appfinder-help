@@ -1,4 +1,5 @@
 Appfinder (mxfb-appfinder)
+----------------
 
 TAB ICONS
 
@@ -6,18 +7,13 @@ TAB ICONS
  Categories - filters apps according to the the selected category
  Help - this document
 
+TABS NOT SHOWN
+ Filebrowser - a basic file browser for opening files
+ Window - show open windows and switch between them
+
 CUSTOMIZATION
 
-Appfinder uses a unique pair of configuration files that are located in ~/.config/rofi/themes/appfinder.
-
-1. mxfb-appfinder-config.rasi: 
---the "window" section sets position and size
---the "color" section sets colors
-2. mxfb-appfinder.rasi: 
---sets which tabs are displayed
---imports other settings from the file above.
-
-Both files can be manually edited with a text editor such as Featherpad.
+Appearance, size and position can be changed using  Help > Settings
 
 
 *****DE*****
@@ -27,18 +23,14 @@ TAB-SYMBOLE
  Kategorien - filtert Apps nach der ausgewählten Kategorie
  Hilfe - dieses Dokument
 
+NICHT ANGEZEIGTE TABS
+
+ Dateibrowser - ein einfacher Dateibrowser zum Öffnen von Dateien
+ Fenster - zeigt offene Fenster an und schaltet zwischen ihnen um
+
 ANPASSUNG
 
-Appfinder verwendet zwei Konfigurationsdateien, die sich in ~/.config/rofi/themes/appfinder befinden.
-
-1. mxfb-appfinder-config.rasi: 
--der Abschnitt "window" legt Position und Größe fest
--der Abschnitt "color" legt die Farben fest
-2. mxfb-appfinder.rasi: 
--Legt fest, welche Registerkarten angezeigt werden
--importiert andere Einstellungen aus der obigen Datei.
-
-Beide Dateien können manuell mit einem Texteditor wie z.B. Featherpad bearbeitet werden.
+Erscheinungsbild, Größe und Position können über  Hilfe > Einstellungen geändert werden.
 
 *****ES*****
 ICONOS DE LA PESTAÑA
@@ -47,18 +39,14 @@ ICONOS DE LA PESTAÑA
  Categorías - filtra las aplicaciones según la categoría seleccionada
  Ayuda - este documento
 
+PESTAÑAS NO MOSTRADAS
+
+ Navegador de archivos - un navegador de archivos básico para abrir archivos
+ Ventana - muestra las ventanas abiertas y cambia entre ellas
+
 PERSONALIZACIÓN
 
-Appfinder utiliza un par único de archivos de configuración que se encuentran en ~/.config/rofi/themes/appfinder.
-
-1. mxfb-appfinder-config.rasi: 
---la sección "ventana" establece la posición y el tamaño
---la sección "color" establece los colores
-2. mxfb-appfinder.rasi: 
---establece qué pestañas se muestran
---importa otros ajustes del archivo anterior.
-
-Ambos archivos pueden editarse manualmente con un editor de texto como Featherpad.
+El aspecto, el tamaño y la posición pueden modificarse mediante Ayuda > Configuración.
 
 *****EL*****
 ΤΑΜΠ ICONS
@@ -67,18 +55,14 @@ Ambos archivos pueden editarse manualmente con un editor de texto como Featherpa
  Κατηγορίες - φιλτράρει τις εφαρμογές σύμφωνα με την επιλεγμένη κατηγορία
  Βοήθεια - αυτό το έγγραφο
 
+ΤΑΜΠΕΣ ΔΕΝ ΕΙΔΟΝΤΑΙ
+
+ Filebrowser - ένα βασικό πρόγραμμα περιήγησης αρχείων για το άνοιγμα αρχείων
+ Παράθυρο - εμφάνιση των ανοικτών παραθύρων και εναλλαγή μεταξύ τους
+
 ΠΡΟΣΑΡΜΟΓΗ
 
-Το Appfinder χρησιμοποιεί ένα μοναδικό ζεύγος αρχείων διαμόρφωσης που βρίσκονται στο ~/.config/rofi/themes/appfinder.
-
-1. mxfb-appfinder-config.rasi: 
--το τμήμα "window" ορίζει τη θέση και το μέγεθος
--το τμήμα "color" ορίζει τα χρώματα
-2. mxfb-appfinder.rasi: 
--ορίζει ποιες καρτέλες εμφανίζονται
---μεταφέρει άλλες ρυθμίσεις από το παραπάνω αρχείο.
-
-Και τα δύο αρχεία μπορούν να επεξεργαστούν χειροκίνητα με έναν επεξεργαστή κειμένου όπως το Featherpad.
+Η εμφάνιση, το μέγεθος και η θέση μπορούν να αλλάξουν χρησιμοποιώντας τη  Βοήθεια > Ρυθμίσεις.
 
 *****FR*****
 TAB ICONS
@@ -87,18 +71,14 @@ TAB ICONS
  Catégories - filtre les applications en fonction de la catégorie sélectionnée
  Aide - ce document
 
+ONGLETS NON AFFICHÉS
+
+ Filebrowser - un navigateur de base pour ouvrir des fichiers
+ Fenêtre - affiche les fenêtres ouvertes et permet de passer de l'une à l'autre
+
 PERSONNALISATION
 
-Appfinder utilise une paire unique de fichiers de configuration qui sont situés dans ~/.config/rofi/themes/appfinder.
-
-1. mxfb-appfinder-config.rasi : 
---la section "window" définit la position et la taille de la fenêtre
---la section "color" définit les couleurs
-2. mxfb-appfinder.rasi : 
---détermine les onglets à afficher
---importe d'autres paramètres du fichier ci-dessus.
-
-Les deux fichiers peuvent être édités manuellement avec un éditeur de texte tel que Featherpad.
+L'apparence, la taille et la position peuvent être modifiées en utilisant  Aide > Paramètres.
 
 
 *****IT*****
@@ -108,18 +88,14 @@ TAB ICONE
  Categorie - filtra le app in base alla categoria selezionata
  Aiuto - questo documento
 
+TABS NON MOSTRATI
+
+ Filebrowser - un browser di file di base per aprire i file
+ Finestra - mostra le finestre aperte e passa dall'una all'altra.
+
 PERSONALIZZAZIONE
 
-Appfinder utilizza una coppia unica di file di configurazione che si trovano in ~/.config/rofi/themes/appfinder.
-
-1. mxfb-appfinder-config.rasi: 
--la sezione "finestra" imposta la posizione e le dimensioni
--la sezione "colore" imposta i colori
-2. mxfb-appfinder.rasi: 
--imposta quali schede vengono visualizzate
---importa altre impostazioni dal file precedente.
-
-Entrambi i file possono essere modificati manualmente con un editor di testo come Featherpad.
+L'aspetto, la dimensione e la posizione possono essere modificati utilizzando  Aiuto > Impostazioni.
 
 *****JA*****
 TAB ICONS
@@ -128,18 +104,14 @@ TAB ICONS
  Categories - 選択したカテゴリに従ってアプリをフィルタリングします。
  Help - このドキュメントを表示します。
 
+表示されないタブ
+
+ Filebrowser - ファイルを開くための基本的なファイルブラウザです。
+ Window - 開いているウィンドウを表示したり、ウィンドウを切り替えたりします。
+
 カスタマイズ
 
-Appfinderは、~/.config/rofi/themes/appfinderにある独自の設定ファイルのペアを使用します。
-
-1. mxfb-appfinder-config.rasi： 
--"window "セクションは、位置と大きさを設定します。
---color "セクションは色を設定します。
-2. mxfb-appfinder.rasi： 
--どのタブを表示するか設定します
---imported other settings from the file above.
-
-どちらのファイルも、Featherpadなどのテキストエディタで手動で編集することができます。
+外観、サイズ、位置は、「ヘルプ」→「設定」で変更できます。
 
 *****PL*****
 TAB ICONS
@@ -148,18 +120,14 @@ TAB ICONS
  Kategorie - filtruje aplikacje według wybranej kategorii
  Pomoc - ten dokument
 
+ZAKŁADKI NIE POKAZANE
+
+ Filebrowser - podstawowa przeglądarka plików do otwierania plików
+ Okno - wyświetla otwarte okna i przełącza się między nimi
+
 DOSTOSOWYWANIE
 
-Appfinder używa unikalnej pary plików konfiguracyjnych, które znajdują się w ~/.config/rofi/themes/appfinder.
-
-1. mxfb-appfinder-config.rasi: 
---sekcja "window" ustawia pozycję i rozmiar
---sekcja "color" ustawia kolory
-2. mxfb-appfinder.rasi: 
--ustawia, które zakładki są wyświetlane
---importuje inne ustawienia z powyższego pliku.
-
-Oba pliki można edytować ręcznie za pomocą edytora tekstu, takiego jak Featherpad. 
+Wygląd, rozmiar i położenie można zmienić za pomocą opcji  Pomoc > Ustawienia.
 
 *****PT*****
 ÍCONES DO SEPARADOR
@@ -168,18 +136,14 @@ Oba pliki można edytować ręcznie za pomocą edytora tekstu, takiego jak Feath
  Categorias - filtra as aplicações de acordo com a categoria seleccionada
  Ajuda - este documento
 
+TABELAS NÃO MOSTRADAS
+
+ Filebrowser - um navegador de ficheiros básico para abrir ficheiros
+ Janela - mostra as janelas abertas e alterna entre elas
+
 PERSONALIZAÇÃO
 
-O Appfinder utiliza um par único de ficheiros de configuração que estão localizados em ~/.config/rofi/themes/appfinder.
-
-1. mxfb-appfinder-config.rasi: 
---a secção "window" define a posição e o tamanho
--a secção "color" define as cores
-2. mxfb-appfinder.rasi: 
---define que separadores são mostrados
---importa outras definições do ficheiro acima.
-
-Ambos os ficheiros podem ser editados manualmente com um editor de texto como o Featherpad.
+O aspecto, o tamanho e a posição podem ser alterados através de  Ajuda > Definições.
 
 *****RU*****
 ЗНАЧКИ ТАБОВ
@@ -188,18 +152,14 @@ Ambos os ficheiros podem ser editados manualmente com um editor de texto como o 
  Категории - фильтрует приложения в соответствии с выбранной категорией
  Справка - этот документ
 
+ТАБЛИЦЫ НЕ ПОКАЗАНЫ
+
+ Filebrowser - базовый файловый браузер для открытия файлов
+ Окно - отображение открытых окон и переключение между ними
+
 КАСТОМИЗАЦИЯ
 
-Appfinder использует уникальную пару конфигурационных файлов, которые находятся в ~/.config/rofi/themes/appfinder.
-
-1. mxfb-appfinder-config.rasi: 
--секция "window" устанавливает положение и размер.
--секция "color" устанавливает цвета
-2. mxfb-appfinder.rasi: 
--устанавливает, какие вкладки будут отображаться
--импортирует другие настройки из файла выше.
-
-Оба файла могут быть отредактированы вручную с помощью текстового редактора, такого как Featherpad.
+Внешний вид, размер и положение можно изменить с помощью  Справка > Настройки.
 
 *****SV*****
 TAB ICONS
@@ -208,18 +168,14 @@ TAB ICONS
  Kategorier - filtrerar appar enligt den valda kategorin
  Hjälp - det här dokumentet
 
+TABBAR SOM INTE VISAS
+
+ Filwebbläsare - en grundläggande filwebbläsare för att öppna filer
+ Fönster - visar öppna fönster och växlar mellan dem
+
 ANPASSNING
 
-Appfinder använder ett unikt par konfigurationsfiler som finns i ~/.config/rofi/themes/appfinder.
-
-1. mxfb-appfinder-config.rasi: 
---avsnittet "window" anger position och storlek.
--avsnittet "color" ställer in färger
-2. mxfb-appfinder.rasi: 
---inställer vilka flikar som visas
---importerar andra inställningar från filen ovan.
-
-Båda filerna kan redigeras manuellt med en textredigerare som Featherpad.
+Utseende, storlek och position kan ändras med hjälp av  Hjälp > Inställningar.
 
 *****ZH*****
 选项卡 ICONS
@@ -228,18 +184,14 @@ Båda filerna kan redigeras manuellt med en textredigerare som Featherpad.
  类别 - 根据所选类别过滤应用程序
  帮助 - 本文档
 
+未显示的选项卡
+
+ 文件浏览器 - 一个用于打开文件的基本文件浏览器
+ 窗口 - 显示打开的窗口并在它们之间切换
+
 定制
 
-Appfinder使用一对独特的配置文件，这些文件位于~/.config/rofi/themes/appfinder。
+外观、大小和位置可以通过帮助>设置来改变。
 
-1. mxfb-appfinder-config.rasi： 
---窗口 "部分设置位置和大小
---"颜色 "部分设置颜色
-2. mxfb-appfinder.rasi： 
---设置哪些标签被显示
---从上面的文件中导入其他设置。
-
-这两个文件都可以用文本编辑器（如Featherpad）进行手动编辑。
-
-
-Translated with www.DeepL.com/Translator (free version)
+-------------
+Translated with www.DeepL.com/Translator 
