@@ -1,10 +1,10 @@
 #!/bin/bash
 #Rofi-Manager
 #Tool to manage rofi settings
-#V.1.01 by Melber and MX Devs, 01 January 2023
+#Version 230604 by Melber and MX Devs
 #License: GPL-3.0+
 #mxrm-icon based on applications-development and applications-interfacedesign icons from papirus icon set
-#Changelog 1.01: tab selection increased to 6, maximum X and Y-offsets increased to 500, string corrections to match gettext translations
+#Changelog 230604: remove unnecessary copying of rasi files
 
 #set up translation
 
@@ -95,7 +95,7 @@ cp $HOME/.config/rofi/config.rasi $HOME/.restore/rofi/config.rasi_$(date -d "tod
 cp $ROFIPATH/MX-comfort.rasi $HOME/.restore/rofi/MX-comfort.rasi_$(date -d "today" +"%Y%m%d")
 
 cp -f /usr/share/rofi/config.rasi $HOME/.config/rofi/
-cp -f /usr/share/mxrr/MX-*.rasi $HOME/.config/rofi/themes/
+#cp -f /usr/share/mxrr/MX-*.rasi $HOME/.config/rofi/themes/
 cp -f /usr/share/mxrr/*-rr $HOME/.config/rofi/themes/
 cp -f /usr/share/mxrr/template*.rasi $HOME/.config/rofi/themes/mxrm-settings/
 cp -f /usr/share/mxrr/display* $HOME/.config/rofi/themes/mxrm-settings/
