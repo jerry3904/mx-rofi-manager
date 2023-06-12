@@ -16,4 +16,4 @@ bash /usr/bin/appfinder-settings
 fi
 
 echo -e "Appfinder\0icon\x1fhelp-browser"
-echo -e "Settings\0icon\x1fhelp-browser"
+echo -e "Settings\0icon\x1fpreferences"
