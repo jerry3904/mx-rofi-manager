@@ -12,7 +12,7 @@ if [ x"$@" = x"Settings" ];
 then
 killall rofi
 sleep 0.25
-bash /bin/appfinder-settings
+bash /usr/bin/appfinder-settings
 fi
 
 echo -e "Appfinder\0icon\x1fhelp-browser"
