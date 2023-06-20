@@ -1,6 +1,12 @@
 #!/bin/bash
 
-if [ x"$@" = x"Appfinder" ];
+TEXTDOMAINDIR=/usr/share/locale 
+export TEXTDOMAIN="mx-desktop-menu-l10n"
+
+AF_HELP="$(gettext 'Help')"
+AF_SETTINGS="$(gettext 'Settings')"
+
+if [ x"$@" = x"$AF_HELP" ];
 then
 killall rofi
 sleep 0.25
@@ -8,12 +14,12 @@ featherpad /usr/share/rofi/appfinder-help
 kill featherpad
 fi
 
-if [ x"$@" = x"Settings" ];
+if [ x"$@" = x"$AF_SETTINGS" ];
 then
 killall rofi
 sleep 0.25
 bash /usr/bin/appfinder-settings
 fi
 
-echo -e "Appfinder\0icon\x1fhelp-browser"
-echo -e "Settings\0icon\x1fpreferences"
+echo -e "$AF_HELP\0icon\x1fhelp-browser"
+echo -e "$AF_SETTINGS\0icon\x1fpreferences"
