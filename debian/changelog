@@ -1,9 +1,23 @@
-mx-rofi-manager (23.05.28) UNRELEASED; urgency=medium
+mx-rofi-manager (23.06.29) mx; urgency=medium
+
+  * include translations in rofi-help_appfinder
+  * ready for RC
+
+ -- Jerry <jb@mx>  Thu, 29 Jun 2023 08:35:55 -0400
+
+mx-rofi-manager (23.06.13) mx; urgency=medium
+
+  * rofi-help_appfinder - changed settings icon
+
+ -- Jerry <jb@mx>  Tue, 13 Jun 2023 15:43:29 -0400
+
+mx-rofi-manager (23.06.07) mx; urgency=medium
 
   * updated appfinder help tab and text for new app
   * revised rofi-help_appfinder
+  * removed unnecessary rofi files
 
- -- Jerry <jb@mx>  Fri, 02 Jun 2023 13:48:49 -0400
+ -- Jerry <jb@mx>  Wed, 07 Jun 2023 12:31:28 -0400
 
 mx-rofi-manager (23.05.26) mx; urgency=medium
 

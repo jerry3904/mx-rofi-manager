@@ -2,7 +2,6 @@ components/*-help* usr/share/rofi
 components/runbox_code usr/share/rofi
 components/config.rasi usr/share/rofi
 components/template-*.rasi usr/share/mxrr
-components/MX-*.rasi usr/share/mxrr
 components/MX-*-rr usr/share/mxrr
 components/*.desktop usr/share/applications
 components/*.png usr/share/pixmaps
