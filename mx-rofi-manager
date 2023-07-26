@@ -314,7 +314,7 @@ fi
 #################################
 
 
-fkey=1234
+fkey=$RANDOM
 
 yad --plug="$fkey" --tabnum=1 --form --text-align=left --separator="" \
 --field="$(gettext 'Settings')":CB "$CBCURRENT!$CBOTHER" \
