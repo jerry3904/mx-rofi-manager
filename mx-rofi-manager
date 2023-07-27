@@ -154,8 +154,8 @@ if [ "$TEMPTHEME" = '<b>---User---</b>' -o "$TEMPTHEME" = '<b>---Extras---</b>' 
 fi
 
 
-TEXTREQAWESOME=' (fonts-font-awesome recommended for tab icons)'
-TEMPTHEME=$(echo "${TEMPTHEME}" | sed -e "s/$TEXTREQAWESOME//g" )
+###TEXTREQAWESOME=' (fonts-font-awesome recommended for tab icons)'
+###TEMPTHEME=$(echo "${TEMPTHEME}" | sed -e "s/$TEXTREQAWESOME//g" )
 
 ROFIPATH="$HOME/.config/rofi/themes"
 ROFIPATHUSR="/usr/share/rofi/themes"
@@ -257,16 +257,16 @@ sed -i '/template/d' $ROFIPATH/tempdir/rasilist.txt
 
 #add requires font-awesome
 
-declare -a REQAWESOME=(MX-iconic)
+###declare -a REQAWESOME=(MX-iconic)
 
-for i in "${REQAWESOME[@]}"
+###for i in "${REQAWESOME[@]}"
 
-do
+###do
 
-	TEXTREQAWESOME=' (fonts-font-awesome recommended for tab icons)'
-	sed -i "s/$i/$i$TEXTREQAWESOME/g" $ROFIPATH/tempdir/rasilist.txt
+###	TEXTREQAWESOME=' (fonts-font-awesome recommended for tab icons)'
+	###sed -i "s/$i/$i$TEXTREQAWESOME/g" $ROFIPATH/tempdir/rasilist.txt
 
-done
+###done
 
 
 #select theme
@@ -358,7 +358,7 @@ fi
 ###################
 #remove font-awesome
 
-	NEWTHEME=$(echo "${NEWTHEME}" | sed -e "s/$TEXTREQAWESOME//g" )
+###	NEWTHEME=$(echo "${NEWTHEME}" | sed -e "s/$TEXTREQAWESOME//g" )
 
 ##################
 
@@ -367,21 +367,21 @@ fi
 if [ -f $ROFIPATHUSR/$NEWTHEME.rasi ]; then
 
 	ROFINEW="@theme \""$ROFIPATHUSR"/"$NEWTHEME".rasi"\"
-	CHECKAWESOME="$(grep "flag-for-font-awesome" $ROFIPATHUSR/$NEWTHEME.rasi)"
+###	CHECKAWESOME="$(grep "flag-for-font-awesome" $ROFIPATHUSR/$NEWTHEME.rasi)"
 	
 	elif
 	
 	[ -f $ROFIPATHEXTRA/$NEWTHEME.rasi ]; then
 
 	ROFINEW="@theme \""$ROFIPATHEXTRA"/"$NEWTHEME".rasi"\"
-	CHECKAWESOME="$(grep "flag-for-font-awesome" $ROFIPATHEXTRA/$NEWTHEME.rasi)"
+###	CHECKAWESOME="$(grep "flag-for-font-awesome" $ROFIPATHEXTRA/$NEWTHEME.rasi)"
 	
 	elif
 	
 	[ -f $ROFIPATH/$NEWTHEME.rasi ]; then
 
 	ROFINEW="@theme \""$ROFIPATH"/"$NEWTHEME".rasi"\"
-	CHECKAWESOME="$(grep "flag-for-font-awesome" $ROFIPATH/$NEWTHEME.rasi)"
+###	CHECKAWESOME="$(grep "flag-for-font-awesome" $ROFIPATH/$NEWTHEME.rasi)"
 	
 fi
 
@@ -423,41 +423,41 @@ fi
 
 
 
-if [ "$CHECKAWESOME" = "" ]; then
+###if [ "$CHECKAWESOME" = "" ]; then
 
-	CHECKDISPLAY="$(grep "display0" $HOME/.config/rofi/config.rasi )"
+###	CHECKDISPLAY="$(grep "display0" $HOME/.config/rofi/config.rasi )"
 	
-	if [ "$CHECKDISPLAY" != '//@import "/mxrm-settings/display0.rasi"' ]; then
+###	if [ "$CHECKDISPLAY" != '//@import "/mxrm-settings/display0.rasi"' ]; then
 	
-	DISPLAYOFF='//@import "/mxrm-settings/display0.rasi"'
-	DISPLAYOFF=$(echo "${DISPLAYOFF}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+###	DISPLAYOFF='//@import "/mxrm-settings/display0.rasi"'
+###	DISPLAYOFF=$(echo "${DISPLAYOFF}" | sed -e 's/[]$\/*[\^]/\\&/g' )
 	
-	DISPLAYON='@import "/mxrm-settings/display0.rasi"'
-	DISPLAYON=$(echo "${DISPLAYON}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+###	DISPLAYON='@import "/mxrm-settings/display0.rasi"'
+###	DISPLAYON=$(echo "${DISPLAYON}" | sed -e 's/[]$\/*[\^]/\\&/g' )
 
-	sed -i -e "s/${DISPLAYON}/${DISPLAYOFF}/g" $HOME/.config/rofi/config.rasi
+###	sed -i -e "s/${DISPLAYON}/${DISPLAYOFF}/g" $HOME/.config/rofi/config.rasi
 	
-	fi
+###	fi
 
-fi
+###fi
 
-if [ "$CHECKAWESOME" != "" ]; then
+###if [ "$CHECKAWESOME" != "" ]; then
 
-	CHECKDISPLAY="$(grep "display0" $HOME/.config/rofi/config.rasi )"
+###	CHECKDISPLAY="$(grep "display0" $HOME/.config/rofi/config.rasi )"
 	
-	if [ "$CHECKDISPLAY" != '@import "/mxrm-settings/display0.rasi"' ]; then
+###	if [ "$CHECKDISPLAY" != '@import "/mxrm-settings/display0.rasi"' ]; then
 	
-	DISPLAYOFF='//@import "/mxrm-settings/display0.rasi"'
-	DISPLAYOFF=$(echo "${DISPLAYOFF}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+###	DISPLAYOFF='//@import "/mxrm-settings/display0.rasi"'
+###	DISPLAYOFF=$(echo "${DISPLAYOFF}" | sed -e 's/[]$\/*[\^]/\\&/g' )
 	
-	DISPLAYON='@import "/mxrm-settings/display0.rasi"'
-	DISPLAYON=$(echo "${DISPLAYON}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+###	DISPLAYON='@import "/mxrm-settings/display0.rasi"'
+###	DISPLAYON=$(echo "${DISPLAYON}" | sed -e 's/[]$\/*[\^]/\\&/g' )
 
-	sed -i -e "s/${DISPLAYOFF}/${DISPLAYON}/g" $HOME/.config/rofi/config.rasi
+###	sed -i -e "s/${DISPLAYOFF}/${DISPLAYON}/g" $HOME/.config/rofi/config.rasi
 	
-	fi
+###	fi
 
-fi
+###fi
 
 
 ###################		
