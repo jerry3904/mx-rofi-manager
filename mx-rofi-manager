@@ -1,21 +1,17 @@
 #!/bin/bash
 #Rofi-Manager
 #Tool to manage rofi settings
-#Version 230604 by Melber and MX Devs
+#Version 24.01.01 by Melber and MX Devs
 #License: GPL-3.0+
 #mxrm-icon based on applications-development and applications-interfacedesign icons from papirus icon set
-#Changelog 230604: remove unnecessary copying of rasi files
+#Changelog 24.01.01: fix copying of rasi files for xfce
 
 #set up translation
-
 source gettext.sh
-
 export TEXTDOMAINDIR=/usr/share/locale 
 export TEXTDOMAIN="mx-rofi-manager"
 
-
 #define some variables
-
 ROFIPATH="$HOME/.config/rofi/themes"
 ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
 
@@ -24,30 +20,20 @@ trap "rm -r "$ROFIPATH/tempdir" " EXIT
 
 #
 if [ ! -d $ROFIPATH ]; then
-
 	mkdir $ROFIPATH
-
 fi
 
 #create tempdir
-
 if [ ! -d $ROFIPATH/tempdir ]; then
-
 	mkdir -p $ROFIPATH/tempdir
-
 fi
 
-
 #create mxrm-settings
-
 if [ ! -d $ROFIPATH/mxrm-settings ]; then
-
 	mkdir -p $ROFIPATH/mxrm-settings
-	
 fi
 	
 if [ ! -f $ROFIPATH/mxrm-settings/mxrm-settings.rasi ]; then
-	
 	echo "/**
  * ROFI mxrm-settings by Melber & MX-Devs
  */
@@ -71,52 +57,58 @@ lines: 12;
 fi
 
 
-
 # notify user and back up config.rasi if mx-rofi-manager has not already been launched
 
 if [ ! -f $HOME/.config/rofi/mxrm-check ]; then
-
-NOW=$(date +%Y"%m%d")
-
-MESSAGE="$(eval_gettext 'This tool edits the rofi config file.\n\nThe existing file will be backed up as \n\n<b>$HOME/.restore/rofi/config.rasi_$NOW</b>')"
+    NOW=$(date +%Y"%m%d")
+    MESSAGE="$(eval_gettext 'This tool edits the rofi config file.\n\nThe existing file will be backed up as \n\n<b>$HOME/.restore/rofi/config.rasi_$NOW</b>')"
 
 ##begin message box
-yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --width=350 --height=200 --text-align=center --text="\n\n$MESSAGE\n\n" --text-align=center --center --borders=20 --button="gtk-cancel":7 --button="$(gettext 'OK to proceed?')":6
+    yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --width=350 --height=200 \
+    --text-align=center --text="\n\n$MESSAGE\n\n" --text-align=center --center --borders=20 -- \
+    button="gtk-cancel":7 --button="$(gettext 'OK to proceed?')":6
 
+    if [ ! "$?" = "6" ]; then
+	    exit 0
+    else
+        mkdir -p $HOME/.restore/rofi/
+        cp $HOME/.config/rofi/config.rasi $HOME/.restore/rofi/config.rasi_$(date -d "today" +"%Y%m%d")
+        cp $ROFIPATH/MX-comfort.rasi $HOME/.restore/rofi/MX-comfort.rasi_$(date -d "today" +"%Y%m%d")
+        cp -f /usr/share/rofi/config.rasi $HOME/.config/rofi/
+        #cp -f /usr/share/mxrr/MX-*.rasi $HOME/.config/rofi/themes/
+        cp -f /usr/share/mxrr/*-rr $HOME/.config/rofi/themes/
+        cp -f /usr/share/mxrr/template*.rasi $HOME/.config/rofi/themes/mxrm-settings/
+        cp -f /usr/share/mxrr/display* $HOME/.config/rofi/themes/mxrm-settings/
+        cp -f /usr/share/rofi/themes/README $HOME/.config/rofi/themes/README
 
-if [ ! "$?" = "6" ]; then
+        if [ "${DESKTOP_SESSION##*/}" != "fluxbox" ]; then
+            cp -f /usr/share/mxrr/MX-*.rasi $HOME/.config/rofi/themes/
+        fi
 
-	exit 0
-		
-else
-
-mkdir -p $HOME/.restore/rofi/
-cp $HOME/.config/rofi/config.rasi $HOME/.restore/rofi/config.rasi_$(date -d "today" +"%Y%m%d")
-cp $ROFIPATH/MX-comfort.rasi $HOME/.restore/rofi/MX-comfort.rasi_$(date -d "today" +"%Y%m%d")
-
-cp -f /usr/share/rofi/config.rasi $HOME/.config/rofi/
-#cp -f /usr/share/mxrr/MX-*.rasi $HOME/.config/rofi/themes/
-cp -f /usr/share/mxrr/*-rr $HOME/.config/rofi/themes/
-cp -f /usr/share/mxrr/template*.rasi $HOME/.config/rofi/themes/mxrm-settings/
-cp -f /usr/share/mxrr/display* $HOME/.config/rofi/themes/mxrm-settings/
-cp -f /usr/share/rofi/themes/README $HOME/.config/rofi/themes/README
-
-echo '#mxrm-check
+        echo '#mxrm-check
 #do not delete, file used to set up MX-rofi-manager' > $HOME/.config/rofi/mxrm-check
-
-fi
+    fi
 fi
 
 
 #v0.11 edit config.rasi
 
-RASICHECK="$(grep "mxrm-settings" $HOME/.config/rofi/config.rasi)"
+RASI_CHECK2="$(grep "mxrm-settings" $HOME/.config/rofi/config.rasi)"
 
-if [ -z "$RASICHECK" ]; then
-	
+if [ -z "$RASI_CHECK2" ]; then
 	RASINEWLINE="@import \"/mxrm-settings/mxrm-settings.rasi\""
 	echo $RASINEWLINE >> $HOME/.config/rofi/config.rasi
-	
+fi
+
+FA_CHECK="$(fc-list | grep font-awesome)"
+RASI_CHECK="$(grep "display0" $HOME/.config/rofi/config.rasi )"
+
+if [ -z "$FA_CHECK" ]; then
+    if [ "$RASI_CHECK" != '//@import "/mxrm-settings/display0.rasi"' ]; then
+	    DISPLAYON='@import "/mxrm-settings/display0.rasi"'
+        DISPLAYOFF='//@import "/mxrm-settings/display0.rasi"'
+	    sed -i -e "s/${DISPLAYON}/${DISPLAYOFF}/g" $HOME/.config/rofi/config.rasi
+    fi
 fi
 
 
