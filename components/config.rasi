@@ -1,15 +1,14 @@
 configuration {
 	
-	modi: "drun,help:/usr/share/rofi/rofi-help";
+	modi: "drun";
 	show-icons: true;
-	icon-theme: "papirus";
-	//fake-transparency: true; << rofi 1.7 may require a compositor
+	icon-theme: "Papirus";
 	//sidebar-mode: true;
 }
 
-////
-//for use with iconic.rasi
+
 //@import "/mxrm-settings/display0.rasi"
-////
-@theme "~/.config/rofi/themes/MX-comfort.rasi"
-//@import "/mxrm-settings/mxrm-settings.rasi"
+
+@theme "/home/melber/.config/rofi/themes/MX-fancy.rasi"
+
+@import "/mxrm-settings/mxrm-settings.rasi"
