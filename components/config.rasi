@@ -9,6 +9,6 @@ configuration {
 
 //@import "/mxrm-settings/display0.rasi"
 
-@theme "/home/melber/.config/rofi/themes/MX-fancy.rasi"
+@theme "MX-fancy.rasi"
 
 @import "/mxrm-settings/mxrm-settings.rasi"
