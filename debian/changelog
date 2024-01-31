@@ -1,3 +1,10 @@
+mx-rofi-manager (24.01.01) mx; urgency=medium
+
+  * fix for non-mxfb installation
+  * update icon
+
+ -- Melber <melber.mx.linux@gmail.com>  Wed, 31 Jan 2024 22:22:01 +0100
+
 mx-rofi-manager (23.06.29) mx; urgency=medium
 
   * include translations in rofi-help_appfinder
