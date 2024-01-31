@@ -9,6 +9,6 @@ configuration {
 
 //@import "/mxrm-settings/display0.rasi"
 
-@theme "MX-fancy.rasi"
+@theme "MX-comfort.rasi"
 
 @import "/mxrm-settings/mxrm-settings.rasi"
