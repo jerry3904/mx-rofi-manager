@@ -1,53 +1,36 @@
 #!/bin/bash
-#Rofi-Manager
-#Tool to manage rofi settings
-#Version 230604 by Melber and MX Devs
+#MX-Rofi-Manager - A tool to manage rofi settings
+#Version 24.01.01 by Melber and MX Devs
 #License: GPL-3.0+
-#mxrm-icon based on applications-development and applications-interfacedesign icons from papirus icon set
-#Changelog 230604: remove unnecessary copying of rasi files
 
 #set up translation
-
 source gettext.sh
-
 export TEXTDOMAINDIR=/usr/share/locale 
 export TEXTDOMAIN="mx-rofi-manager"
 
-
 #define some variables
-
 ROFIPATH="$HOME/.config/rofi/themes"
-ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 
 #delete stylelist and tempclr after use
 trap "rm -r "$ROFIPATH/tempdir" " EXIT
 
 #
 if [ ! -d $ROFIPATH ]; then
-
 	mkdir $ROFIPATH
-
 fi
 
 #create tempdir
-
 if [ ! -d $ROFIPATH/tempdir ]; then
-
 	mkdir -p $ROFIPATH/tempdir
-
 fi
 
-
 #create mxrm-settings
-
 if [ ! -d $ROFIPATH/mxrm-settings ]; then
-
 	mkdir -p $ROFIPATH/mxrm-settings
-	
 fi
 	
 if [ ! -f $ROFIPATH/mxrm-settings/mxrm-settings.rasi ]; then
-	
 	echo "/**
  * ROFI mxrm-settings by Melber & MX-Devs
  */
@@ -71,52 +54,67 @@ lines: 12;
 fi
 
 
-
 # notify user and back up config.rasi if mx-rofi-manager has not already been launched
 
 if [ ! -f $HOME/.config/rofi/mxrm-check ]; then
-
-NOW=$(date +%Y"%m%d")
-
-MESSAGE="$(eval_gettext 'This tool edits the rofi config file.\n\nThe existing file will be backed up as \n\n<b>$HOME/.restore/rofi/config.rasi_$NOW</b>')"
+    NOW=$(date +%Y"%m%d")
+    MESSAGE="$(eval_gettext 'This tool edits the rofi config file.\n\nThe existing file will be backed up as \n\n<b>$HOME/.restore/rofi/config.rasi_$NOW</b>')"
+    
+    TITLE="$(gettext 'MX-Rofi-Manager')"
+    CLASS="mx-rofi-manager"
+    ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 
 ##begin message box
-yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --width=350 --height=200 --text-align=center --text="\n\n$MESSAGE\n\n" --text-align=center --center --borders=20 --button="gtk-cancel":7 --button="$(gettext 'OK to proceed?')":6
+    yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" --width=350 --height=200 \
+    --text-align=center --text="\n\n$MESSAGE\n\n" --text-align=center --center --borders=20 \
+    --button="gtk-cancel":4 --button="$(gettext 'OK to proceed?')":6
 
+    case $? in
 
-if [ ! "$?" = "6" ]; then
+    4 | 252 )
+	    exit 0
+	;;
+	
+    6 )
+        mkdir -p $HOME/.restore/rofi/
+        cp $HOME/.config/rofi/config.rasi $HOME/.restore/rofi/config.rasi_$(date -d "today" +"%Y%m%d")
+        cp $ROFIPATH/MX-comfort.rasi $HOME/.restore/rofi/MX-comfort.rasi_$(date -d "today" +"%Y%m%d")
+        cp -f /usr/share/rofi/config.rasi $HOME/.config/rofi/
+        #cp -f /usr/share/mxrr/MX-*.rasi $HOME/.config/rofi/themes/
+        cp -f /usr/share/mxrr/*-rr $HOME/.config/rofi/themes/
+        cp -f /usr/share/mxrr/template*.rasi $HOME/.config/rofi/themes/mxrm-settings/
+        cp -f /usr/share/mxrr/display* $HOME/.config/rofi/themes/mxrm-settings/
+        cp -f /usr/share/rofi/themes/README $HOME/.config/rofi/themes/README
 
-	exit 0
-		
-else
+        if [ "${DESKTOP_SESSION##*/}" != "fluxbox" ]; then
+            cp -f /usr/share/mxrr/MX-*.rasi $HOME/.config/rofi/themes/
+        fi
 
-mkdir -p $HOME/.restore/rofi/
-cp $HOME/.config/rofi/config.rasi $HOME/.restore/rofi/config.rasi_$(date -d "today" +"%Y%m%d")
-cp $ROFIPATH/MX-comfort.rasi $HOME/.restore/rofi/MX-comfort.rasi_$(date -d "today" +"%Y%m%d")
-
-cp -f /usr/share/rofi/config.rasi $HOME/.config/rofi/
-#cp -f /usr/share/mxrr/MX-*.rasi $HOME/.config/rofi/themes/
-cp -f /usr/share/mxrr/*-rr $HOME/.config/rofi/themes/
-cp -f /usr/share/mxrr/template*.rasi $HOME/.config/rofi/themes/mxrm-settings/
-cp -f /usr/share/mxrr/display* $HOME/.config/rofi/themes/mxrm-settings/
-cp -f /usr/share/rofi/themes/README $HOME/.config/rofi/themes/README
-
-echo '#mxrm-check
+        echo '#mxrm-check
 #do not delete, file used to set up MX-rofi-manager' > $HOME/.config/rofi/mxrm-check
-
-fi
+    ;;
+    esac
 fi
 
 
 #v0.11 edit config.rasi
 
-RASICHECK="$(grep "mxrm-settings" $HOME/.config/rofi/config.rasi)"
+RASI_CHECK2="$(grep "mxrm-settings" $HOME/.config/rofi/config.rasi)"
 
-if [ -z "$RASICHECK" ]; then
-	
+if [ -z "$RASI_CHECK2" ]; then
 	RASINEWLINE="@import \"/mxrm-settings/mxrm-settings.rasi\""
 	echo $RASINEWLINE >> $HOME/.config/rofi/config.rasi
-	
+fi
+
+FA_CHECK="$(fc-list | grep font-awesome)"
+RASI_CHECK="$(grep "display0" $HOME/.config/rofi/config.rasi )"
+
+if [ -z "$FA_CHECK" ]; then
+    if [ "$RASI_CHECK" != '//@import "/mxrm-settings/display0.rasi"' ]; then
+	    DISPLAYON='@import "/mxrm-settings/display0.rasi"'
+        DISPLAYOFF='//@import "/mxrm-settings/display0.rasi"'
+	    sed -i -e "s/${DISPLAYON}/${DISPLAYOFF}/g" $HOME/.config/rofi/config.rasi
+    fi
 fi
 
 
@@ -128,11 +126,11 @@ fi
 rofi_theme() {
 
 TITLE="$(gettext 'Rofi-Theme')"
-CLASS="mxrm"
+CLASS="mx-rofi-manager"
 ROFIPATH="$HOME/.config/rofi/themes"
 ROFIPATHUSR="/usr/share/rofi/themes"
 ROFIPATHEXTRA="/usr/share/rofi/themes/extra-themes"
-ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 source gettext.sh
 
 #################################
@@ -217,7 +215,8 @@ export -f rofi_preview
 rofi_help-theme() {
 
 TITLE="$(gettext 'MX-Rofi-Help')"
-CLASS="mxrm"
+CLASS="mx-rofi-manager"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 
 HELPTEXTTHEME="$(gettext '
 SPECIFIC AND GLOBAL SETTINGS
@@ -537,10 +536,10 @@ exit
 rofi_tabs() {
 
 TITLE="$(gettext 'Rofi-Tab-Selector')"
-CLASS="mxrm"
+CLASS="mx-rofi-manager"
 ROFIPATH="$HOME/.config/rofi/themes"
 ROFIPATHUSR="/usr/share/rofi/themes"
-ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 source gettext.sh
 
 
@@ -694,10 +693,10 @@ exit
 rofi_position() {
 
 TITLE="$(gettext 'Rofi-Position')"
-CLASS="mxrm"
+CLASS="mx-rofi-manager"
 ROFIPATH="$HOME/.config/rofi/themes"
 ROFIPATHUSR="/usr/share/rofi/themes"
-ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 source gettext.sh
 
 ###################################################################
@@ -706,7 +705,8 @@ source gettext.sh
 rofi_help-position() {
 
 TITLE="$(gettext 'MX-Rofi-Help')"
-CLASS="mxrm"
+CLASS="mx-rofi-manager"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 
 HELPTEXTPOS="$(gettext '
 TERMS
@@ -1047,10 +1047,10 @@ fi
 rofi_font() {
 
 TITLE="$(gettext 'Rofi-Font')"
-CLASS="mxrm"
+CLASS="mx-rofi-manager"
 ROFIPATH="$HOME/.config/rofi/themes"
 ROFIPATHUSR="/usr/share/rofi/themes"
-ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 source gettext.sh
 
 ###################################################################
@@ -1228,9 +1228,9 @@ rofi_recolor() {
 #define some variables
 
 TITLE="$(gettext 'MX-Rofi-Recolor')"
-CLASS="mxrm"
+CLASS="mx-rofi-manager"
 ROFIPATH="$HOME/.config/rofi/themes"
-ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 source gettext.sh
 
 #read available styles
@@ -1315,9 +1315,9 @@ echo "$BASESTYLE" > $ROFIPATH/tempdir/mxrrhelptemp.txt
 
 mxrrhelp() {
 TITLE="$(gettext 'MX-Rofi-Recolor Help')"
-CLASS="mxrm"
+CLASS="mx-rofi-manager"
 ROFIPATH="$HOME/.config/rofi/themes"
-ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 source gettext.sh
 
 read -r -a BASESTYLE < $ROFIPATH/tempdir/mxrrhelptemp.txt
@@ -1616,10 +1616,10 @@ exit
 rofi_edit() {
 
 TITLE="$(gettext 'Rofi-Edit')"
-CLASS="mxrm"
+CLASS="mx-rofi-manager"
 ROFIPATH="$HOME/.config/rofi/themes"
 ROFIPATHUSR="/usr/share/rofi/themes"
-ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 source gettext.sh
 
 #find editor
@@ -1700,8 +1700,8 @@ exit
 rofi_help() {
 
 TITLE="$(gettext 'MX-Rofi-Help')"
-CLASS="mxrm"
-ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
+CLASS="mx-rofi-manager"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 
 MXRMHELPTEXT="$(gettext 'MX Rofi manager provides a fast and easy way to manipulate the handy app rofi and its many possible functions ("modi"). Available actions:
 --select the functions to be shown
@@ -1728,8 +1728,8 @@ export -f rofi_help
 
 #MAIN WINDOW
 TITLE="$(gettext 'MX-Rofi-Manager')"
-CLASS="mxrm"
-ICONPATH="/usr/share/pixmaps/mxrm-icon.png"
+CLASS="mx-rofi-manager"
+ICONPATH="/usr/share/pixmaps/mxrm-icon.svg"
 
 TEXTMXRM="$(gettext '<b>Rofi Manager is a tool to configure rofi themes.\n\n<i>What would you like to do?</i></b>\n')\n"
 BUTTONTHEME="$(gettext 'Change the current rofi theme')"

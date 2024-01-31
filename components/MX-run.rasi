@@ -1,0 +1,114 @@
+/**
+ * ROFI Color theme by MX-Devs inspired by Qball.rasi by Dave Davenport
+ * Modified by MX Devs December 2022
+ * License: GPL
+ */
+
+* {
+    // MX-run
+    // with tabs
+    // mxrr template-run.rasi
+    font: "Noto sans 11";
+}
+
+* {
+    // Title background
+    color01: #1D2324;
+    // Title text not used
+    color02: #FF0000;
+    // Searchbar background
+    color03: #1D2324;
+    // Searchbar text
+    color04: #ffffff;
+    // Inctive tab background not used
+    color05: #FF0000;
+    // Inctive tab text
+    color06: #CACDD0;
+    // Active tab background not used
+    color07: #FF0000;
+    // Active tab text not used
+    color08: #FF0000;
+    // Active tab highlight
+    color09: #0f56d9;
+    // Selection background
+    color10: #29353B;
+    // Selection text 
+    color11: #ffffff;
+}
+
+* {
+    background-color:      @color01;
+	border-color:          @color09;
+	text-color:            @color04;
+}
+
+window {
+   anchor: north;
+   location: north;
+   y-offset: 0;
+   x-offset: 0;
+   width: 33%;
+   padding:    4px;
+   border: 6px 0px 0px 0px;
+   children:   [ horibox, textbox ];
+}
+
+horibox {
+    orientation: horizontal;
+    margin: 5px 0px 0px 0px;
+    children:   [ prompt, textbox-prompt-colon, entry, listview ];
+}
+
+prompt {
+    spacing:    0;
+    margin:     0em 0.25em 0em 0.5em ;
+    text-color: @color06;
+}
+
+textbox-prompt-colon {
+    expand:     false;
+    str:        ": ";
+    text-color: @color06;
+}
+
+entry {
+    expand:     false;
+    width:      10em;
+}
+
+listview {
+    layout:     horizontal;
+    //spacing:    5px;
+    lines:      100;
+}
+
+element {
+    padding: 2px;
+    //vertical-align: 0.5;
+    //horizontal-align: 0.5;
+}
+
+element selected {
+    background-color: @color10;
+    border: 1px;
+    border-color: @color09;
+    text-color: @color11;
+}
+
+element-text, element-icon {
+  background-color: inherit;
+  text-color: inherit;
+  //padding: 0px 40px 0px 0px;
+  //vertical-align: 0.5;
+  horizontal-align: 0.5;
+  expand: false;
+}
+
+textbox {
+    expand: false;
+    background-color: @color03;
+    text-color: @color06;
+    margin: 10px 0px 0px 10px;
+    font: "Noto Sans Italic 10";
+    content: "Run in terminal:   Shift + Enter";
+}
