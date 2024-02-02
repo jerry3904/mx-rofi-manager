@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+#Translator comment - this is name of application
+Name=Rofi Manager
+#Translator commnent - this is description for menu
+Comment=Easily change the rofi configuration
+Exec=mx-rofi-manager
+Icon=mxrm-icon
+Terminal=false
+ShowOnly=
+Categories=Settings;
+
+
+
