@@ -1,10 +1,9 @@
 [main]
 host = https://www.transifex.com
 
-[o:anticapitalista:p:antix-development:r:mx-rofi-manager]
+[antix-development.mx-rofi-manager]
 file_filter = po/mx-rofi-manager_<lang>.po
 source_file = mx-rofi-manager.pot
 source_lang = en
-type        = po
-minimum_perc = 25
+type = po
 

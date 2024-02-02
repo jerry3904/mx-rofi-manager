@@ -4,25 +4,25 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Besnik Bleta <besnik@programeshqip.org>, 2022
 # Dolphin Oracle <dolphinoracle@gmail.com>, 2023
+# Besnik Bleta <besnik@programeshqip.org>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 14:28-0500\n"
+"POT-Creation-Date: 2024-02-01 21:55-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
-"Language-Team: Albanian (https://www.transifex.com/anticapitalista/teams/10162/sq/)\n"
+"Last-Translator: Besnik Bleta <besnik@programeshqip.org>, 2023\n"
+"Language-Team: Albanian (https://app.transifex.com/anticapitalista/teams/10162/sq/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sq\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../mx-rofi-manager:222
+#: ../mx-rofi-manager:221
 msgid ""
 "\n"
 "SPECIFIC AND GLOBAL SETTINGS\n"
@@ -33,6 +33,14 @@ msgid ""
 "\n"
 "--Global: settings come from a separate file (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) and are applied to all themes. Rofi manager can edit these by changing the current theme to that file."
 msgstr ""
+"\n"
+"RREGULLIME SPECIFIKE DHE GLOBALE\n"
+"\n"
+"Rregullimet për pozicion, madhësi dhe shkronja mund të kenë dy formate:\n"
+"\n"
+"--Specifike: rregullimet vijnë drejt e nga <ndonjë kartelë emër_kartele.rasi> me vlerat e tyre të veçanta. Përgjegjësi Rofi mund të përpunojë rregullimet specifike të temës së Përdoruesit (~/.config/rofi/themes/<njëfarë emri.rasi>), por këto tema Ekstra dhe Sistemi mund të ndryshohen vetëm me një përpunues tekstesh.\n"
+"\n"
+"--Globale: rregullimet vijnë nga një kartelë më vete (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) dhe zbatohen mbi krejt temat. Përgjegjësi Rofi mund t’i përpunojë këto tema duke ndryshuar temën aktuale me atë kartelë."
 
 #: ../mx-rofi-manager:711
 msgid ""
@@ -78,11 +86,11 @@ msgstr ""
 
 #: ../mx-rofi-manager:935
 msgid "    X-Offset (- to left, + to right)"
-msgstr ""
+msgstr "    Shmangie X (- për majtas, + për djathtas)"
 
 #: ../mx-rofi-manager:936
 msgid "    Y-Offset (- upwards, + downwards)"
-msgstr ""
+msgstr "    Shmangie Y (- për sipër, + për poshtë)"
 
 #: ../mx-rofi-manager:1155
 msgid "<b>Adjust the font of the current rofi window.</b>"
@@ -119,7 +127,7 @@ msgstr ""
 "<b>Përgjegjësi Rofi është një mjet për formësim temash Rofi.\\n\\n<i>Ç’do të"
 " donit të bëni?</i></b>\\n"
 
-#: ../mx-rofi-manager:295
+#: ../mx-rofi-manager:294
 msgid ""
 "<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
@@ -127,7 +135,7 @@ msgstr ""
 "<b>Përzgjidhni rregullime shfaqjeje dhe temë për përdorim</b> (për "
 "paraparje, dyklikojeni)."
 
-#: ../mx-rofi-manager:547
+#: ../mx-rofi-manager:546
 msgid "<b>Select which tabs rofi should display</b>\\n"
 msgstr "<b>Përzgjidhni cilat skeda duhet të shfaqë rofi</b>\\n"
 
@@ -185,12 +193,12 @@ msgstr ""
 "Kaq qe!\\nPozicioni dhe madhësia e temës së tanishme rofi janë ndryshuar."
 
 #. ########
-#: ../mx-rofi-manager:524
+#: ../mx-rofi-manager:523
 #, sh-format
 msgid "All done!\\n\\n<b>$NEWTHEME</b> has been set as the current rofi theme.\\n\\n"
 msgstr "Kaq qe!\\n\\n<b>$NEWTHEME</b> u caktua si tema juaj e tanishme rofi.\\n\\n"
 
-#: ../mx-rofi-manager:678
+#: ../mx-rofi-manager:677
 msgid "All done!\\n\\nTab configuration has been updated.\\n\\n"
 msgstr "Kaq qe!\\n\\nFormësimi i skedave u përditësua.\\n\\n"
 
@@ -218,7 +226,7 @@ msgstr "Përpunoni në përpunues tekstesh një kartelë formësimi teme rofi"
 msgid "Font"
 msgstr "Shkronja"
 
-#: ../mx-rofi-manager:475
+#: ../mx-rofi-manager:474
 #, sh-format
 msgid "Global settings are blocked for"
 msgstr "Rregullimet globale janë të bllokuara për"
@@ -227,7 +235,7 @@ msgstr "Rregullimet globale janë të bllokuara për"
 msgid "Height (number of lines shown in list)"
 msgstr "Lartësi (si numër rreshtash shfaqur në listë)"
 
-#: ../mx-rofi-manager:556
+#: ../mx-rofi-manager:555
 msgid ""
 "If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or "
 "<i>Ctrl + Tab</i>\\n"
@@ -265,14 +273,14 @@ msgstr ""
 "--shihni dokumentimin\n"
 "Për më tepër hollësi, shihni skedën “ndihmë” te rofi.\n"
 
-#: ../mx-rofi-manager:219 ../mx-rofi-manager:708 ../mx-rofi-manager:1702
+#: ../mx-rofi-manager:217 ../mx-rofi-manager:707 ../mx-rofi-manager:1702
 msgid "MX-Rofi-Help"
 msgstr ""
 
 #. ##################################################################
 #. ##################################################################
 #. MAIN WINDOW
-#: ../mx-rofi-manager:1730
+#: ../mx-rofi-manager:63 ../mx-rofi-manager:1730
 msgid "MX-Rofi-Manager"
 msgstr "Kaq qe!\\nTema e re Rof"
 
@@ -295,13 +303,13 @@ msgstr "Emër teme të re"
 msgid "No Theme name!"
 msgstr "Pa emër Teme!"
 
-#: ../mx-rofi-manager:408 ../mx-rofi-manager:662 ../mx-rofi-manager:1005
+#: ../mx-rofi-manager:407 ../mx-rofi-manager:661 ../mx-rofi-manager:1005
 #: ../mx-rofi-manager:1195
 #, sh-format
 msgid "No change to current settings!\\n"
 msgstr "Pa ndryshime te rregullimet e tanishme!\\n"
 
-#: ../mx-rofi-manager:350
+#: ../mx-rofi-manager:349
 msgid "No theme selected."
 msgstr "S’u përzgjodh temë."
 
@@ -313,7 +321,7 @@ msgstr ""
 "S’u përzgjodh temë.\\n\\nSi temë fillimi do të përdoret <b>MX-comfort</b>."
 
 #. #begin message box
-#: ../mx-rofi-manager:84
+#: ../mx-rofi-manager:70
 msgid "OK to proceed?"
 msgstr "OK të vazhdohet?"
 
@@ -338,15 +346,15 @@ msgstr ""
 msgid "Rofi-Font"
 msgstr ""
 
-#: ../mx-rofi-manager:696
+#: ../mx-rofi-manager:695
 msgid "Rofi-Position"
 msgstr ""
 
-#: ../mx-rofi-manager:539
+#: ../mx-rofi-manager:538
 msgid "Rofi-Tab-Selector"
 msgstr ""
 
-#: ../mx-rofi-manager:130
+#: ../mx-rofi-manager:128
 msgid "Rofi-Theme"
 msgstr ""
 
@@ -370,7 +378,7 @@ msgstr "Sfond Përzgjedhjeje"
 msgid "Selection Text"
 msgstr "Tekst Përzgjedhjeje"
 
-#: ../mx-rofi-manager:320
+#: ../mx-rofi-manager:319
 msgid "Settings"
 msgstr "Rregullime"
 
@@ -384,7 +392,7 @@ msgstr ""
 "duke përdorur rregullimet globale.\\n\\nDoni të ndryshohen te rregullimet "
 "globale?.\\n\\n"
 
-#: ../mx-rofi-manager:476
+#: ../mx-rofi-manager:475
 msgid "Specific settings will be used"
 msgstr "Do të përdoren rregullime specifike"
 
@@ -397,7 +405,7 @@ msgstr "Do të përdoren rregullime specifike"
 msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
 msgstr "Rregullimet e tanishme për shfaqjen janë <b>$TOGGLETEXT</b>"
 
-#: ../mx-rofi-manager:297
+#: ../mx-rofi-manager:296
 #, sh-format
 msgid ""
 "The current theme is <b>$ROFICURRENT</b> and its settings are "
@@ -411,7 +419,7 @@ msgstr ""
 msgid "Theme name $NEWNAME is protected. Choose another name"
 msgstr "Emri $NEWNAME për tema është i rezervuar. Zgjidhni tjetër emër"
 
-#: ../mx-rofi-manager:81
+#: ../mx-rofi-manager:61
 #, sh-format
 msgid ""
 "This tool edits the rofi config file.\\n\\nThe existing file will be backed "
@@ -455,23 +463,23 @@ msgstr ""
 "\\nTema për t’u përpunuar është ruajtur te\\n<b>$ROFIPATH</b> "
 "si\\n\\n<b>$EDITTHEMECOPY</b>\\n\\n"
 
-#: ../mx-rofi-manager:549
+#: ../mx-rofi-manager:548
 msgid "a powerful calculation engine"
 msgstr "një mekanizëm i fuqishëm përllogaritjesh"
 
-#: ../mx-rofi-manager:554
+#: ../mx-rofi-manager:553
 msgid "a set of links about using rofi"
 msgstr "një grup lidhjesh mbi përdorimin e rofi-t"
 
-#: ../mx-rofi-manager:551
+#: ../mx-rofi-manager:550
 msgid "displays all available executable files"
 msgstr "shfaq krejt kartelat e ekzekutueshme të mundshme"
 
-#: ../mx-rofi-manager:553
+#: ../mx-rofi-manager:552
 msgid "enables easy switching"
 msgstr "aktivizon këmbim të kollajtë"
 
-#: ../mx-rofi-manager:550
+#: ../mx-rofi-manager:549
 msgid "fast access to files"
 msgstr "hyrje e shpejtë në kartela"
 
@@ -479,14 +487,24 @@ msgstr "hyrje e shpejtë në kartela"
 msgid "mxrr-color-selector"
 msgstr "mxrr-color-selector"
 
-#: ../mx-rofi-manager:552
+#: ../mx-rofi-manager:551
 msgid "opens a secure shell"
 msgstr "hap një shell të sigurt"
 
-#: ../mx-rofi-manager:555
+#: ../mx-rofi-manager:554
 msgid "tab will not be shown\\n"
 msgstr "skeda s’do të shfaqet\\n"
 
-#: ../mx-rofi-manager:548
+#: ../mx-rofi-manager:547
 msgid "the MX default that displays available apps"
 msgstr "parazgjedhja MX që shfaq aplikacionet e gatshme"
+
+#. Translator comment - this is name of application
+#: ../xdg/mx-rofi-manager.desktop.in:6
+msgid "Rofi Manager"
+msgstr ""
+
+#. Translator commnent - this is description for menu
+#: ../xdg/mx-rofi-manager.desktop.in:8
+msgid "Easily change the rofi configuration"
+msgstr ""

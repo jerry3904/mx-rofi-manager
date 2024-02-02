@@ -5,25 +5,25 @@
 # 
 # Translators:
 # anticapitalista <anticapitalista@riseup.net>, 2022
-# Wallon Wallon, 2022
 # Dolphin Oracle <dolphinoracle@gmail.com>, 2023
+# Wallon Wallon, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 14:28-0500\n"
+"POT-Creation-Date: 2024-02-01 21:55-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
-"Language-Team: French (https://www.transifex.com/anticapitalista/teams/10162/fr/)\n"
+"Last-Translator: Wallon Wallon, 2023\n"
+"Language-Team: French (https://app.transifex.com/anticapitalista/teams/10162/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../mx-rofi-manager:222
+#: ../mx-rofi-manager:221
 msgid ""
 "\n"
 "SPECIFIC AND GLOBAL SETTINGS\n"
@@ -39,9 +39,9 @@ msgstr ""
 "\n"
 "Les paramètres de position, de taille et de police peuvent avoir deux formats :\n"
 "\n"
-"--Spécifique : les paramètres proviennent directement du fichier <un nom.rasi> avec ses valeurs particulières. Le gestionnaire Rofi peut modifier les paramètres spécifiques des thèmes utilisateur (~/.config/rofi/themes/<un nom.rasi>) mais ceux des thèmes Extra et System ne peuvent être modifiés qu'avec un éditeur de texte.\n"
+"--Spécifique : les paramètres proviennent directement du fichier <un nom.rasi> avec ses valeurs particulières. Le gestionnaire Rofi peut modifier les paramètres spécifiques des thèmes utilisateur (~/.config/rofi/themes/<un nom.rasi>) mais ceux des thèmes Extra et System ne peuvent être modifiés qu’avec un éditeur de texte.\n"
 "\n"
-"--Global : les paramètres proviennent d'un fichier séparé (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) et sont appliqués à tous les thèmes. Le gestionnaire Rofi peut les modifier en changeant le thème actuel dans ce fichier."
+"--Global : les paramètres proviennent d’un fichier séparé (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) et sont appliqués à tous les thèmes. Le gestionnaire Rofi peut les modifier en changeant le thème actuel dans ce fichier."
 
 #: ../mx-rofi-manager:711
 msgid ""
@@ -68,22 +68,22 @@ msgstr ""
 "\n"
 "TERMES\n"
 "\n"
-"- EMPLACEMENT : L'emplacement général de la fenêtre Rofi sur l'écran.\n"
+"- EMPLACEMENT : L’emplacement général de la fenêtre Rofi sur l’écran.\n"
 "\n"
-"- ANCRAGE : Le point de la fenêtre Rofi qui est fixé à l'emplacement.\n"
+"- ANCRAGE : Le point de la fenêtre Rofi qui est fixé à l’emplacement.\n"
 "\n"
-"- X-OFFSET & Y-OFFSET / X-Décalage & Y-Décalage : le décalage (pixels) de la fenêtre Rofi par rapport au point d'ancrage\n"
+"- X-OFFSET & Y-OFFSET / X-Décalage & Y-Décalage : le décalage (pixels) de la fenêtre Rofi par rapport au point d’ancrage.\n"
 "\n"
 "\n"
 "EXEMPLES\n"
 "\n"
-"Emplacement centre, ancrage centre : place le centre de la fenêtre Rofi au centre de l'écran\n"
+"Emplacement centre, ancrage centre : place le centre de la fenêtre Rofi au centre de l’écran.\n"
 "\n"
-"Emplacement nord-ouest, ancrage nord-ouest : place le coin supérieur gauche de la fenêtre Rofi en haut à gauche de l'écran.\n"
+"Emplacement nord-ouest, ancrage nord-ouest : place le coin supérieur gauche de la fenêtre Rofi en haut à gauche de l’écran.\n"
 "\n"
-"Emplacement centre, ancrage nord-ouest : place le coin supérieur gauche de la fenêtre Rofi au centre de l'écran.\n"
+"Emplacement centre, ancrage nord-ouest : place le coin supérieur gauche de la fenêtre Rofi au centre de l’écran.\n"
 "\n"
-"Emplacement ouest, ancrage ouest, x-offset 32 : déplace la fenêtre Rofi pour éviter le chevauchement avec un panneau vertical.."
+"Emplacement ouest, ancrage ouest, x-offset 32 : déplace la fenêtre Rofi pour éviter le chevauchement avec un panneau vertical."
 
 #: ../mx-rofi-manager:935
 msgid "    X-Offset (- to left, + to right)"
@@ -102,7 +102,7 @@ msgstr "<b>Ajuster la police de la fenêtre actuelle de Rofi.</b>"
 #: ../mx-rofi-manager:926
 msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
 msgstr ""
-"<b>Ajuster l'emplacement et la taille de la fenêtre Rofi actuelle.\\n</b>"
+"<b>Ajuster l’emplacement et la taille de la fenêtre Rofi actuelle.\\n</b>"
 
 #: ../mx-rofi-manager:1422
 msgid "<b>Make new theme current?</b>"
@@ -128,15 +128,15 @@ msgstr ""
 "<b>Rofi Manager est un outil pour configurer les thèmes Rofi.\\n\\n<i>Que "
 "voulez-vous faire ?</i></b>\\n"
 
-#: ../mx-rofi-manager:295
+#: ../mx-rofi-manager:294
 msgid ""
 "<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
-"<b>Choisir les paramètres d'apparence et le thème à utiliser</b> (double-"
+"<b>Choisir les paramètres d’apparence et le thème à utiliser</b> (double-"
 "clic pour avoir un aperçu)."
 
-#: ../mx-rofi-manager:547
+#: ../mx-rofi-manager:546
 msgid "<b>Select which tabs rofi should display</b>\\n"
 msgstr "<b>Choisir les onglets que Rofi doit afficher</b>\\n"
 
@@ -157,15 +157,15 @@ msgstr ""
 
 #: ../mx-rofi-manager:1364 ../mx-rofi-manager:1402
 msgid "Active Tab Background"
-msgstr "Arrière-plan de l'onglet actif"
+msgstr "Arrière-plan de l’onglet actif"
 
 #: ../mx-rofi-manager:1366 ../mx-rofi-manager:1404
 msgid "Active Tab Highlight"
-msgstr "Mise en évidence de l'onglet actif"
+msgstr "Mise en évidence de l’onglet actif"
 
 #: ../mx-rofi-manager:1365 ../mx-rofi-manager:1403
 msgid "Active Tab Text"
-msgstr "Texte de l'onglet actif"
+msgstr "Texte de l’onglet actif"
 
 #: ../mx-rofi-manager:1600
 #, sh-format
@@ -194,14 +194,14 @@ msgstr ""
 "Terminé !\\nLa position et la taille du thème Rofi actuel ont été modifiées."
 
 #. ########
-#: ../mx-rofi-manager:524
+#: ../mx-rofi-manager:523
 #, sh-format
 msgid "All done!\\n\\n<b>$NEWTHEME</b> has been set as the current rofi theme.\\n\\n"
 msgstr ""
 "Terminé !\\n\\n<b>$NEWTHEME</b> a été défini comme le thème actuel de "
 "Rofi.\\n\\n"
 
-#: ../mx-rofi-manager:678
+#: ../mx-rofi-manager:677
 msgid "All done!\\n\\nTab configuration has been updated.\\n\\n"
 msgstr "Terminé !\\n\\nLa configuration des onglets a été mise à jour.\\n\\n"
 
@@ -219,7 +219,7 @@ msgstr "Modifier les fonctions (<i> modi </i>) des onglets Rofi"
 
 #: ../mx-rofi-manager:1737
 msgid "Change the location and size of the current rofi window"
-msgstr "Modifier l'emplacement et la taille de la fenêtre rofi actuelle"
+msgstr "Modifier l’emplacement et la taille de la fenêtre rofi actuelle"
 
 #: ../mx-rofi-manager:1740
 msgid "Edit a rofi theme config file in text editor"
@@ -228,9 +228,9 @@ msgstr ""
 
 #: ../mx-rofi-manager:1164
 msgid "Font"
-msgstr "Police"
+msgstr "Police d’écriture"
 
-#: ../mx-rofi-manager:475
+#: ../mx-rofi-manager:474
 #, sh-format
 msgid "Global settings are blocked for"
 msgstr "Les paramètres globaux sont bloqués pour"
@@ -239,25 +239,25 @@ msgstr "Les paramètres globaux sont bloqués pour"
 msgid "Height (number of lines shown in list)"
 msgstr "Hauteur (nombre de lignes affichées dans la liste)"
 
-#: ../mx-rofi-manager:556
+#: ../mx-rofi-manager:555
 msgid ""
 "If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or "
 "<i>Ctrl + Tab</i>\\n"
 msgstr ""
-"Si un thème n'affiche pas d'onglets, changez d'onglet avec <i>Shift + "
+"Si un thème n’affiche pas d’onglets, changez d’onglet avec <i>Shift + "
 "Flèche</i> ou <i>Ctrl + Tab</i>\\n"
 
 #: ../mx-rofi-manager:1362 ../mx-rofi-manager:1388
 msgid "Inactive Tab Background"
-msgstr "Arrière-plan de l'onglet inactif"
+msgstr "Arrière-plan de l’onglet inactif"
 
 #: ../mx-rofi-manager:1363 ../mx-rofi-manager:1389
 msgid "Inactive Tab Text"
-msgstr "Texte de l'onglet inactif"
+msgstr "Texte de l’onglet inactif"
 
 #: ../mx-rofi-manager:934
 msgid "Location of rofi window on the screen"
-msgstr "Emplacement de la fenêtre Rofi sur l'écran"
+msgstr "Emplacement de la fenêtre Rofi sur l’écran"
 
 #: ../mx-rofi-manager:1706
 msgid ""
@@ -269,22 +269,22 @@ msgid ""
 "--access documentation\n"
 "For more details, consult the rofi \"help\" tab.\n"
 msgstr ""
-"MX Rofi Manager offre un moyen rapide et facile de manipuler l'application Rofi avec ses nombreuses fonctions (\"modi\"). Opérations disponibles :\n"
+"MX Rofi Manager offre un moyen rapide et facile de manipuler l’application Rofi avec ses nombreuses fonctions (« modi »). Opérations disponibles :\n"
 "--choisir les fonctions à afficher\n"
 "--changer le thème en cours\n"
 "--ajuster les couleurs, la police et la position (thèmes par défaut uniquement)\n"
 "--modifier les thèmes manuellement\n"
 "--accéder à la documentation\n"
-"Pour plus de détails, consultez l'onglet \"aide\" de Rofi.\n"
+"Pour plus de détails, consultez l’onglet « aide » de Rofi.\n"
 
-#: ../mx-rofi-manager:219 ../mx-rofi-manager:708 ../mx-rofi-manager:1702
+#: ../mx-rofi-manager:217 ../mx-rofi-manager:707 ../mx-rofi-manager:1702
 msgid "MX-Rofi-Help"
 msgstr "MX-Rofi-Help"
 
 #. ##################################################################
 #. ##################################################################
 #. MAIN WINDOW
-#: ../mx-rofi-manager:1730
+#: ../mx-rofi-manager:63 ../mx-rofi-manager:1730
 msgid "MX-Rofi-Manager"
 msgstr "MX-Rofi-Manager"
 
@@ -307,13 +307,13 @@ msgstr "Nouveau nom du thème"
 msgid "No Theme name!"
 msgstr "Aucun nom de thème !"
 
-#: ../mx-rofi-manager:408 ../mx-rofi-manager:662 ../mx-rofi-manager:1005
+#: ../mx-rofi-manager:407 ../mx-rofi-manager:661 ../mx-rofi-manager:1005
 #: ../mx-rofi-manager:1195
 #, sh-format
 msgid "No change to current settings!\\n"
 msgstr "Aucune modification des paramètres actuels !\\n"
 
-#: ../mx-rofi-manager:350
+#: ../mx-rofi-manager:349
 msgid "No theme selected."
 msgstr "Pas de thème sélectionné."
 
@@ -325,9 +325,9 @@ msgstr ""
 "Aucun thème sélectionné.\\n\\n<b>MX-comfort</b> servira de thème de départ."
 
 #. #begin message box
-#: ../mx-rofi-manager:84
+#: ../mx-rofi-manager:70
 msgid "OK to proceed?"
-msgstr "OK pour continuer ?"
+msgstr "Valider pour continuer ?"
 
 #: ../mx-rofi-manager:1506
 #, sh-format
@@ -350,15 +350,15 @@ msgstr "Rofi-Edit"
 msgid "Rofi-Font"
 msgstr "Rofi-Font"
 
-#: ../mx-rofi-manager:696
+#: ../mx-rofi-manager:695
 msgid "Rofi-Position"
 msgstr "Rofi-Position"
 
-#: ../mx-rofi-manager:539
+#: ../mx-rofi-manager:538
 msgid "Rofi-Tab-Selector"
 msgstr "Rofi-Tab-Selector"
 
-#: ../mx-rofi-manager:130
+#: ../mx-rofi-manager:128
 msgid "Rofi-Theme"
 msgstr "Rofi-Theme"
 
@@ -382,7 +382,7 @@ msgstr "Arrière-plan de la sélection"
 msgid "Selection Text"
 msgstr "Texte de la sélection"
 
-#: ../mx-rofi-manager:320
+#: ../mx-rofi-manager:319
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -392,11 +392,11 @@ msgid ""
 "Sorry, the appearance settings for $ROFICURRENT can only be modified using "
 "global settings.\\n\\nWould you like to change to global settings?.\\n\\n"
 msgstr ""
-"Désolé, les paramètres d'apparence de $ROFICURRENT ne peuvent être modifiés "
-"qu'à l'aide des paramètres globaux.\\n\\nSouhaitez-vous passer aux "
+"Désolé, les paramètres d’apparence de $ROFICURRENT ne peuvent être modifiés "
+"qu’à l’aide des paramètres globaux.\\n\\nSouhaitez-vous passer aux "
 "paramètres globaux ?.\\n\\n"
 
-#: ../mx-rofi-manager:476
+#: ../mx-rofi-manager:475
 msgid "Specific settings will be used"
 msgstr "Les paramètres spécifiques seront utilisés"
 
@@ -407,9 +407,9 @@ msgstr "Les paramètres spécifiques seront utilisés"
 #: ../mx-rofi-manager:930 ../mx-rofi-manager:1157
 #, sh-format
 msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
-msgstr "Les paramètres d'apparence actuels sont <b>$TOGGLETEXT</b>"
+msgstr "Les paramètres d’apparence actuels sont <b>$TOGGLETEXT</b>"
 
-#: ../mx-rofi-manager:297
+#: ../mx-rofi-manager:296
 #, sh-format
 msgid ""
 "The current theme is <b>$ROFICURRENT</b> and its settings are "
@@ -423,7 +423,7 @@ msgstr ""
 msgid "Theme name $NEWNAME is protected. Choose another name"
 msgstr "Le nom du thème $NEWNAME est protégé. Choisissez un autre nom"
 
-#: ../mx-rofi-manager:81
+#: ../mx-rofi-manager:61
 #, sh-format
 msgid ""
 "This tool edits the rofi config file.\\n\\nThe existing file will be backed "
@@ -443,7 +443,7 @@ msgstr "Texte du titre"
 
 #: ../mx-rofi-manager:937
 msgid "Width (percentage of screen width)"
-msgstr "Largeur (pourcentage de la largeur de l'écran)"
+msgstr "Largeur (pourcentage de la largeur de l’écran)"
 
 #. select starting style
 #: ../mx-rofi-manager:1245
@@ -468,23 +468,23 @@ msgstr ""
 "\\nLe thème à éditer a été sauvegardé dans\\n<b>$ROFIPATH</b> "
 "sous\\n\\n<b>$EDITTHEMECOPY</b>\\n\\n"
 
-#: ../mx-rofi-manager:549
+#: ../mx-rofi-manager:548
 msgid "a powerful calculation engine"
 msgstr "un puissant moteur de calcul"
 
-#: ../mx-rofi-manager:554
+#: ../mx-rofi-manager:553
 msgid "a set of links about using rofi"
-msgstr "une série de liens sur l'utilisation de Rofi"
+msgstr "une série de liens sur l’utilisation de Rofi"
 
-#: ../mx-rofi-manager:551
+#: ../mx-rofi-manager:550
 msgid "displays all available executable files"
 msgstr "affiche tous les fichiers exécutables disponibles"
 
-#: ../mx-rofi-manager:553
+#: ../mx-rofi-manager:552
 msgid "enables easy switching"
 msgstr "permet une commutation facile"
 
-#: ../mx-rofi-manager:550
+#: ../mx-rofi-manager:549
 msgid "fast access to files"
 msgstr "accès rapide aux fichiers"
 
@@ -492,14 +492,24 @@ msgstr "accès rapide aux fichiers"
 msgid "mxrr-color-selector"
 msgstr "mxrr-color-selector"
 
-#: ../mx-rofi-manager:552
+#: ../mx-rofi-manager:551
 msgid "opens a secure shell"
 msgstr "ouvre un shell sécurisé"
 
-#: ../mx-rofi-manager:555
+#: ../mx-rofi-manager:554
 msgid "tab will not be shown\\n"
-msgstr "l'onglet ne sera pas affiché\\n"
+msgstr "l’onglet ne sera pas affiché\\n"
 
-#: ../mx-rofi-manager:548
+#: ../mx-rofi-manager:547
 msgid "the MX default that displays available apps"
 msgstr "le MX par défaut qui affiche les applications disponibles"
+
+#. Translator comment - this is name of application
+#: ../xdg/mx-rofi-manager.desktop.in:6
+msgid "Rofi Manager"
+msgstr ""
+
+#. Translator commnent - this is description for menu
+#: ../xdg/mx-rofi-manager.desktop.in:8
+msgid "Easily change the rofi configuration"
+msgstr ""
