@@ -503,9 +503,9 @@ msgstr "Стандарт MX, отображает доступные прило�
 #. Translator comment - this is name of application
 #: ../xdg/mx-rofi-manager.desktop.in:6
 msgid "Rofi Manager"
-msgstr ""
+msgstr "Rofi Менеджер"
 
 #. Translator commnent - this is description for menu
 #: ../xdg/mx-rofi-manager.desktop.in:8
 msgid "Easily change the rofi configuration"
-msgstr ""
+msgstr " Простое изменение конфигурации rofi"

@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Dolphin Oracle <dolphinoracle@gmail.com>, 2023
-# Wallon Wallon, 2023
+# Dolphin Oracle <dolphinoracle@gmail.com>, 2022
+# Wallon Wallon, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-01 21:55-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: Wallon Wallon, 2023\n"
+"Last-Translator: Wallon Wallon, 2024\n"
 "Language-Team: French (Belgium) (https://app.transifex.com/anticapitalista/teams/10162/fr_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -210,7 +210,7 @@ msgstr "Changer le thème actuel de Rofi"
 
 #: ../mx-rofi-manager:1738
 msgid "Change the font of the current rofi window"
-msgstr "Changer la police de la fenêtre rofi actuelle"
+msgstr "Changer la police de la fenêtre Rofi actuelle"
 
 #: ../mx-rofi-manager:1736
 msgid "Change the functions (<i> modi </i>) of the rofi tabs"
@@ -218,7 +218,7 @@ msgstr "Modifier les fonctions (<i> modi </i>) des onglets Rofi"
 
 #: ../mx-rofi-manager:1737
 msgid "Change the location and size of the current rofi window"
-msgstr "Modifier l’emplacement et la taille de la fenêtre rofi actuelle"
+msgstr "Modifier l’emplacement et la taille de la fenêtre Rofi actuelle"
 
 #: ../mx-rofi-manager:1740
 msgid "Edit a rofi theme config file in text editor"
@@ -393,7 +393,7 @@ msgid ""
 msgstr ""
 "Désolé, les paramètres d’apparence de $ROFICURRENT ne peuvent être modifiés "
 "qu’à l’aide des paramètres globaux.\\n\\nSouhaitez-vous passer aux "
-"paramètres globaux?.\\n\\n"
+"paramètres globaux? \\n\\n"
 
 #: ../mx-rofi-manager:475
 msgid "Specific settings will be used"
@@ -506,9 +506,9 @@ msgstr "le MX par défaut qui affiche les applications disponibles"
 #. Translator comment - this is name of application
 #: ../xdg/mx-rofi-manager.desktop.in:6
 msgid "Rofi Manager"
-msgstr ""
+msgstr "Gestionnaire Rofi - Rofi Manager"
 
 #. Translator commnent - this is description for menu
 #: ../xdg/mx-rofi-manager.desktop.in:8
 msgid "Easily change the rofi configuration"
-msgstr ""
+msgstr "Modifier facilement la configuration de Rofi"

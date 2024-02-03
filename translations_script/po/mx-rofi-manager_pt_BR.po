@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Dolphin Oracle <dolphinoracle@gmail.com>, 2023
-# marcelo cripe <marcelocripe@gmail.com>, 2023
+# marcelo cripe <marcelocripe@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-01 21:55-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: marcelo cripe <marcelocripe@gmail.com>, 2023\n"
+"Last-Translator: marcelo cripe <marcelocripe@gmail.com>, 2024\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/anticapitalista/teams/10162/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,7 +38,7 @@ msgstr ""
 "\n"
 "As configurações de posição, tamanho e fonte podem ter dois formatos:\n"
 "\n"
-"--Specific ou Específica: as configurações vêm diretamente do arquivo que possui um nome semelhante ao <name.rasi> com seus valores particulares. O gerenciador de configurações do Rofi pode editar as configurações específicas dos temas do usuário (~/.config/rofi/themes/<name.rasi>), mas as dos temas Extra e do System ou Sistema só podem ser alteradas com um editor de texto.\n"
+"--Specific ou Específica: as configurações vêm diretamente do arquivo que possui um nome semelhante ao <name.rasi> com seus valores particulares. O gerenciador das configurações do Rofi permite editar as configurações específicas dos temas do usuário (~/.config/rofi/themes/<name.rasi>), mas as dos temas Extra e do System ou Sistema só podem ser alteradas com um editor de texto.\n"
 "\n"
 "--Global: as configurações vêm de um arquivo separado (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) e são aplicadas a todos os temas. O gerenciador de configurações do Rofi pode editá-los alterando o tema atual para este arquivo."
 
@@ -102,7 +102,7 @@ msgstr "<b>Ajustar a fonte da janela atual do Rofi.</b>"
 #. MAINPOS
 #: ../mx-rofi-manager:926
 msgid "<b>Adjust the location and size of the current rofi window.\\n</b>"
-msgstr "<b>Ajuste a localização e do tamanho da janela atual do Rofi.\\n</b>"
+msgstr "<b>Ajuste a localização e o tamanho da janela atual do Rofi.\\n</b>"
 
 #: ../mx-rofi-manager:1422
 msgid "<b>Make new theme current?</b>"
@@ -125,7 +125,7 @@ msgid ""
 "<b>Rofi Manager is a tool to configure rofi themes.\\n\\n<i>What would you "
 "like to do?</i></b>\\n"
 msgstr ""
-"<b>O Gerenciador de Configurações do Rofi MX é uma ferramenta para "
+"<b>O Gerenciador das Configurações do Rofi do MX é uma ferramenta para "
 "configurar os temas do Rofi.\\n\\n<i>O que você quer fazer?</i></b>\\n"
 
 #: ../mx-rofi-manager:294
@@ -174,7 +174,8 @@ msgid ""
 " themes with <b>MX-Rofi-Manager</b>"
 msgstr ""
 "Tudo foi feito com sucesso!\\nO tema <b>$NEWNAME</b> do Rofi foi "
-"criado.\\n\\nVocê pode alterar os temas com o <b>MX-Rofi-Manager</b>"
+"criado.\\n\\nVocê pode alterar os temas com o <b>Gerenciador das "
+"Configurações do Rofi do MX</b>"
 
 #: ../mx-rofi-manager:1591
 #, sh-format
@@ -275,7 +276,7 @@ msgid ""
 "--access documentation\n"
 "For more details, consult the rofi \"help\" tab.\n"
 msgstr ""
-"O Gerenciador de Configurações do Rofi MX permite manipular rapidamente o programa aplicativo Rofi e as suas diversas funções possíveis (“modo”). As funções disponíveis são:\n"
+"O Gerenciador das Configurações do Rofi do MX permite manipular rapidamente o programa aplicativo Rofi e as suas diversas funções possíveis (“modo”). As funções disponíveis são:\n"
 "--selecionar as funções a serem exibidas\n"
 "--alterar o tema atual\n"
 "--ajustar as cores, a fonte e a posição (apenas para os temas padrão)\n"
@@ -285,14 +286,14 @@ msgstr ""
 
 #: ../mx-rofi-manager:217 ../mx-rofi-manager:707 ../mx-rofi-manager:1702
 msgid "MX-Rofi-Help"
-msgstr "Ajuda do Gerenciador de Configurações do Rofi MX"
+msgstr "Ajuda do Gerenciador das Configurações do Rofi do MX"
 
 #. ##################################################################
 #. ##################################################################
 #. MAIN WINDOW
 #: ../mx-rofi-manager:63 ../mx-rofi-manager:1730
 msgid "MX-Rofi-Manager"
-msgstr "Gerenciador de Configurações do Rofi MX"
+msgstr "Gerenciador das Configurações do Rofi MX"
 
 #. mxrr MX-comfort-rofi-recolor
 #. Tool to edit colors in MX-comfort rofi theme
@@ -399,7 +400,7 @@ msgid ""
 "Sorry, the appearance settings for $ROFICURRENT can only be modified using "
 "global settings.\\n\\nWould you like to change to global settings?.\\n\\n"
 msgstr ""
-"Desculpe, as configurações de aparência para $ROFICURRENT só podem ser "
+"Atenção! As configurações da aparência para $ROFICURRENT só podem ser "
 "modificadas utilizando as configurações globais.\\n\\nVocê quer modificar "
 "para as configurações globais?\\n\\n"
 
@@ -437,8 +438,8 @@ msgid ""
 "up as \\n\\n<b>$HOME/.restore/rofi/config.rasi_$NOW</b>"
 msgstr ""
 "Esta ferramenta permite editar o arquivo de configurações do Rofi.\\n\\nSerá"
-" feito uma cópia de segurança do arquivo de configurações no caminho "
-"\\n\\n<b>$HOME/.restore/rofi/config.rasi_$NOW</b>"
+" feito uma cópia de segurança do arquivo de configurações na \\n\\n "
+"pasta<b>$HOME/.restore/rofi/config.rasi_$NOW</b>"
 
 #: ../mx-rofi-manager:1358 ../mx-rofi-manager:1384
 msgid "Title Background"
@@ -482,7 +483,8 @@ msgstr "É um poderoso mecanismo de cálculo"
 #: ../mx-rofi-manager:553
 msgid "a set of links about using rofi"
 msgstr ""
-"Um conjunto de ligações para páginas eletrônicas sobre a utilização do Rofi"
+"É um conjunto de ligações ou vínculos para as páginas eletrônicas sobre como"
+" utilizar o Rofi"
 
 #: ../mx-rofi-manager:550
 msgid "displays all available executable files"
@@ -515,9 +517,12 @@ msgstr "O padrão do MX é exibir os aplicativos disponíveis"
 #. Translator comment - this is name of application
 #: ../xdg/mx-rofi-manager.desktop.in:6
 msgid "Rofi Manager"
-msgstr ""
+msgstr "Gerenciador das Configurações do Rofi do MX"
 
 #. Translator commnent - this is description for menu
 #: ../xdg/mx-rofi-manager.desktop.in:8
 msgid "Easily change the rofi configuration"
 msgstr ""
+"O ‘Rofi Manager’ ou ‘MX-Rofi-Manager’ ou ‘Gerenciador das Configurações do "
+"Rofi do MX’ permite alterar facilmente a configurações do pesquisador e "
+"inicializador de aplicativos e arquivos Rofi"

@@ -484,9 +484,9 @@ msgstr "利用可能なアプリを表示する MX の標準機能"
 #. Translator comment - this is name of application
 #: ../xdg/mx-rofi-manager.desktop.in:6
 msgid "Rofi Manager"
-msgstr ""
+msgstr "Rofi マネージャ"
 
 #. Translator commnent - this is description for menu
 #: ../xdg/mx-rofi-manager.desktop.in:8
 msgid "Easily change the rofi configuration"
-msgstr ""
+msgstr "Rofi の設定変更が簡単に行えます"
