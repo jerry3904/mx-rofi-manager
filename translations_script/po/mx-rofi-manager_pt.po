@@ -6,9 +6,9 @@
 # Translators:
 # Paulo C., 2022
 # marcelo cripe <marcelocripe@gmail.com>, 2022
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2022
 # José Vieira <jvieira33@sapo.pt>, 2022
 # Dolphin Oracle <dolphinoracle@gmail.com>, 2023
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-01 21:55-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2024\n"
 "Language-Team: Portuguese (https://app.transifex.com/anticapitalista/teams/10162/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -510,9 +510,9 @@ msgstr "a predefinição do MX para mostrar aplicações disponíveis"
 #. Translator comment - this is name of application
 #: ../xdg/mx-rofi-manager.desktop.in:6
 msgid "Rofi Manager"
-msgstr ""
+msgstr "Gestor Rofi"
 
 #. Translator commnent - this is description for menu
 #: ../xdg/mx-rofi-manager.desktop.in:8
 msgid "Easily change the rofi configuration"
-msgstr ""
+msgstr "Alterar facilmente a configuração do rofi"
