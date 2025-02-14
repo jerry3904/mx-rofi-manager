@@ -4,25 +4,25 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Yaron Shahrabani <sh.yaron@gmail.com>, 2022
 # anticapitalista <anticapitalista@riseup.net>, 2022
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 14:28-0500\n"
+"POT-Creation-Date: 2024-02-01 21:55-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: anticapitalista <anticapitalista@riseup.net>, 2022\n"
-"Language-Team: Hebrew (Israel) (https://www.transifex.com/anticapitalista/teams/10162/he_IL/)\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>, 2023\n"
+"Language-Team: Hebrew (Israel) (https://app.transifex.com/anticapitalista/teams/10162/he_IL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he_IL\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
 
-#: ../mx-rofi-manager:222
+#: ../mx-rofi-manager:221
 msgid ""
 "\n"
 "SPECIFIC AND GLOBAL SETTINGS\n"
@@ -81,11 +81,11 @@ msgstr ""
 
 #: ../mx-rofi-manager:1486
 msgid "<b>Name for new style</b>"
-msgstr ""
+msgstr "<b>שם לסגנון החדש</b>"
 
 #: ../mx-rofi-manager:1467 ../mx-rofi-manager:1513
 msgid "<b>Name for new theme</b>"
-msgstr ""
+msgstr "<b>שם לערכת העיצוב החדשה</b>"
 
 #: ../mx-rofi-manager:1420
 msgid "<b>Name for new theme</b>     "
@@ -97,13 +97,13 @@ msgid ""
 "like to do?</i></b>\\n"
 msgstr ""
 
-#: ../mx-rofi-manager:295
+#: ../mx-rofi-manager:294
 msgid ""
 "<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
 
-#: ../mx-rofi-manager:547
+#: ../mx-rofi-manager:546
 msgid "<b>Select which tabs rofi should display</b>\\n"
 msgstr ""
 
@@ -111,7 +111,7 @@ msgstr ""
 #. color selection dialogue
 #: ../mx-rofi-manager:1383
 msgid "<b>\\nEdit colors and create a new rofi theme.\\n\\n</b>"
-msgstr ""
+msgstr "<b>\\nעריכת צבעים ויצירת ערכת עיצוב חדשה של rofi.\\n\\n</b>"
 
 #: ../mx-rofi-manager:1506
 #, sh-format
@@ -122,15 +122,15 @@ msgstr ""
 
 #: ../mx-rofi-manager:1364 ../mx-rofi-manager:1402
 msgid "Active Tab Background"
-msgstr ""
+msgstr "רקע הלשונית הפעילה"
 
 #: ../mx-rofi-manager:1366 ../mx-rofi-manager:1404
 msgid "Active Tab Highlight"
-msgstr ""
+msgstr "הגדרת הלשונית הבהירה"
 
 #: ../mx-rofi-manager:1365 ../mx-rofi-manager:1403
 msgid "Active Tab Text"
-msgstr ""
+msgstr "טקסט הלשונית הפעילה"
 
 #: ../mx-rofi-manager:1600
 #, sh-format
@@ -156,12 +156,12 @@ msgid ""
 msgstr ""
 
 #. ########
-#: ../mx-rofi-manager:524
+#: ../mx-rofi-manager:523
 #, sh-format
 msgid "All done!\\n\\n<b>$NEWTHEME</b> has been set as the current rofi theme.\\n\\n"
 msgstr ""
 
-#: ../mx-rofi-manager:678
+#: ../mx-rofi-manager:677
 msgid "All done!\\n\\nTab configuration has been updated.\\n\\n"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Font"
 msgstr ""
 
-#: ../mx-rofi-manager:475
+#: ../mx-rofi-manager:474
 #, sh-format
 msgid "Global settings are blocked for"
 msgstr ""
@@ -198,7 +198,7 @@ msgstr ""
 msgid "Height (number of lines shown in list)"
 msgstr ""
 
-#: ../mx-rofi-manager:556
+#: ../mx-rofi-manager:555
 msgid ""
 "If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or "
 "<i>Ctrl + Tab</i>\\n"
@@ -206,11 +206,11 @@ msgstr ""
 
 #: ../mx-rofi-manager:1362 ../mx-rofi-manager:1388
 msgid "Inactive Tab Background"
-msgstr ""
+msgstr "רקע לשונית בלתי פעילה"
 
 #: ../mx-rofi-manager:1363 ../mx-rofi-manager:1389
 msgid "Inactive Tab Text"
-msgstr ""
+msgstr "טקסט לשונית בלתי פעילה"
 
 #: ../mx-rofi-manager:934
 msgid "Location of rofi window on the screen"
@@ -227,14 +227,14 @@ msgid ""
 "For more details, consult the rofi \"help\" tab.\n"
 msgstr ""
 
-#: ../mx-rofi-manager:219 ../mx-rofi-manager:708 ../mx-rofi-manager:1702
+#: ../mx-rofi-manager:217 ../mx-rofi-manager:707 ../mx-rofi-manager:1702
 msgid "MX-Rofi-Help"
 msgstr ""
 
 #. ##################################################################
 #. ##################################################################
 #. MAIN WINDOW
-#: ../mx-rofi-manager:1730
+#: ../mx-rofi-manager:63 ../mx-rofi-manager:1730
 msgid "MX-Rofi-Manager"
 msgstr ""
 
@@ -255,15 +255,15 @@ msgstr ""
 
 #: ../mx-rofi-manager:1466
 msgid "No Theme name!"
-msgstr ""
+msgstr "אין שם לערכת עיצוב!"
 
-#: ../mx-rofi-manager:408 ../mx-rofi-manager:662 ../mx-rofi-manager:1005
+#: ../mx-rofi-manager:407 ../mx-rofi-manager:661 ../mx-rofi-manager:1005
 #: ../mx-rofi-manager:1195
 #, sh-format
 msgid "No change to current settings!\\n"
 msgstr ""
 
-#: ../mx-rofi-manager:350
+#: ../mx-rofi-manager:349
 msgid "No theme selected."
 msgstr ""
 
@@ -271,17 +271,17 @@ msgstr ""
 msgid ""
 "No theme selected.\\n\\n<b>MX-comfort</b> will be used as the starting "
 "theme."
-msgstr ""
+msgstr "לא נבחרה ערכת עיצוב.\\n\\n<b>MX-comfort</b> תשמש כערכת העיצוב הפותחת."
 
 #. #begin message box
-#: ../mx-rofi-manager:84
+#: ../mx-rofi-manager:70
 msgid "OK to proceed?"
 msgstr "להמשיך?"
 
 #: ../mx-rofi-manager:1506
 #, sh-format
 msgid "Overwrite $NEWNAME"
-msgstr ""
+msgstr "שכתוב $NEWNAME"
 
 #: ../mx-rofi-manager:1739
 msgid "Recolor a rofi theme based on MX-comfort"
@@ -289,7 +289,7 @@ msgstr ""
 
 #: ../mx-rofi-manager:1372
 msgid "Return to Main Window"
-msgstr ""
+msgstr "חזרה לחלון הראשי"
 
 #: ../mx-rofi-manager:1618
 msgid "Rofi-Edit"
@@ -299,39 +299,39 @@ msgstr ""
 msgid "Rofi-Font"
 msgstr ""
 
-#: ../mx-rofi-manager:696
+#: ../mx-rofi-manager:695
 msgid "Rofi-Position"
 msgstr ""
 
-#: ../mx-rofi-manager:539
+#: ../mx-rofi-manager:538
 msgid "Rofi-Tab-Selector"
 msgstr ""
 
-#: ../mx-rofi-manager:130
+#: ../mx-rofi-manager:128
 msgid "Rofi-Theme"
 msgstr ""
 
 #: ../mx-rofi-manager:1506
 msgid "Save as different theme name"
-msgstr ""
+msgstr "שמירה כשם ערכת עיצוב שונה"
 
 #: ../mx-rofi-manager:1360 ../mx-rofi-manager:1386
 msgid "Searchbar Background"
-msgstr ""
+msgstr "רקע סרגל החיפוש"
 
 #: ../mx-rofi-manager:1361 ../mx-rofi-manager:1387
 msgid "Searchbar Text"
-msgstr ""
+msgstr "טקסט סרגל החיפוש"
 
 #: ../mx-rofi-manager:1367 ../mx-rofi-manager:1405
 msgid "Selection Background"
-msgstr ""
+msgstr "רקע הבחירה"
 
 #: ../mx-rofi-manager:1368 ../mx-rofi-manager:1406
 msgid "Selection Text"
-msgstr ""
+msgstr "טקסט הבחירה"
 
-#: ../mx-rofi-manager:320
+#: ../mx-rofi-manager:319
 msgid "Settings"
 msgstr "הגדרות"
 
@@ -342,7 +342,7 @@ msgid ""
 "global settings.\\n\\nWould you like to change to global settings?.\\n\\n"
 msgstr ""
 
-#: ../mx-rofi-manager:476
+#: ../mx-rofi-manager:475
 msgid "Specific settings will be used"
 msgstr ""
 
@@ -355,7 +355,7 @@ msgstr ""
 msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
 msgstr ""
 
-#: ../mx-rofi-manager:297
+#: ../mx-rofi-manager:296
 #, sh-format
 msgid ""
 "The current theme is <b>$ROFICURRENT</b> and its settings are "
@@ -367,20 +367,22 @@ msgstr ""
 msgid "Theme name $NEWNAME is protected. Choose another name"
 msgstr ""
 
-#: ../mx-rofi-manager:81
+#: ../mx-rofi-manager:61
 #, sh-format
 msgid ""
 "This tool edits the rofi config file.\\n\\nThe existing file will be backed "
 "up as \\n\\n<b>$HOME/.restore/rofi/config.rasi_$NOW</b>"
 msgstr ""
+"כלי זה עורך את קובץ ההגדרות של rofi.\\n\\nהקובץ הקיים יגובה אל‎ "
+"\\n\\n<b>$HOME/.restore/rofi/config.rasi_$NOW</b>"
 
 #: ../mx-rofi-manager:1358 ../mx-rofi-manager:1384
 msgid "Title Background"
-msgstr ""
+msgstr "רקע הכותרת"
 
 #: ../mx-rofi-manager:1359 ../mx-rofi-manager:1385
 msgid "Title Text"
-msgstr ""
+msgstr "טקסט הכותרת"
 
 #: ../mx-rofi-manager:937
 msgid "Width (percentage of screen width)"
@@ -389,7 +391,7 @@ msgstr ""
 #. select starting style
 #: ../mx-rofi-manager:1245
 msgid "\\n<b> Choose which theme to use as a starting point</b>\\n"
-msgstr ""
+msgstr "\\n<b> לבחור באיזו ערכת עיצוב להשתמש כנקודת התחלה</b>\\n"
 
 #. select theme
 #: ../mx-rofi-manager:1643
@@ -405,38 +407,48 @@ msgid ""
 "as\\n\\n<b>$EDITTHEMECOPY</b>\\n\\n"
 msgstr ""
 
-#: ../mx-rofi-manager:549
+#: ../mx-rofi-manager:548
 msgid "a powerful calculation engine"
 msgstr ""
 
-#: ../mx-rofi-manager:554
+#: ../mx-rofi-manager:553
 msgid "a set of links about using rofi"
 msgstr ""
 
-#: ../mx-rofi-manager:551
+#: ../mx-rofi-manager:550
 msgid "displays all available executable files"
 msgstr ""
 
-#: ../mx-rofi-manager:553
+#: ../mx-rofi-manager:552
 msgid "enables easy switching"
 msgstr ""
 
-#: ../mx-rofi-manager:550
+#: ../mx-rofi-manager:549
 msgid "fast access to files"
 msgstr ""
 
 #: ../mx-rofi-manager:1297
 msgid "mxrr-color-selector"
-msgstr ""
+msgstr "mxrr-color-selector"
 
-#: ../mx-rofi-manager:552
+#: ../mx-rofi-manager:551
 msgid "opens a secure shell"
 msgstr ""
 
-#: ../mx-rofi-manager:555
+#: ../mx-rofi-manager:554
 msgid "tab will not be shown\\n"
 msgstr ""
 
-#: ../mx-rofi-manager:548
+#: ../mx-rofi-manager:547
 msgid "the MX default that displays available apps"
+msgstr ""
+
+#. Translator comment - this is name of application
+#: ../xdg/mx-rofi-manager.desktop.in:6
+msgid "Rofi Manager"
+msgstr ""
+
+#. Translator commnent - this is description for menu
+#: ../xdg/mx-rofi-manager.desktop.in:8
+msgid "Easily change the rofi configuration"
 msgstr ""

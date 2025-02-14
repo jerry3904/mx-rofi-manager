@@ -5,7 +5,7 @@
 # 
 # Translators:
 # anticapitalista <anticapitalista@riseup.net>, 2022
-# Feri, 2022
+# Kempelen <antixhu@netengine.hu>, 2022
 # Dolphin Oracle <dolphinoracle@gmail.com>, 2023
 # 
 #, fuzzy
@@ -13,17 +13,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 14:28-0500\n"
+"POT-Creation-Date: 2024-02-01 21:55-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
 "Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
-"Language-Team: Hungarian (https://www.transifex.com/anticapitalista/teams/10162/hu/)\n"
+"Language-Team: Hungarian (https://app.transifex.com/anticapitalista/teams/10162/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../mx-rofi-manager:222
+#: ../mx-rofi-manager:221
 msgid ""
 "\n"
 "SPECIFIC AND GLOBAL SETTINGS\n"
@@ -127,7 +127,7 @@ msgstr ""
 "<b>A Rofi Manager segítségével a rofi témákat konfigurálhatja.\\n\\n<i>Mit "
 "szeretne tenni?</b>\\n"
 
-#: ../mx-rofi-manager:295
+#: ../mx-rofi-manager:294
 msgid ""
 "<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
@@ -135,7 +135,7 @@ msgstr ""
 "<b>Válassza ki a használni kívánt megjelenítési beállításokat és "
 "témát</b>(dupla-kattintással előnézet)."
 
-#: ../mx-rofi-manager:547
+#: ../mx-rofi-manager:546
 msgid "<b>Select which tabs rofi should display</b>\\n"
 msgstr "<b>Válassza ki mely füleket jelenítse meg a rofi</b>\\n"
 
@@ -192,12 +192,12 @@ msgid ""
 msgstr "Minden kész!\\nA jelenlegi rofi téma helye és mérete módosítva."
 
 #. ########
-#: ../mx-rofi-manager:524
+#: ../mx-rofi-manager:523
 #, sh-format
 msgid "All done!\\n\\n<b>$NEWTHEME</b> has been set as the current rofi theme.\\n\\n"
 msgstr "Minden kész!\\n<b>$NEWTHEME</b> beállítva, mint aktuális rofi téma.\\n\\n"
 
-#: ../mx-rofi-manager:678
+#: ../mx-rofi-manager:677
 msgid "All done!\\n\\nTab configuration has been updated.\\n\\n"
 msgstr "Minden kész!\\n\\nA fülek beállítása frissítve.\\n\\n"
 
@@ -225,7 +225,7 @@ msgstr "Rofi téma beállítási fájl szerkesztése szövegszerkesztőben"
 msgid "Font"
 msgstr "Betűtípus"
 
-#: ../mx-rofi-manager:475
+#: ../mx-rofi-manager:474
 #, sh-format
 msgid "Global settings are blocked for"
 msgstr "A globális beállítások zárolva vannak ehhez:"
@@ -234,7 +234,7 @@ msgstr "A globális beállítások zárolva vannak ehhez:"
 msgid "Height (number of lines shown in list)"
 msgstr "Magasság (a sorok száma a listán)"
 
-#: ../mx-rofi-manager:556
+#: ../mx-rofi-manager:555
 msgid ""
 "If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or "
 "<i>Ctrl + Tab</i>\\n"
@@ -272,14 +272,14 @@ msgstr ""
 "--hozzáférés a dokumentációhoz\n"
 "További részletekért tekintse meg a rofi \"súgó\" fülét.\n"
 
-#: ../mx-rofi-manager:219 ../mx-rofi-manager:708 ../mx-rofi-manager:1702
+#: ../mx-rofi-manager:217 ../mx-rofi-manager:707 ../mx-rofi-manager:1702
 msgid "MX-Rofi-Help"
 msgstr "MX-Rofi-Súgó"
 
 #. ##################################################################
 #. ##################################################################
 #. MAIN WINDOW
-#: ../mx-rofi-manager:1730
+#: ../mx-rofi-manager:63 ../mx-rofi-manager:1730
 msgid "MX-Rofi-Manager"
 msgstr "MX-Rofi-Manager"
 
@@ -302,13 +302,13 @@ msgstr "Új téma neve"
 msgid "No Theme name!"
 msgstr "Nincs téma név!"
 
-#: ../mx-rofi-manager:408 ../mx-rofi-manager:662 ../mx-rofi-manager:1005
+#: ../mx-rofi-manager:407 ../mx-rofi-manager:661 ../mx-rofi-manager:1005
 #: ../mx-rofi-manager:1195
 #, sh-format
 msgid "No change to current settings!\\n"
 msgstr "Nem változtak a jelenlegi beállítások!\\n"
 
-#: ../mx-rofi-manager:350
+#: ../mx-rofi-manager:349
 msgid "No theme selected."
 msgstr "Nincs téma kiválasztva."
 
@@ -321,7 +321,7 @@ msgstr ""
 " indulási téma."
 
 #. #begin message box
-#: ../mx-rofi-manager:84
+#: ../mx-rofi-manager:70
 msgid "OK to proceed?"
 msgstr "Folytatja?"
 
@@ -346,15 +346,15 @@ msgstr "Rofi-Szerkesztő"
 msgid "Rofi-Font"
 msgstr "Rofi-Betűtípus"
 
-#: ../mx-rofi-manager:696
+#: ../mx-rofi-manager:695
 msgid "Rofi-Position"
 msgstr "Rofi-Pozíció"
 
-#: ../mx-rofi-manager:539
+#: ../mx-rofi-manager:538
 msgid "Rofi-Tab-Selector"
 msgstr "Rofi-Fül-Választó"
 
-#: ../mx-rofi-manager:130
+#: ../mx-rofi-manager:128
 msgid "Rofi-Theme"
 msgstr "Rofi-Téma"
 
@@ -378,7 +378,7 @@ msgstr "Kijelölés háttér"
 msgid "Selection Text"
 msgstr "Kijelölés szöveg"
 
-#: ../mx-rofi-manager:320
+#: ../mx-rofi-manager:319
 msgid "Settings"
 msgstr "Beállítások"
 
@@ -392,7 +392,7 @@ msgstr ""
 "használatával módosíthatók.\\n\\nMeg kívánja változtatni a globális "
 "beállításokat?.\\n\\n"
 
-#: ../mx-rofi-manager:476
+#: ../mx-rofi-manager:475
 msgid "Specific settings will be used"
 msgstr "Specifikus beállítások lesznek felhasználva"
 
@@ -405,7 +405,7 @@ msgstr "Specifikus beállítások lesznek felhasználva"
 msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
 msgstr "A jelenlegi megjelenési beállítások: <b>$TOGGLETEXT</b>"
 
-#: ../mx-rofi-manager:297
+#: ../mx-rofi-manager:296
 #, sh-format
 msgid ""
 "The current theme is <b>$ROFICURRENT</b> and its settings are "
@@ -419,7 +419,7 @@ msgstr ""
 msgid "Theme name $NEWNAME is protected. Choose another name"
 msgstr "$NEWNAME témanév védett. Válasszon egy másik nevet"
 
-#: ../mx-rofi-manager:81
+#: ../mx-rofi-manager:61
 #, sh-format
 msgid ""
 "This tool edits the rofi config file.\\n\\nThe existing file will be backed "
@@ -463,23 +463,23 @@ msgstr ""
 "\\nA szerkeszteni kívánt téma mentésre került itt:\\n<b>$ROFIPATH</b> "
 "mint\\n\\n<b>$EDITTHEMECOPY</b>\\n\\n"
 
-#: ../mx-rofi-manager:549
+#: ../mx-rofi-manager:548
 msgid "a powerful calculation engine"
 msgstr "egy hatékony számítási rendszer"
 
-#: ../mx-rofi-manager:554
+#: ../mx-rofi-manager:553
 msgid "a set of links about using rofi"
 msgstr "hivatkozások a rofi használatához"
 
-#: ../mx-rofi-manager:551
+#: ../mx-rofi-manager:550
 msgid "displays all available executable files"
 msgstr "minden futtatható fájlt megjelenít"
 
-#: ../mx-rofi-manager:553
+#: ../mx-rofi-manager:552
 msgid "enables easy switching"
 msgstr "könnyű váltást tesz lehetővé"
 
-#: ../mx-rofi-manager:550
+#: ../mx-rofi-manager:549
 msgid "fast access to files"
 msgstr "fájlok gyors elérését biztosítja"
 
@@ -487,14 +487,24 @@ msgstr "fájlok gyors elérését biztosítja"
 msgid "mxrr-color-selector"
 msgstr "mxrr-color-selector"
 
-#: ../mx-rofi-manager:552
+#: ../mx-rofi-manager:551
 msgid "opens a secure shell"
 msgstr "egy biztonságos parancsértelmezőt nyit"
 
-#: ../mx-rofi-manager:555
+#: ../mx-rofi-manager:554
 msgid "tab will not be shown\\n"
 msgstr "a fül nem lesz megjelenítve\\n"
 
-#: ../mx-rofi-manager:548
+#: ../mx-rofi-manager:547
 msgid "the MX default that displays available apps"
 msgstr "az MX alapértelmezés, amely megjeleníti az elérhető alkalmazásokat"
+
+#. Translator comment - this is name of application
+#: ../xdg/mx-rofi-manager.desktop.in:6
+msgid "Rofi Manager"
+msgstr ""
+
+#. Translator commnent - this is description for menu
+#: ../xdg/mx-rofi-manager.desktop.in:8
+msgid "Easily change the rofi configuration"
+msgstr ""

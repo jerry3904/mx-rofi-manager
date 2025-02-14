@@ -5,25 +5,25 @@
 # 
 # Translators:
 # anticapitalista <anticapitalista@riseup.net>, 2022
-# Eduard Selma <selma@tinet.cat>, 2022
 # Dolphin Oracle <dolphinoracle@gmail.com>, 2023
+# Eduard Selma <selma@tinet.cat>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 14:28-0500\n"
+"POT-Creation-Date: 2024-02-01 21:55-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
-"Language-Team: Catalan (https://www.transifex.com/anticapitalista/teams/10162/ca/)\n"
+"Last-Translator: Eduard Selma <selma@tinet.cat>, 2024\n"
+"Language-Team: Catalan (https://app.transifex.com/anticapitalista/teams/10162/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../mx-rofi-manager:222
+#: ../mx-rofi-manager:221
 msgid ""
 "\n"
 "SPECIFIC AND GLOBAL SETTINGS\n"
@@ -34,6 +34,14 @@ msgid ""
 "\n"
 "--Global: settings come from a separate file (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) and are applied to all themes. Rofi manager can edit these by changing the current theme to that file."
 msgstr ""
+"\n"
+"PARÀMETRES ESPECÍFICS I GLOBALS\n"
+"\n"
+"Els paràmetres de posició, mida i lletra poden tenir dos formats:\n"
+"\n"
+"--Els paràmetres específics venen directament del fitxer  <algun_nom.rasi> amb valors particulars. El gestor Rofi pot editar els paràmetres específics dels temes d'usuari (~/.config/rofi/themes/<algun_nom.rasi>) pero els temes Extra i System només es poden canviar amb un editor de text.\n"
+"\n"
+"--Els paràmetres Globals venen d'un fitxer separat (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) i s'apliquen a tots els temes. El gestor Rofi pot editar-los canviant el nom actual d'aquest fitxer"
 
 #: ../mx-rofi-manager:711
 msgid ""
@@ -79,11 +87,11 @@ msgstr ""
 
 #: ../mx-rofi-manager:935
 msgid "    X-Offset (- to left, + to right)"
-msgstr ""
+msgstr "    X-Offset (- a l'esquerra, + a la dreta)"
 
 #: ../mx-rofi-manager:936
 msgid "    Y-Offset (- upwards, + downwards)"
-msgstr ""
+msgstr "    Y-Offset (- amunt, + avall)"
 
 #: ../mx-rofi-manager:1155
 msgid "<b>Adjust the font of the current rofi window.</b>"
@@ -119,7 +127,7 @@ msgstr ""
 "<b>Rofi Manager és una eina per configurar els temes Rofi.\\n\\n<i>què "
 "voldríeu fer ara?</i></b>\\n"
 
-#: ../mx-rofi-manager:295
+#: ../mx-rofi-manager:294
 msgid ""
 "<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
@@ -127,7 +135,7 @@ msgstr ""
 "<b>Seleccioneu els paràmetres d'aspecte i tema a usar</b> (doble-clic per "
 "visualitzar)."
 
-#: ../mx-rofi-manager:547
+#: ../mx-rofi-manager:546
 msgid "<b>Select which tabs rofi should display</b>\\n"
 msgstr "<b>Trieu quines pestanyes mostrarà Rofi</b>\\n"
 
@@ -184,12 +192,12 @@ msgid ""
 msgstr "Acabat!\\nS'ha modificat la posició i mida del tema Rofi actual."
 
 #. ########
-#: ../mx-rofi-manager:524
+#: ../mx-rofi-manager:523
 #, sh-format
 msgid "All done!\\n\\n<b>$NEWTHEME</b> has been set as the current rofi theme.\\n\\n"
 msgstr "Acabat!\\n\\n<b>S'ha definit $NEWTHEME</b> com a tema actual de Rofi.\\n\\n"
 
-#: ../mx-rofi-manager:678
+#: ../mx-rofi-manager:677
 msgid "All done!\\n\\nTab configuration has been updated.\\n\\n"
 msgstr "Tot fet!\\n\\nS'ha actualitzat la configuració de la pestanya.\\n\\n"
 
@@ -217,7 +225,7 @@ msgstr "Edita el fitxer de configuració de tema Rofi a l'editor de text"
 msgid "Font"
 msgstr "Lletra"
 
-#: ../mx-rofi-manager:475
+#: ../mx-rofi-manager:474
 #, sh-format
 msgid "Global settings are blocked for"
 msgstr "Els ajustos globals estan bloquejats per"
@@ -226,7 +234,7 @@ msgstr "Els ajustos globals estan bloquejats per"
 msgid "Height (number of lines shown in list)"
 msgstr "Altura (nombre de línies a la llista)"
 
-#: ../mx-rofi-manager:556
+#: ../mx-rofi-manager:555
 msgid ""
 "If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or "
 "<i>Ctrl + Tab</i>\\n"
@@ -264,14 +272,14 @@ msgstr ""
 "--accedir a la documentació\n"
 "Per més detalls, consulteu la pestanya Rofi \"ajuda\".\n"
 
-#: ../mx-rofi-manager:219 ../mx-rofi-manager:708 ../mx-rofi-manager:1702
+#: ../mx-rofi-manager:217 ../mx-rofi-manager:707 ../mx-rofi-manager:1702
 msgid "MX-Rofi-Help"
 msgstr "Ajuda de MX-Rofi"
 
 #. ##################################################################
 #. ##################################################################
 #. MAIN WINDOW
-#: ../mx-rofi-manager:1730
+#: ../mx-rofi-manager:63 ../mx-rofi-manager:1730
 msgid "MX-Rofi-Manager"
 msgstr "Gestor de MX-Rofi"
 
@@ -294,13 +302,13 @@ msgstr "Nom del nou tema"
 msgid "No Theme name!"
 msgstr "No hi ha nom de Tema!"
 
-#: ../mx-rofi-manager:408 ../mx-rofi-manager:662 ../mx-rofi-manager:1005
+#: ../mx-rofi-manager:407 ../mx-rofi-manager:661 ../mx-rofi-manager:1005
 #: ../mx-rofi-manager:1195
 #, sh-format
 msgid "No change to current settings!\\n"
 msgstr "No s'han canviat els paràmetres actuals!\\n"
 
-#: ../mx-rofi-manager:350
+#: ../mx-rofi-manager:349
 msgid "No theme selected."
 msgstr "No s'ha triat cap tema."
 
@@ -311,7 +319,7 @@ msgid ""
 msgstr "No s'ha triat cap tema.\\n\\nS'usarà<b>MX-comfort</b> com a tema inicial."
 
 #. #begin message box
-#: ../mx-rofi-manager:84
+#: ../mx-rofi-manager:70
 msgid "OK to proceed?"
 msgstr "D'acord en començar?"
 
@@ -336,15 +344,15 @@ msgstr "Rofi-Edit"
 msgid "Rofi-Font"
 msgstr "Lletra Rofi"
 
-#: ../mx-rofi-manager:696
+#: ../mx-rofi-manager:695
 msgid "Rofi-Position"
 msgstr "Posició Rofi"
 
-#: ../mx-rofi-manager:539
+#: ../mx-rofi-manager:538
 msgid "Rofi-Tab-Selector"
 msgstr "Rofi-Tab-Selector"
 
-#: ../mx-rofi-manager:130
+#: ../mx-rofi-manager:128
 msgid "Rofi-Theme"
 msgstr "Rofi-Theme"
 
@@ -368,7 +376,7 @@ msgstr "Fons de la Selecció"
 msgid "Selection Text"
 msgstr "Text de la Selecció"
 
-#: ../mx-rofi-manager:320
+#: ../mx-rofi-manager:319
 msgid "Settings"
 msgstr "Paràmetres"
 
@@ -381,7 +389,7 @@ msgstr ""
 "Ho sento, els paràmetres d'aspecte per $ROFICURRENT només es poden modificar"
 " usant paràmetres globalsn\\nVoleu canviar a paràmetres globals?.\\n\\n"
 
-#: ../mx-rofi-manager:476
+#: ../mx-rofi-manager:475
 msgid "Specific settings will be used"
 msgstr "S'usaran paràmetres específics"
 
@@ -394,7 +402,7 @@ msgstr "S'usaran paràmetres específics"
 msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
 msgstr "Els paràmetres d'aspecte actuals són <b>$TOGGLETEXT</b>"
 
-#: ../mx-rofi-manager:297
+#: ../mx-rofi-manager:296
 #, sh-format
 msgid ""
 "The current theme is <b>$ROFICURRENT</b> and its settings are "
@@ -408,7 +416,7 @@ msgstr ""
 msgid "Theme name $NEWNAME is protected. Choose another name"
 msgstr "El nom de tema $NEWNAME està protegit. Trieu un altre nom"
 
-#: ../mx-rofi-manager:81
+#: ../mx-rofi-manager:61
 #, sh-format
 msgid ""
 "This tool edits the rofi config file.\\n\\nThe existing file will be backed "
@@ -452,23 +460,23 @@ msgstr ""
 "\\nEl tema a editar s'ha desat a\\n<b>$ROFIPATH</b> com "
 "a\\n\\n<b>$EDITTHEMECOPY</b>\\n\\n"
 
-#: ../mx-rofi-manager:549
+#: ../mx-rofi-manager:548
 msgid "a powerful calculation engine"
 msgstr "un potent motor de càlcul"
 
-#: ../mx-rofi-manager:554
+#: ../mx-rofi-manager:553
 msgid "a set of links about using rofi"
 msgstr "un joc d'enllaços quant a l'ús de Rofi"
 
-#: ../mx-rofi-manager:551
+#: ../mx-rofi-manager:550
 msgid "displays all available executable files"
 msgstr "mostra tots els fitxers executables a l'abast"
 
-#: ../mx-rofi-manager:553
+#: ../mx-rofi-manager:552
 msgid "enables easy switching"
 msgstr "permet la commutació fàcil"
 
-#: ../mx-rofi-manager:550
+#: ../mx-rofi-manager:549
 msgid "fast access to files"
 msgstr "accés ràpid als fitxers"
 
@@ -476,14 +484,24 @@ msgstr "accés ràpid als fitxers"
 msgid "mxrr-color-selector"
 msgstr "mxrr-color-selector"
 
-#: ../mx-rofi-manager:552
+#: ../mx-rofi-manager:551
 msgid "opens a secure shell"
 msgstr "obre una shell segura"
 
-#: ../mx-rofi-manager:555
+#: ../mx-rofi-manager:554
 msgid "tab will not be shown\\n"
 msgstr "no es mostrarà la pestanya\\n "
 
-#: ../mx-rofi-manager:548
+#: ../mx-rofi-manager:547
 msgid "the MX default that displays available apps"
 msgstr "el d'omissió a MX que mostra les aplicacions disponibles"
+
+#. Translator comment - this is name of application
+#: ../xdg/mx-rofi-manager.desktop.in:6
+msgid "Rofi Manager"
+msgstr "Rofi Manager"
+
+#. Translator commnent - this is description for menu
+#: ../xdg/mx-rofi-manager.desktop.in:8
+msgid "Easily change the rofi configuration"
+msgstr "Canvia fàcilment la configuració de Rofi"

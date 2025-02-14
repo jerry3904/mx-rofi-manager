@@ -5,25 +5,25 @@
 # 
 # Translators:
 # Transifex Bot <>, 2022
-# Green, 2023
 # Dolphin Oracle <dolphinoracle@gmail.com>, 2023
+# Green <usergreen@users.osdn.me>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 14:28-0500\n"
+"POT-Creation-Date: 2024-02-01 21:55-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/anticapitalista/teams/10162/ja/)\n"
+"Last-Translator: Green <usergreen@users.osdn.me>, 2024\n"
+"Language-Team: Japanese (https://app.transifex.com/anticapitalista/teams/10162/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../mx-rofi-manager:222
+#: ../mx-rofi-manager:221
 msgid ""
 "\n"
 "SPECIFIC AND GLOBAL SETTINGS\n"
@@ -39,7 +39,7 @@ msgstr ""
 "\n"
 "位置・サイズ・フォントの設定には、以下のとおり2つの形式があります。\n"
 "\n"
-"--仕様: 設定は <some name.rasi> ファイルから直接に特定の値を伴って取得します。Rofi マネージャは、ユーザーのテーマ（~/.config/rofi/themes/<some name.rasi>）については、任意に設定を編集することができますが、Extra テーマとシステムテーマは、テキストエディタでのみ設定変更できます。\n"
+"--仕様: 設定は <some name.rasi> ファイルから直接に特定の値を伴って取得します。Rofi マネージャは、ユーザのテーマ（~/.config/rofi/themes/<some name.rasi>）については、任意に設定を編集することができますが、Extra テーマとシステムテーマは、テキストエディタでのみ設定変更できます。\n"
 "\n"
 "--グローバル: この設定は別のファイル (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) から来ており、すべてのテーマに適用されます。Rofi マネージャを使って現在のテーマを変更することで、これらを編集することができます。"
 
@@ -125,13 +125,13 @@ msgid ""
 "like to do?</i></b>\\n"
 msgstr "<b>Rofi マネージャは Rofi テーマの設定ツールです。\\n\\n<i>何をしたいですか？</i></b>\\n"
 
-#: ../mx-rofi-manager:295
+#: ../mx-rofi-manager:294
 msgid ""
 "<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr "<b>使用する外観の設定とテーマを選択してください</b> (ダブルクリックでプレビューできます)。"
 
-#: ../mx-rofi-manager:547
+#: ../mx-rofi-manager:546
 msgid "<b>Select which tabs rofi should display</b>\\n"
 msgstr "<b>Rofi を表示するタブを選択</b>\\n"
 
@@ -186,12 +186,12 @@ msgid ""
 msgstr "完了です!\\n現在の rofi テーマの位置と大きさを変更しました。"
 
 #. ########
-#: ../mx-rofi-manager:524
+#: ../mx-rofi-manager:523
 #, sh-format
 msgid "All done!\\n\\n<b>$NEWTHEME</b> has been set as the current rofi theme.\\n\\n"
 msgstr "すべて完了！\\n<b>$NEWNAME</b> を現在の rofi テーマにセットしました。"
 
-#: ../mx-rofi-manager:678
+#: ../mx-rofi-manager:677
 msgid "All done!\\n\\nTab configuration has been updated.\\n\\n"
 msgstr "すべて完了！\\n\\nタブの設定を更新しました。\\n\\n"
 
@@ -219,7 +219,7 @@ msgstr "テキストエディタで rofi テーマの設定ファイルを編集
 msgid "Font"
 msgstr "フォント"
 
-#: ../mx-rofi-manager:475
+#: ../mx-rofi-manager:474
 #, sh-format
 msgid "Global settings are blocked for"
 msgstr "についてのグローバル設定はブロックしています"
@@ -228,7 +228,7 @@ msgstr "についてのグローバル設定はブロックしています"
 msgid "Height (number of lines shown in list)"
 msgstr "高さ (一覧に表示する行数)"
 
-#: ../mx-rofi-manager:556
+#: ../mx-rofi-manager:555
 msgid ""
 "If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or "
 "<i>Ctrl + Tab</i>\\n"
@@ -264,14 +264,14 @@ msgstr ""
 "--文書へのアクセス\n"
 "詳しくは Rofi の \"ヘルプ\" タブをご覧ください。\n"
 
-#: ../mx-rofi-manager:219 ../mx-rofi-manager:708 ../mx-rofi-manager:1702
+#: ../mx-rofi-manager:217 ../mx-rofi-manager:707 ../mx-rofi-manager:1702
 msgid "MX-Rofi-Help"
 msgstr "MX-Rofi-Help"
 
 #. ##################################################################
 #. ##################################################################
 #. MAIN WINDOW
-#: ../mx-rofi-manager:1730
+#: ../mx-rofi-manager:63 ../mx-rofi-manager:1730
 msgid "MX-Rofi-Manager"
 msgstr "MX-Rofi-Manager"
 
@@ -294,13 +294,13 @@ msgstr "新しいテーマ名"
 msgid "No Theme name!"
 msgstr "テーマ名がありません！"
 
-#: ../mx-rofi-manager:408 ../mx-rofi-manager:662 ../mx-rofi-manager:1005
+#: ../mx-rofi-manager:407 ../mx-rofi-manager:661 ../mx-rofi-manager:1005
 #: ../mx-rofi-manager:1195
 #, sh-format
 msgid "No change to current settings!\\n"
 msgstr "現在の設定に変更はありません!\\n"
 
-#: ../mx-rofi-manager:350
+#: ../mx-rofi-manager:349
 msgid "No theme selected."
 msgstr "テーマを選択していません。"
 
@@ -311,7 +311,7 @@ msgid ""
 msgstr "テーマを選択していません。\\n\\n<b>MX-comfort</b> を開始時のテーマとして使用します。"
 
 #. #begin message box
-#: ../mx-rofi-manager:84
+#: ../mx-rofi-manager:70
 msgid "OK to proceed?"
 msgstr "続行してもいいですか？"
 
@@ -336,15 +336,15 @@ msgstr "Rofi-Edit"
 msgid "Rofi-Font"
 msgstr "Rofi-Font"
 
-#: ../mx-rofi-manager:696
+#: ../mx-rofi-manager:695
 msgid "Rofi-Position"
 msgstr "Rofi-Position"
 
-#: ../mx-rofi-manager:539
+#: ../mx-rofi-manager:538
 msgid "Rofi-Tab-Selector"
 msgstr "Rofi-Tab-Selector"
 
-#: ../mx-rofi-manager:130
+#: ../mx-rofi-manager:128
 msgid "Rofi-Theme"
 msgstr "Rofi-Theme"
 
@@ -368,7 +368,7 @@ msgstr "選択の背景"
 msgid "Selection Text"
 msgstr "選択のテキスト"
 
-#: ../mx-rofi-manager:320
+#: ../mx-rofi-manager:319
 msgid "Settings"
 msgstr "設定"
 
@@ -379,7 +379,7 @@ msgid ""
 "global settings.\\n\\nWould you like to change to global settings?.\\n\\n"
 msgstr "申し訳ありませんが、$ROFICURRENT の外観設定は、グローバル設定でのみ変更可能です。\\n\\nグローバル設定を変更しますか？\\n\\n"
 
-#: ../mx-rofi-manager:476
+#: ../mx-rofi-manager:475
 msgid "Specific settings will be used"
 msgstr "特定の設定を使用します"
 
@@ -392,7 +392,7 @@ msgstr "特定の設定を使用します"
 msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
 msgstr "現在の外観の設定は <b>$TOGGLETEXT</b> です"
 
-#: ../mx-rofi-manager:297
+#: ../mx-rofi-manager:296
 #, sh-format
 msgid ""
 "The current theme is <b>$ROFICURRENT</b> and its settings are "
@@ -404,7 +404,7 @@ msgstr "現在のテーマは <b>$ROFICURRENT</b> です。この設定は <b>$T
 msgid "Theme name $NEWNAME is protected. Choose another name"
 msgstr "テーマ名 $NEWNAME は保護されています。別の名前を選んでください。"
 
-#: ../mx-rofi-manager:81
+#: ../mx-rofi-manager:61
 #, sh-format
 msgid ""
 "This tool edits the rofi config file.\\n\\nThe existing file will be backed "
@@ -445,23 +445,23 @@ msgid ""
 "as\\n\\n<b>$EDITTHEMECOPY</b>\\n\\n"
 msgstr "\\n編集したテーマを<b>$EDITTHEMECOPY</b>として、<b>$ROFIPATH</b> に保存しました\\n\\n"
 
-#: ../mx-rofi-manager:549
+#: ../mx-rofi-manager:548
 msgid "a powerful calculation engine"
 msgstr "パワフルな計算エンジン"
 
-#: ../mx-rofi-manager:554
+#: ../mx-rofi-manager:553
 msgid "a set of links about using rofi"
 msgstr "rofi の使い方に関するリンク集"
 
-#: ../mx-rofi-manager:551
+#: ../mx-rofi-manager:550
 msgid "displays all available executable files"
 msgstr "利用可能なすべての実行可能ファイルを表示"
 
-#: ../mx-rofi-manager:553
+#: ../mx-rofi-manager:552
 msgid "enables easy switching"
 msgstr "簡単に切り替え可能にする"
 
-#: ../mx-rofi-manager:550
+#: ../mx-rofi-manager:549
 msgid "fast access to files"
 msgstr "ファイルへの高速アクセス"
 
@@ -469,14 +469,24 @@ msgstr "ファイルへの高速アクセス"
 msgid "mxrr-color-selector"
 msgstr "mxrr-color-selector"
 
-#: ../mx-rofi-manager:552
+#: ../mx-rofi-manager:551
 msgid "opens a secure shell"
 msgstr "セキュアなシェルを開く"
 
-#: ../mx-rofi-manager:555
+#: ../mx-rofi-manager:554
 msgid "tab will not be shown\\n"
 msgstr "タブを表示しません\\n"
 
-#: ../mx-rofi-manager:548
+#: ../mx-rofi-manager:547
 msgid "the MX default that displays available apps"
 msgstr "利用可能なアプリを表示する MX の標準機能"
+
+#. Translator comment - this is name of application
+#: ../xdg/mx-rofi-manager.desktop.in:6
+msgid "Rofi Manager"
+msgstr "Rofi マネージャ"
+
+#. Translator commnent - this is description for menu
+#: ../xdg/mx-rofi-manager.desktop.in:8
+msgid "Easily change the rofi configuration"
+msgstr "Rofi の設定変更が簡単に行えます"

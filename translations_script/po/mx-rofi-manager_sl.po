@@ -5,25 +5,25 @@
 # 
 # Translators:
 # Mario <al.manja@gmx.com>, 2022
-# Arnold Marko <arnold.marko@gmail.com>, 2022
 # Dolphin Oracle <dolphinoracle@gmail.com>, 2023
+# Arnold Marko <arnold.marko@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 14:28-0500\n"
+"POT-Creation-Date: 2024-02-01 21:55-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
-"Language-Team: Slovenian (https://www.transifex.com/anticapitalista/teams/10162/sl/)\n"
+"Last-Translator: Arnold Marko <arnold.marko@gmail.com>, 2024\n"
+"Language-Team: Slovenian (https://app.transifex.com/anticapitalista/teams/10162/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 
-#: ../mx-rofi-manager:222
+#: ../mx-rofi-manager:221
 msgid ""
 "\n"
 "SPECIFIC AND GLOBAL SETTINGS\n"
@@ -34,6 +34,14 @@ msgid ""
 "\n"
 "--Global: settings come from a separate file (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) and are applied to all themes. Rofi manager can edit these by changing the current theme to that file."
 msgstr ""
+"\n"
+"SPECIFIČNE IN GLOBALNE NASTAVITVE\n"
+"\n"
+"Nastavitve za položaj, velikost in pisavo lahko imajo dve obliki:\n"
+"\n"
+"--Specific: nastavitve izhajajo neposredno iz nastavitev <neko ime.rasl> datoteke. Rofi upravljalnik lahko uredi specifične nastavitve uporabnikove teme (~/.config/rofi/themes/<some name.rasi>), medtem ko je posebne in sistemske teme mogoče urejati le z urejevalnikom besedil.\n"
+"\n"
+"--Global: nastavitve izhajajo iz ločene datoteke (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) in so uporabljene za vse teme. Rofi upravljalnik jih lahko ureja tako, da prilagodi trenutno temo glede na to datoteko."
 
 #: ../mx-rofi-manager:711
 msgid ""
@@ -79,15 +87,15 @@ msgstr ""
 
 #: ../mx-rofi-manager:935
 msgid "    X-Offset (- to left, + to right)"
-msgstr ""
+msgstr "X-odmik (- na levo, + na desno)"
 
 #: ../mx-rofi-manager:936
 msgid "    Y-Offset (- upwards, + downwards)"
-msgstr ""
+msgstr "Y-odmik (- navzgor, + navzdol)"
 
 #: ../mx-rofi-manager:1155
 msgid "<b>Adjust the font of the current rofi window.</b>"
-msgstr ""
+msgstr "<b>Prilaogdi pisavo trenutnega rofi okna.</b>"
 
 #. get new position
 #. MAINPOS
@@ -116,14 +124,16 @@ msgid ""
 "<b>Rofi Manager is a tool to configure rofi themes.\\n\\n<i>What would you "
 "like to do?</i></b>\\n"
 msgstr ""
+"<b>Rofi upravljanik je orodje za nastavljanje tem.\\n\\n<i>Kaj želite "
+"storiti?</i></b>\\n"
 
-#: ../mx-rofi-manager:295
+#: ../mx-rofi-manager:294
 msgid ""
 "<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
-msgstr ""
+msgstr "<b>Izberite nastavitve videza in temo</b> (dvojni klik za predogled)."
 
-#: ../mx-rofi-manager:547
+#: ../mx-rofi-manager:546
 msgid "<b>Select which tabs rofi should display</b>\\n"
 msgstr "<b>Izberite zavihke, ki naj jih rofi prikaže</b>\\n"
 
@@ -184,14 +194,14 @@ msgstr ""
 "spremenjena."
 
 #. ########
-#: ../mx-rofi-manager:524
+#: ../mx-rofi-manager:523
 #, sh-format
 msgid "All done!\\n\\n<b>$NEWTHEME</b> has been set as the current rofi theme.\\n\\n"
 msgstr ""
 "Opravljeno!\\nZa trenutno rofi temo ja bila nastavljena tema "
 "<b>NEWTHEME</b>\\n\\n."
 
-#: ../mx-rofi-manager:678
+#: ../mx-rofi-manager:677
 msgid "All done!\\n\\nTab configuration has been updated.\\n\\n"
 msgstr "Opravljeno!\\n\\nNastavitve zavihkov so bile posodobljene.\\n\\n"
 
@@ -219,20 +229,22 @@ msgstr "Urejanje nastavitvene datoteke rofi teme v urejevalniku besedil"
 msgid "Font"
 msgstr "Pisava"
 
-#: ../mx-rofi-manager:475
+#: ../mx-rofi-manager:474
 #, sh-format
 msgid "Global settings are blocked for"
-msgstr ""
+msgstr "Globalne nastavitve so blokirane za"
 
 #: ../mx-rofi-manager:938
 msgid "Height (number of lines shown in list)"
 msgstr "Višina (število vrstic, ki so pirkazane na seznamu)"
 
-#: ../mx-rofi-manager:556
+#: ../mx-rofi-manager:555
 msgid ""
 "If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or "
 "<i>Ctrl + Tab</i>\\n"
 msgstr ""
+"Če tema ne prikaže zavihkov, preklopite med zavihki z <i>Shift + puščica</i>"
+" ali <i>Ctrl+tabulator</i>\\n "
 
 #: ../mx-rofi-manager:1362 ../mx-rofi-manager:1388
 msgid "Inactive Tab Background"
@@ -240,7 +252,7 @@ msgstr "Ozadje nekativnega zavihka"
 
 #: ../mx-rofi-manager:1363 ../mx-rofi-manager:1389
 msgid "Inactive Tab Text"
-msgstr "Tekst neaktivnega zavihka"
+msgstr "Besedilo neaktivnega zavihka"
 
 #: ../mx-rofi-manager:934
 msgid "Location of rofi window on the screen"
@@ -264,14 +276,14 @@ msgstr ""
 "- dostop do dokumentacije\n"
 "Za več podrobnosti uporabite rofi zavihek \"pomoč\".\n"
 
-#: ../mx-rofi-manager:219 ../mx-rofi-manager:708 ../mx-rofi-manager:1702
+#: ../mx-rofi-manager:217 ../mx-rofi-manager:707 ../mx-rofi-manager:1702
 msgid "MX-Rofi-Help"
 msgstr "MX-Rofi-pomoč"
 
 #. ##################################################################
 #. ##################################################################
 #. MAIN WINDOW
-#: ../mx-rofi-manager:1730
+#: ../mx-rofi-manager:63 ../mx-rofi-manager:1730
 msgid "MX-Rofi-Manager"
 msgstr "MX-Rofi-upravljanik"
 
@@ -294,13 +306,13 @@ msgstr "Ime nove teme"
 msgid "No Theme name!"
 msgstr "Ni imena za temo!"
 
-#: ../mx-rofi-manager:408 ../mx-rofi-manager:662 ../mx-rofi-manager:1005
+#: ../mx-rofi-manager:407 ../mx-rofi-manager:661 ../mx-rofi-manager:1005
 #: ../mx-rofi-manager:1195
 #, sh-format
 msgid "No change to current settings!\\n"
 msgstr "Brez sprememb trenutnih nastavitev!\\n"
 
-#: ../mx-rofi-manager:350
+#: ../mx-rofi-manager:349
 msgid "No theme selected."
 msgstr "Nobena tema ni izbrana"
 
@@ -312,7 +324,7 @@ msgstr ""
 "Nobena tema ni izbrana.\\n\\n<b>MX-comfort</b> bo izbrana za začetno temo."
 
 #. #begin message box
-#: ../mx-rofi-manager:84
+#: ../mx-rofi-manager:70
 msgid "OK to proceed?"
 msgstr "OK za nadaljevanje?"
 
@@ -337,15 +349,15 @@ msgstr "Rofu-urejanje"
 msgid "Rofi-Font"
 msgstr "Rofi-pisava"
 
-#: ../mx-rofi-manager:696
+#: ../mx-rofi-manager:695
 msgid "Rofi-Position"
 msgstr "Rofi-položaj"
 
-#: ../mx-rofi-manager:539
+#: ../mx-rofi-manager:538
 msgid "Rofi-Tab-Selector"
 msgstr "ROFI-izbirnik-zavihka"
 
-#: ../mx-rofi-manager:130
+#: ../mx-rofi-manager:128
 msgid "Rofi-Theme"
 msgstr "Rofi-tema"
 
@@ -359,7 +371,7 @@ msgstr "Ozadje pasice iskalnika"
 
 #: ../mx-rofi-manager:1361 ../mx-rofi-manager:1387
 msgid "Searchbar Text"
-msgstr "Tekst pasice iskalnik"
+msgstr "Besedilo pasice iskalnika"
 
 #: ../mx-rofi-manager:1367 ../mx-rofi-manager:1405
 msgid "Selection Background"
@@ -367,9 +379,9 @@ msgstr "Ozadje izbora"
 
 #: ../mx-rofi-manager:1368 ../mx-rofi-manager:1406
 msgid "Selection Text"
-msgstr "Tekst izbora"
+msgstr "Besedilo izbora"
 
-#: ../mx-rofi-manager:320
+#: ../mx-rofi-manager:319
 msgid "Settings"
 msgstr "Nastavitve"
 
@@ -379,10 +391,12 @@ msgid ""
 "Sorry, the appearance settings for $ROFICURRENT can only be modified using "
 "global settings.\\n\\nWould you like to change to global settings?.\\n\\n"
 msgstr ""
+"Nastavit6ve izgleda za  $ROFICURRENT ke mogoče spremeniti le preko globalnih"
+" nastavitev.\\n\\nAli želite spremeniti glboalne nastavitve?\\n\\n"
 
-#: ../mx-rofi-manager:476
+#: ../mx-rofi-manager:475
 msgid "Specific settings will be used"
-msgstr ""
+msgstr "Uporabljene bodo specifične nastavitve"
 
 #. TEXTLOCMAIN2="$(eval_gettext 'The current appearance settings are
 #. <b>$TOGGLETEXTTRANS</b>\n')"
@@ -391,21 +405,22 @@ msgstr ""
 #: ../mx-rofi-manager:930 ../mx-rofi-manager:1157
 #, sh-format
 msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
-msgstr ""
+msgstr "Trenutne nastavitve videza so <b>$TOGGLETEXT</b>"
 
-#: ../mx-rofi-manager:297
+#: ../mx-rofi-manager:296
 #, sh-format
 msgid ""
 "The current theme is <b>$ROFICURRENT</b> and its settings are "
 "<b>$TOGGLETEXT</b>."
 msgstr ""
+"Trenutna tema je <b>$ROFICURRENT</b> za nastavitvami <b>$TOGGLETEXT</b>."
 
 #: ../mx-rofi-manager:1485
 #, sh-format
 msgid "Theme name $NEWNAME is protected. Choose another name"
 msgstr "Ime za temo $NEWNAME je zaščiteno. Izberite drugo ime"
 
-#: ../mx-rofi-manager:81
+#: ../mx-rofi-manager:61
 #, sh-format
 msgid ""
 "This tool edits the rofi config file.\\n\\nThe existing file will be backed "
@@ -449,23 +464,23 @@ msgstr ""
 "\\nTema za urejanje je bila shranjena v\\n\\n<b>$ROFIPATH1 </b> kot\\n\\n "
 "<b>$EDITTHEMECOPY</b>\\n\\n"
 
-#: ../mx-rofi-manager:549
+#: ../mx-rofi-manager:548
 msgid "a powerful calculation engine"
 msgstr "zmogljiv računski pogon"
 
-#: ../mx-rofi-manager:554
+#: ../mx-rofi-manager:553
 msgid "a set of links about using rofi"
 msgstr "skupek povezav o rabi rofija"
 
-#: ../mx-rofi-manager:551
+#: ../mx-rofi-manager:550
 msgid "displays all available executable files"
 msgstr "Prikaže vse izvršljive datoteke"
 
-#: ../mx-rofi-manager:553
+#: ../mx-rofi-manager:552
 msgid "enables easy switching"
 msgstr "vklpi preprosto preklapljanje"
 
-#: ../mx-rofi-manager:550
+#: ../mx-rofi-manager:549
 msgid "fast access to files"
 msgstr "hitri dostop do datotek"
 
@@ -473,14 +488,24 @@ msgstr "hitri dostop do datotek"
 msgid "mxrr-color-selector"
 msgstr "mxrr-izbirnik-barv"
 
-#: ../mx-rofi-manager:552
+#: ../mx-rofi-manager:551
 msgid "opens a secure shell"
 msgstr "odpre varno ukazno lupino"
 
-#: ../mx-rofi-manager:555
+#: ../mx-rofi-manager:554
 msgid "tab will not be shown\\n"
 msgstr "zavihek ne bo prikazan\\n"
 
-#: ../mx-rofi-manager:548
+#: ../mx-rofi-manager:547
 msgid "the MX default that displays available apps"
 msgstr "MX privzeto za prikaz programov, ki so na voljo"
+
+#. Translator comment - this is name of application
+#: ../xdg/mx-rofi-manager.desktop.in:6
+msgid "Rofi Manager"
+msgstr "Rofi upravljalnik"
+
+#. Translator commnent - this is description for menu
+#: ../xdg/mx-rofi-manager.desktop.in:8
+msgid "Easily change the rofi configuration"
+msgstr "Preprosto spreminjanje rofi nastavitev"
