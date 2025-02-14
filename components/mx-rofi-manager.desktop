@@ -39,7 +39,7 @@ Exec=mx-rofi-manager
 Icon=mxrm-icon
 Terminal=false
 ShowOnly=
-Categories=Settings;
+Categories=System;X-MXFB-Tools;
 
 
 
