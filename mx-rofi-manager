@@ -1,6 +1,6 @@
 #!/bin/bash
 #MX-Rofi-Manager - A tool to manage rofi settings
-#Version 24.01.01 by Melber and MX Devs
+#Version 25.02.01 by Melber and MX Devs
 #License: GPL-3.0+
 
 #set up translation
@@ -97,8 +97,7 @@ if [ ! -f $HOME/.config/rofi/mxrm-check ]; then
 fi
 
 
-#v0.11 edit config.rasi
-
+# mxrm-settings check
 RASI_CHECK2="$(grep "mxrm-settings" $HOME/.config/rofi/config.rasi)"
 
 if [ -z "$RASI_CHECK2" ]; then
@@ -106,17 +105,27 @@ if [ -z "$RASI_CHECK2" ]; then
 	echo $RASINEWLINE >> $HOME/.config/rofi/config.rasi
 fi
 
+# fontawesome check
+
 FA_CHECK="$(fc-list | grep font-awesome)"
 RASI_CHECK="$(grep "display0" $HOME/.config/rofi/config.rasi )"
 
-if [ -z "$FA_CHECK" ]; then
-    if [ "$RASI_CHECK" != '//@import "/mxrm-settings/display0.rasi"' ]; then
-	    DISPLAYON='@import "/mxrm-settings/display0.rasi"'
-        DISPLAYOFF='//@import "/mxrm-settings/display0.rasi"'
-	    sed -i -e "s/${DISPLAYON}/${DISPLAYOFF}/g" $HOME/.config/rofi/config.rasi
+DISPLAYOFF='//@import "/mxrm-settings/display0.rasi"'
+DISPLAYOFF=$(echo "${DISPLAYOFF}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+DISPLAYON='@import "/mxrm-settings/display0.rasi"'
+DISPLAYON=$(echo "${DISPLAYON}" | sed -e 's/[]$\/*[\^]/\\&/g' )
+
+if [ -n "$FA_CHECK" ]; then
+    if [ "$RASI_CHECK" = '//@import "/mxrm-settings/display0.rasi"' ]; then
+	    sed -i -e "s/${DISPLAYOFF}/${DISPLAYON}/" $HOME/.config/rofi/config.rasi
+	fi
+fi
+	
+if [ -z "$FA_CHECK" ]; then	    
+    if [ "$RASI_CHECK" = '@import "/mxrm-settings/display0.rasi"' ]; then
+	    sed -i -e "s/${DISPLAYON}/${DISPLAYOFF}/" $HOME/.config/rofi/config.rasi 
     fi
 fi
-
 
 ###################################################################
 ###################################################################
