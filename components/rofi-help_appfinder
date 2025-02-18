@@ -22,4 +22,4 @@ bash /usr/bin/appfinder-settings
 fi
 
 echo -e "$AF_HELP\0icon\x1fhelp-browser"
-echo -e "$AF_SETTINGS\0icon\x1fpreferences"
+echo -e "$AF_SETTINGS\0icon\x1fmxfb-appfinder-settings"
