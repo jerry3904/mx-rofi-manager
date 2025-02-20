@@ -3,9 +3,10 @@ Appfinder (mxfb-appfinder)
 
 TAB ICONS
 
- All apps - shows all apps
- Categories - filters apps according to the the selected category
+ All apps - shows all apps
+ Categories - filters apps according to the the selected category
  Help - this document
+ Exit options - Ways to end the session
 
 TABS NOT SHOWN
  Filebrowser - a basic file browser for opening files
@@ -19,9 +20,10 @@ Appearance, size and position can be changed using  Help > Settings
 *****DE*****
 TAB-SYMBOLE
 
- Alle Apps - zeigt alle Apps an
- Kategorien - filtert Apps nach der ausgewählten Kategorie
+ Alle Apps - zeigt alle Apps an
+ Kategorien - filtert Apps nach der ausgewählten Kategorie
  Hilfe - dieses Dokument
+ Verlassen - Möglichkeiten, die Sitzung zu beenden
 
 NICHT ANGEZEIGTE TABS
 
@@ -35,9 +37,10 @@ Erscheinungsbild, Größe und Position können über  Hilfe > Einstellungen g
 *****ES*****
 ICONOS DE LA PESTAÑA
 
- Todas las apps - muestra todas las apps
- Categorías - filtra las aplicaciones según la categoría seleccionada
+ Todas las apps - muestra todas las apps
+ Categorías - filtra las aplicaciones según la categoría seleccionada
  Ayuda - este documento
+ Opciones de salida - Formas de finalizar la sesión
 
 PESTAÑAS NO MOSTRADAS
 
@@ -51,9 +54,10 @@ El aspecto, el tamaño y la posición pueden modificarse mediante Ayuda > Config
 *****EL*****
 ΤΑΜΠ ICONS
 
- Όλες οι εφαρμογές - εμφανίζει όλες τις εφαρμογές
- Κατηγορίες - φιλτράρει τις εφαρμογές σύμφωνα με την επιλεγμένη κατηγορία
+ Όλες οι εφαρμογές - εμφανίζει όλες τις εφαρμογές
+ Κατηγορίες - φιλτράρει τις εφαρμογές σύμφωνα με την επιλεγμένη κατηγορία
  Βοήθεια - αυτό το έγγραφο
+ Επιλογές εξόδου - Τρόποι τερματισμού της συνεδρίας
 
 ΤΑΜΠΕΣ ΔΕΝ ΕΙΔΟΝΤΑΙ
 
@@ -67,9 +71,10 @@ El aspecto, el tamaño y la posición pueden modificarse mediante Ayuda > Config
 *****FR*****
 TAB ICONS
 
- Toutes les applications - affiche toutes les applications
- Catégories - filtre les applications en fonction de la catégorie sélectionnée
+ Toutes les applications - affiche toutes les applications
+ Catégories - filtre les applications en fonction de la catégorie sélectionnée
  Aide - ce document
+ Options de sortie - Façons de mettre fin à la session
 
 ONGLETS NON AFFICHÉS
 
@@ -84,9 +89,10 @@ L'apparence, la taille et la position peuvent être modifiées en utilisant  
 *****IT*****
 TAB ICONE
 
- Tutte le app - mostra tutte le app
- Categorie - filtra le app in base alla categoria selezionata
+ Tutte le app - mostra tutte le app
+ Categorie - filtra le app in base alla categoria selezionata
  Aiuto - questo documento
+ Opzioni di uscita - Modi per terminare la sessione
 
 TABS NON MOSTRATI
 
@@ -100,9 +106,10 @@ L'aspetto, la dimensione e la posizione possono essere modificati utilizzando �
 *****JA*****
 TAB ICONS
 
- All apps - すべてのアプリを表示します。
- Categories - 選択したカテゴリに従ってアプリをフィルタリングします。
+ All apps - すべてのアプリを表示します。
+ Categories - 選択したカテゴリに従ってアプリをフィルタリングします。
  Help - このドキュメントを表示します。
+ Exit options - セッションを終了する方法
 
 表示されないタブ
 
@@ -116,9 +123,10 @@ TAB ICONS
 *****PL*****
 TAB ICONS
 
- Wszystkie aplikacje - wyświetla wszystkie aplikacje
- Kategorie - filtruje aplikacje według wybranej kategorii
+ Wszystkie aplikacje - wyświetla wszystkie aplikacje
+ Kategorie - filtruje aplikacje według wybranej kategorii
  Pomoc - ten dokument
+ Opcje wyjścia - sposoby zakończenia sesji
 
 ZAKŁADKI NIE POKAZANE
 
@@ -132,9 +140,10 @@ Wygląd, rozmiar i położenie można zmienić za pomocą opcji  Pomoc > Usta
 *****PT*****
 ÍCONES DO SEPARADOR
 
- Todas as aplicações - mostra todas as aplicações
- Categorias - filtra as aplicações de acordo com a categoria seleccionada
+ Todas as aplicações - mostra todas as aplicações
+ Categorias - filtra as aplicações de acordo com a categoria seleccionada
  Ajuda - este documento
+ Opções de saída - Formas de terminar a sessão
 
 TABELAS NÃO MOSTRADAS
 
@@ -148,9 +157,10 @@ O aspecto, o tamanho e a posição podem ser alterados através de  Ajuda > D
 *****RU*****
 ЗНАЧКИ ТАБОВ
 
- Все приложения - показывает все приложения
- Категории - фильтрует приложения в соответствии с выбранной категорией
+ Все приложения - показывает все приложения
+ Категории - фильтрует приложения в соответствии с выбранной категорией
  Справка - этот документ
+ Варианты выхода - способы завершения сеанса
 
 ТАБЛИЦЫ НЕ ПОКАЗАНЫ
 
@@ -164,8 +174,8 @@ O aspecto, o tamanho e a posição podem ser alterados através de  Ajuda > D
 *****SV*****
 TAB ICONS
 
- Alla appar - visar alla appar
- Kategorier - filtrerar appar enligt den valda kategorin
+ Alla appar - visar alla appar
+ Kategorier - filtrerar appar enligt den valda kategorin
  Hjälp - det här dokumentet
 
 TABBAR SOM INTE VISAS
@@ -180,8 +190,8 @@ Utseende, storlek och position kan ändras med hjälp av  Hjälp > Inställni
 *****ZH*****
 选项卡 ICONS
 
- 所有应用程序 - 显示所有应用程序
- 类别 - 根据所选类别过滤应用程序
+ 所有应用程序 - 显示所有应用程序
+ 类别 - 根据所选类别过滤应用程序
  帮助 - 本文档
 
 未显示的选项卡
