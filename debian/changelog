@@ -1,9 +1,10 @@
-mx-rofi-manager (24.03.01+nmu1) UNRELEASED; urgency=medium
+mx-rofi-manager (24.03.01+nmu3) mx; urgency=medium
 
   * Non-maintainer upload.
   * add category X-MXFB-Tools
+  * corrections to appfinder-settings
 
- -- Dolphin Oracle <devs@mx>  Fri, 14 Feb 2025 16:25:34 -0500
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 23 Feb 2025 11:25:03 -0500
 
 mx-rofi-manager (24.03.01) mx; urgency=medium
 
